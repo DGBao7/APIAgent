@@ -1,0 +1,56 @@
+APIAgent/
+│
+├── CMakeLists.txt
+│
+├── main.cpp
+│
+├── include/
+│   └── maf/
+│       ├── core/
+│       │   ├── Task.h
+│       │   ├── Agent.h
+│       │   ├── User.h
+│       │   └── Result.h
+│       │
+│       │
+│       ├── orchestration/
+│       │   ├── Memory.h
+│       │   ├── Planner.h
+│       │   └── Executor.h 
+│       │
+│       │
+│       ├── agents/
+│       │   ├── Strategy.h
+│       │   ├── Observe.h
+│       │   └── State.h
+│       │
+│       ├── providers/
+│       │   ├── ILLMProvider.h
+│       │   └── OpenAiProvider.h
+│       │
+│       │
+│       ├── communication/
+│       │   ├── Event.h
+│       │   └── User.h
+│       │
+│       ├ ui/
+│       │
+│       │
+│       └ utils/
+└── src/
+    ├── core/
+    ├── orchestration/
+    ├── agents/
+    ├── providers/
+    ├── communication/
+    ├── ui/
+    └── utils/
+
+Core: phần lõi, quản lý đầu vào, đầu ra, gọi ui, tạo class agents
+Orchestration: lên kế hoạch, bộ nhớ, thực thi
+Agents: lựa chọn llm provider, quản lý giao tiếp giữa agent, quản lý trạng thái nhiệm vụ
+Provides: gọi key api, kết nối api, nếu làm tượng trưng thì k cần
+Communication: nhạc trưởng giữa frontend và backend
+UI: vẽ
+utils:
+main.cpp: bố của nhạc trưởng
