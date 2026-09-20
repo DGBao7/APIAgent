@@ -1,0 +1,3 @@
+D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir
+D:/work/programs/prj/APIAgent/build/CMakeFiles/edit_cache.dir
+D:/work/programs/prj/APIAgent/build/CMakeFiles/rebuild_cache.dir

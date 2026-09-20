@@ -1,0 +1,122 @@
+[
+{
+  "directory": "D:/work/programs/prj/APIAgent/build",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\main.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\main.cpp",
+  "file": "D:/work/programs/prj/APIAgent/main.cpp",
+  "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/main.cpp.obj"
+},
+{
+  "directory": "D:/work/programs/prj/APIAgent/build",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\agents\\Observe.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\agents\\Observe.cpp",
+  "file": "D:/work/programs/prj/APIAgent/src/agents/Observe.cpp",
+  "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/agents/Observe.cpp.obj"
+},
+{
+  "directory": "D:/work/programs/prj/APIAgent/build",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\agents\\State.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\agents\\State.cpp",
+  "file": "D:/work/programs/prj/APIAgent/src/agents/State.cpp",
+  "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/agents/State.cpp.obj"
+},
+{
+  "directory": "D:/work/programs/prj/APIAgent/build",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\agents\\Strategy.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\agents\\Strategy.cpp",
+  "file": "D:/work/programs/prj/APIAgent/src/agents/Strategy.cpp",
+  "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/agents/Strategy.cpp.obj"
+},
+{
+  "directory": "D:/work/programs/prj/APIAgent/build",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\communication\\Event.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\communication\\Event.cpp",
+  "file": "D:/work/programs/prj/APIAgent/src/communication/Event.cpp",
+  "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/communication/Event.cpp.obj"
+},
+{
+  "directory": "D:/work/programs/prj/APIAgent/build",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\communication\\User.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\communication\\User.cpp",
+  "file": "D:/work/programs/prj/APIAgent/src/communication/User.cpp",
+  "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/communication/User.cpp.obj"
+},
+{
+  "directory": "D:/work/programs/prj/APIAgent/build",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\core\\Agent.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\core\\Agent.cpp",
+  "file": "D:/work/programs/prj/APIAgent/src/core/Agent.cpp",
+  "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/core/Agent.cpp.obj"
+},
+{
+  "directory": "D:/work/programs/prj/APIAgent/build",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\core\\Result.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\core\\Result.cpp",
+  "file": "D:/work/programs/prj/APIAgent/src/core/Result.cpp",
+  "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/core/Result.cpp.obj"
+},
+{
+  "directory": "D:/work/programs/prj/APIAgent/build",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\core\\Task.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\core\\Task.cpp",
+  "file": "D:/work/programs/prj/APIAgent/src/core/Task.cpp",
+  "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/core/Task.cpp.obj"
+},
+{
+  "directory": "D:/work/programs/prj/APIAgent/build",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\core\\User.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\core\\User.cpp",
+  "file": "D:/work/programs/prj/APIAgent/src/core/User.cpp",
+  "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/core/User.cpp.obj"
+},
+{
+  "directory": "D:/work/programs/prj/APIAgent/build",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\orchestration\\Executor.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\orchestration\\Executor.cpp",
+  "file": "D:/work/programs/prj/APIAgent/src/orchestration/Executor.cpp",
+  "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/orchestration/Executor.cpp.obj"
+},
+{
+  "directory": "D:/work/programs/prj/APIAgent/build",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\orchestration\\Memory.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\orchestration\\Memory.cpp",
+  "file": "D:/work/programs/prj/APIAgent/src/orchestration/Memory.cpp",
+  "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/orchestration/Memory.cpp.obj"
+},
+{
+  "directory": "D:/work/programs/prj/APIAgent/build",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\orchestration\\Planner.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\orchestration\\Planner.cpp",
+  "file": "D:/work/programs/prj/APIAgent/src/orchestration/Planner.cpp",
+  "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/orchestration/Planner.cpp.obj"
+},
+{
+  "directory": "D:/work/programs/prj/APIAgent/build",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\providers\\GeminiProvider.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\providers\\GeminiProvider.cpp",
+  "file": "D:/work/programs/prj/APIAgent/src/providers/GeminiProvider.cpp",
+  "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/providers/GeminiProvider.cpp.obj"
+},
+{
+  "directory": "D:/work/programs/prj/APIAgent/build",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\providers\\GroqProvider.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\providers\\GroqProvider.cpp",
+  "file": "D:/work/programs/prj/APIAgent/src/providers/GroqProvider.cpp",
+  "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/providers/GroqProvider.cpp.obj"
+},
+{
+  "directory": "D:/work/programs/prj/APIAgent/build",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\providers\\HttpClient.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\providers\\HttpClient.cpp",
+  "file": "D:/work/programs/prj/APIAgent/src/providers/HttpClient.cpp",
+  "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/providers/HttpClient.cpp.obj"
+},
+{
+  "directory": "D:/work/programs/prj/APIAgent/build",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\providers\\ILLMProvider.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\providers\\ILLMProvider.cpp",
+  "file": "D:/work/programs/prj/APIAgent/src/providers/ILLMProvider.cpp",
+  "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/providers/ILLMProvider.cpp.obj"
+},
+{
+  "directory": "D:/work/programs/prj/APIAgent/build",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\providers\\OpenAICompatibleProvider.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\providers\\OpenAICompatibleProvider.cpp",
+  "file": "D:/work/programs/prj/APIAgent/src/providers/OpenAICompatibleProvider.cpp",
+  "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/providers/OpenAICompatibleProvider.cpp.obj"
+},
+{
+  "directory": "D:/work/programs/prj/APIAgent/build",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\providers\\OpenRouterProvider.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\providers\\OpenRouterProvider.cpp",
+  "file": "D:/work/programs/prj/APIAgent/src/providers/OpenRouterProvider.cpp",
+  "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/providers/OpenRouterProvider.cpp.obj"
+},
+{
+  "directory": "D:/work/programs/prj/APIAgent/build",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\utils\\Env.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\utils\\Env.cpp",
+  "file": "D:/work/programs/prj/APIAgent/src/utils/Env.cpp",
+  "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/utils/Env.cpp.obj"
+}
+]

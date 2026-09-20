@@ -39,18 +39,9 @@ APIAgent/
 │       └ utils/
 └── src/
     ├── core/
-    ├── orchestration/
-    ├── agents/
-    ├── providers/
+    ├── orchestration/ 
+    ├── agents/ 
+    ├── providers/ 
     ├── communication/
     ├── ui/
     └── utils/
-
-Core: phần lõi, quản lý đầu vào, đầu ra, gọi ui, tạo class agents
-Orchestration: lên kế hoạch, bộ nhớ, thực thi
-Agents: lựa chọn llm provider, quản lý giao tiếp giữa agent, quản lý trạng thái nhiệm vụ
-Provides: gọi key api, kết nối api, nếu làm tượng trưng thì k cần
-Communication: nhạc trưởng giữa frontend và backend
-UI: vẽ
-utils:
-main.cpp: bố của nhạc trưởng
