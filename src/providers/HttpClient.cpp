@@ -1,3 +1,7 @@
+// Ho tro xu ly gui http request
+// Khi giao tiep qua agent, ai khong nam trong may minh, vi vay
+// can gui http request cho moi su giao tiep voi ai
+
 #include "maf/providers/HttpClient.h"
 
 #include <curl/curl.h>

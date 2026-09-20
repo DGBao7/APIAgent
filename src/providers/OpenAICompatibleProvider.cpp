@@ -1,18 +1,33 @@
-#include "maf/providers/OpenAICompatibleProvider.h"
+// Xu ly cac chung cac api tuong thich openai
 
+#include "maf/providers/OpenAICompatibleProvider.h"
 #include "maf/providers/HttpClient.h"
 
 #include <nlohmann/json.hpp>
-
 #include <utility>
+
+// Dung json de request nhu sau
+// {
+//     "model": "...",
+//     "messages": [
+//         {
+//             "role": "system",
+//             "content": "You are an AI."
+//         },
+//         {
+//             "role": "user",
+//             "content": "Hello"
+//         }
+//     ],
+//     "temperature": 0.7,
+//     "max_tokens": 1024
+// }
 
 namespace
 {
-
 using json = nlohmann::json;
-
 }
-
+// constructor
 namespace maf::providers
 {
 
@@ -151,5 +166,4 @@ std::string OpenAICompatibleProvider::_name() const
 {
     return provider_name;
 }
-
 }

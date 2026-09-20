@@ -8,7 +8,7 @@
 
 int main()
 {
-    maf::utils::Env::_load(".env");
+    maf::utils::Env::_load(".env"); // Doc .env
 
     std::vector<maf::providers::Message> messages = {
         {"system" , "You are a concise AI agent."} ,

@@ -1,9 +1,9 @@
 #include "maf/providers/OpenRouterProvider.h"
 #include "maf/utils/Env.h"
 
+// Constructor
 namespace maf::providers
 {
-
 OpenRouterProvider::OpenRouterProvider(const std::string& selected_model)
     : OpenAICompatibleProvider(
         "OpenRouter" ,
@@ -17,5 +17,4 @@ OpenRouterProvider::OpenRouterProvider(const std::string& selected_model)
     )
 {
 }
-
 }

@@ -23,7 +23,7 @@ GeminiProvider::GeminiProvider(const std::string& selected_model)
           selected_model.empty()
               ? (
                   maf::utils::Env::_get("GEMINI_MODEL").empty()
-                      ? "gemini-2.5-flash"
+                      ? "gemini-3.6-flash"
                       : maf::utils::Env::_get("GEMINI_MODEL")
                 )
               : selected_model

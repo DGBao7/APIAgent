@@ -41,6 +41,7 @@ std::string _remove_quotes(const std::string& value)
 
 namespace maf::utils
 {
+// Lay key va ten model
 bool Env::_load(const std::string& path)
 {
     std::ifstream file(path);
@@ -86,15 +87,16 @@ bool Env::_load(const std::string& path)
             continue;
         }
 
-#ifdef _WIN32
+        // Vi window mac va linux tra api khac nhau
+        #ifdef _WIN32
 
-        _putenv_s(key.c_str() , value.c_str());
+            _putenv_s(key.c_str() , value.c_str());
 
-#else
+        #else
 
-        setenv(key.c_str() , value.c_str() , 1);
+            setenv(key.c_str() , value.c_str() , 1);
 
-#endif
+        #endif
     }
 
     return true;
