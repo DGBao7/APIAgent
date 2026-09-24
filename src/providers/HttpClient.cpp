@@ -10,7 +10,6 @@
 
 namespace
 {
-
 size_t _write_callback(
     char* data ,
     size_t size ,

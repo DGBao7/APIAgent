@@ -1,10 +1,8 @@
 #include "maf/providers/GeminiProvider.h"
-
 #include "maf/providers/HttpClient.h"
 #include "maf/utils/Env.h"
 
 #include <nlohmann/json.hpp>
-
 #include <utility>
 
 namespace

@@ -1,5 +1,4 @@
 #include "maf/providers/GroqProvider.h"
-
 #include "maf/utils/Env.h"
 
 namespace maf::providers
