@@ -1,4 +1,5 @@
-#pragma once
+#ifndef OBSERVE_H
+#define OBSERVE_H
 
 #include <string>
 #include <vector>
@@ -11,4 +12,6 @@ struct Observation {
     std::vector<std::string> constraints;
 };
 
-}
+} 
+
+#endif

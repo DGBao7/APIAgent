@@ -1,4 +1,5 @@
-#pragma once
+#ifndef STATE_H
+#define STATE_H
 
 namespace maf::agents {
 
@@ -11,3 +12,5 @@ enum class AgentState {
 };
 
 }
+
+#endif
