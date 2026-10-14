@@ -4,6 +4,13 @@
 #include <fstream>
 #include <string>
 
+std::string _correct_path(std::string path)
+{
+    path = "../" + path;
+
+    return path;
+}
+
 namespace
 {
 std::string _trim(const std::string& value)
@@ -42,8 +49,10 @@ std::string _remove_quotes(const std::string& value)
 namespace maf::utils
 {
 // Lay key va ten model
-bool Env::_load(const std::string& path)
-{
+bool Env::_load(const std::string& pre_path)
+{   
+    std::string path = _correct_path(pre_path);
+
     std::ifstream file(path);
 
     if (!file.is_open())
@@ -105,7 +114,7 @@ bool Env::_load(const std::string& path)
 std::string Env::_get(const std::string& key)
 {
     const char* value = std::getenv(key.c_str());
-
+ 
     if (value == nullptr)
     {
         return "";

@@ -2,6 +2,6 @@
 
 namespace maf::providers
 {
-// constructor and destructor
+// destructor
 ILLMProvider::~ILLMProvider() = default;
 }

@@ -9,20 +9,23 @@ enum class TaskStatus {
     COMPLETED,
     FAILED
 };
+class Task
+{
+private:
+    string id;
+    string description;
+    TaskStatus status;
+public:
+    Task(string TaskID, string desc)
+    :id(TaskID), description(desc), status(TaskStatus::PENDING){}
+    string getId() const {return id;}
+    string getDesc() const {return description;}
+    TaskStatus getStatus() const {return status;}
 
-class Task {
-    private:
-        std::string id;
-        std::string description;
-        TaskStatus status;
-
-    public:
-        Task(std::string TaskID, std::string desc);
-        
-        std::string getId() const;
-        std::string getDesc() const;
-        TaskStatus getStatus() const;
-        void setStatus(TaskStatus new_status);
+    void setStatus(TaskStatus new_status)
+    {   
+        status = new_status;
+    }
 };
 
 } 
