@@ -2,22 +2,22 @@
 #define RESULT_H
 
 #include <string>
-using namespace std;
-class Result
-{
+
+namespace maf::core {
+
+class Result {
 private:
     bool success;
-    string data;
-    string Error_message;
-public:
-    Result(bool isSuccess, string data)
-    :success(success), data(data) {}
-    Result(bool success, string data, string error)
-    :success(success), data(data), Error_message(error) {}
+    std::string data;
+    std::string Error_message;
 
-    bool isSuccess() const {return success;}
-    string getData() const {return data;}
-    string getError() const {return Error_message;}
+public:
+    Result(bool isSuccess, std::string data);
+    Result(bool success, std::string data, std::string error);
+
+    bool isSuccess() const;
+    std::string getData() const;
+    std::string getError() const;
 };
 
 }

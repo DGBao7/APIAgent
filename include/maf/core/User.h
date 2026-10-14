@@ -3,18 +3,18 @@
 
 #include <string>
 
-using namespace std;
+namespace maf::core {
 
-class User
-{
+class User {
 private:
-    string user_id;
-    string user_name;
+    std::string user_id;
+    std::string user_name;
+
 public:
-    User(string id, string name)
-    :user_id(id), user_name(name){}
-    string getUserId() const {return user_id;}
-    string getUserName() const {return user_name;}
+    User(std::string id, std::string name);
+
+    std::string getUserId() const;
+    std::string getUserName() const;
 };
 
 } 

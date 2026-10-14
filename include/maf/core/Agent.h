@@ -2,23 +2,26 @@
 #define AGENT_H
 
 #include <string>
-#include "Result.h"
-#include "Task.h"
-using namespace std;
-class Agent
-{
+#include "maf/core/Result.h"
+#include "maf/core/Task.h"
+
+namespace maf::core {
+
+class Agent {
 private:
-    string agentId;
-    string agentName;
+    std::string agentId;
+    std::string agentName;
+
 public:
-    Agent(string id, string name)
-    :agentId(id), agentName(name){}
+    Agent(std::string id, std::string name);
     virtual ~Agent();
-    string getId() const {return agentId;}
-    string getName() const {return agentName;}
+
+    std::string getId() const;
+    std::string getName() const;
+    
     virtual Result execute(Task& task) = 0;
 };
 
-}
+} 
 
 #endif
