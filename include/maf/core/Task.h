@@ -1,9 +1,9 @@
 #ifndef TASK_H
 #define TASK_H
+
 #include <string>
-using namespace std;
-enum class TaskStatus
-{
+namespace maf::core {
+enum class TaskStatus {
     PENDING,
     RUNNING,
     COMPLETED,
@@ -27,4 +27,7 @@ public:
         status = new_status;
     }
 };
+
+} 
+
 #endif

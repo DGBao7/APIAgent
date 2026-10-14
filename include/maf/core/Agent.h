@@ -1,5 +1,6 @@
 #ifndef AGENT_H
 #define AGENT_H
+
 #include <string>
 #include "Result.h"
 #include "Task.h"
@@ -17,4 +18,7 @@ public:
     string getName() const {return agentName;}
     virtual Result execute(Task& task) = 0;
 };
+
+}
+
 #endif

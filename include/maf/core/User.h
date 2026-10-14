@@ -16,4 +16,7 @@ public:
     string getUserId() const {return user_id;}
     string getUserName() const {return user_name;}
 };
+
+} 
+
 #endif
