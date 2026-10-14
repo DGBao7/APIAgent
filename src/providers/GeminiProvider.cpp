@@ -7,14 +7,11 @@
 
 namespace
 {
-
 using json = nlohmann::json;
-
 }
 
 namespace maf::providers
 {
-
 GeminiProvider::GeminiProvider(const std::string& selected_model)
     : api_key(maf::utils::Env::_get("GEMINI_API_KEY")) ,
       model(
