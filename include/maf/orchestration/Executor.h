@@ -5,9 +5,12 @@
 #include <unordered_map>
 #include <vector>
 #include "maf/orchestration/Planner.h" 
-#include "include/maf/core/Result.h"
+#include "maf/core/Result.h"
 
-class Result;
+namespace maf::core
+{
+    class Result;
+};
 
 namespace maf::orchestration { 
 
@@ -38,7 +41,7 @@ public:
     void registerTool(std::shared_ptr<ITool> tool);
     const ToolRepository& getToolRepository() const noexcept;
 
-    Result executePlan(const std::vector<PlanStep>& plan, Memory& memory);
+    maf::core::Result executePlan(const std::vector<PlanStep>& plan, Memory& memory);
 
 private:
     ToolRepository toolRepository_;

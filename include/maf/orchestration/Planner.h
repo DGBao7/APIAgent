@@ -3,27 +3,31 @@
 #include <string>
 #include <vector>
 
-namespace maf::agents::strategy { 
-class LLMStrategyContext;
+namespace maf::core
+{
+    class Task;
+};
+
+namespace maf::agents::strategy 
+{ 
+    class LLMStrategyContext;
 }
 
-class Task; 
+namespace maf::orchestration 
+{ 
+    class Memory;
 
-namespace maf::orchestration { 
+    struct PlanStep {
+        int index;
+        std::string toolName;
+        std::string instruction;
+    };
 
-class Memory;
-
-struct PlanStep {
-    int index;
-    std::string toolName;
-    std::string instruction;
-};
-
-class Planner {
-public:
-    std::vector<PlanStep> createPlan(const Task& task,
-                                      maf::agents::strategy::LLMStrategyContext& llmContext,
-                                      Memory& memory) const;
-};
-
+    class Planner {
+    public:
+        std::vector<PlanStep> createPlan(
+            const maf::core::Task& task,
+            maf::agents::strategy::LLMStrategyContext& llmContext,
+            Memory& memory) const;
+    };
 } 

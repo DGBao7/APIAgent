@@ -3,6 +3,8 @@
 #include "maf/providers/GroqProvider.h"
 #include "maf/providers/OpenRouterProvider.h"
 #include "maf/communication/User.h"
+#include "maf/core/Task.h"
+#include "maf/communication/Event.h"
 
 #include <iostream>
 #include <vector>
@@ -69,50 +71,14 @@ User _start_user()
     return user;
 }
 
-maf::providers::ILLMProvider* _choose_AI(std::vector<maf::providers::ILLMProvider*> providers)
-{
-    return providers[1];
-}
-
-void _communication(User user , std::vector<maf::providers::ILLMProvider*> providers)
-{
-    maf::providers::ILLMProvider* AI_selected;
-
-    while (true)
-    {
-        user._take_input();
-
-        if (user._return_input() == "exits")
-        {
-            break;
-        }
-
-        std::vector<maf::providers::Message> messages = {
-            {"system" , "You are a concise AI agent."} ,
-            {"user" , user._return_input()}
-        };
-
-        AI_selected = _choose_AI(providers);
-
-        const auto response = AI_selected -> _chat(messages);
-
-        if (response.ok)
-        {
-            std::cout << AI_selected -> _name() << ": "
-                    << response.text << "\n";
-        }
-        else 
-        {
-            std::cout << "[Error]" << response.error << "\n";
-        }
-    }
-}
-
 int main()
 {
     std::vector<maf::providers::ILLMProvider*> providers = _start_API();
 
     User user = _start_user();
 
-    _communication(user , providers);
+    std::string input = maf::communication::_input();
+
+    maf::core::Task task = maf::core::Task::_return_task(input);
+    task._print_task();
 }

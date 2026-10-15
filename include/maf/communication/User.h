@@ -7,9 +7,15 @@
 class User
 {
 private:
+    std::string name;
     std::string input;
 
 public:
+    User()
+    {
+        this -> name = "Bon";
+    }
+
     void _take_input();
     std::string _return_input();
 };

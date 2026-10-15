@@ -85,8 +85,8 @@ std::shared_ptr<ITool> findTool(const ToolRepository& repo, const std::string& n
 }
 
 
-Result makeResult(bool success, const std::string& data, const std::string& error) {
-    return Result(success, data, error);
+maf::core::Result makeResult(bool success, const std::string& data, const std::string& error) {
+    return maf::core::Result(success, data, error);
 }
 
 }  
@@ -138,7 +138,7 @@ const ToolRepository& Executor::getToolRepository() const noexcept {
 }
 
 
-Result Executor::executePlan(const std::vector<PlanStep>& plan, Memory& memory) {
+maf::core::Result Executor::executePlan(const std::vector<PlanStep>& plan, Memory& memory) {
     if (plan.empty()) {
         memory.addEntry(kRoleSystem, "[executor] Plan is empty, nothing to execute.");
         return makeResult(false, "", "Plan is empty");

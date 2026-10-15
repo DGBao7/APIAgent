@@ -19,7 +19,6 @@ public:
     std::string getData() const;
     std::string getError() const;
 };
-
 }
 
 #endif
