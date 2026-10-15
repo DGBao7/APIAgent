@@ -235,9 +235,11 @@ std::string describePlan(const std::string& taskId, const std::vector<PlanStep>&
 
 }  
 
-std::vector<PlanStep> Planner::createPlan(const Task& task,
-                                          maf::agents::strategy::LLMStrategyContext& llmContext,
-                                          Memory& memory) const {
+std::vector<PlanStep> Planner::createPlan(
+    const maf::core::Task& task,
+    maf::agents::strategy::LLMStrategyContext& llmContext,
+    Memory& memory
+) const {
     const std::string description = trimCopy(task.getDesc());
     if (description.empty()) {
         throw std::invalid_argument("Planner::createPlan: task description is empty");
