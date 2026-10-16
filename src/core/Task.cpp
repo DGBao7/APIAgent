@@ -2,8 +2,12 @@
 
 namespace maf::core 
 {
-    Task::Task(std::string TaskID, std::string desc)
-        : id(TaskID), description(desc), status(TaskStatus::PENDING) {}
+    Task::Task(std::string TaskID , std::string input)
+    {
+        this -> id = TaskID;
+        this -> description = input;
+        this -> status = TaskStatus::PENDING;
+    }
 
     std::string Task::getId() const 
     {
@@ -32,6 +36,7 @@ namespace maf::core
 
     void Task::_print_task()
     {
+        std::cout << "===== Task =====" << "\n";
         std::cout << "Task ID: " << this -> getId() << '\n';
         std::cout << "Description: " << this -> getDesc() << '\n';
         std::cout << "Status: " << static_cast<int>(this -> getStatus()) << '\n';

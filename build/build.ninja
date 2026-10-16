@@ -84,14 +84,6 @@ build CMakeFiles/APIAgent.dir/src/communication/Event.cpp.obj: CXX_COMPILER__API
   OBJECT_FILE_DIR = CMakeFiles\APIAgent.dir\src\communication
   TARGET_SUPPORT_DIR = CMakeFiles\APIAgent.dir
 
-build CMakeFiles/APIAgent.dir/src/communication/User.cpp.obj: CXX_COMPILER__APIAgent_unscanned_ D$:/work/programs/prj/APIAgent/src/communication/User.cpp || cmake_object_order_depends_target_APIAgent
-  DEP_FILE = CMakeFiles\APIAgent.dir\src\communication\User.cpp.obj.d
-  FLAGS = -std=gnu++20
-  INCLUDES = -ID:/work/programs/prj/APIAgent/include
-  OBJECT_DIR = CMakeFiles\APIAgent.dir
-  OBJECT_FILE_DIR = CMakeFiles\APIAgent.dir\src\communication
-  TARGET_SUPPORT_DIR = CMakeFiles\APIAgent.dir
-
 build CMakeFiles/APIAgent.dir/src/core/Agent.cpp.obj: CXX_COMPILER__APIAgent_unscanned_ D$:/work/programs/prj/APIAgent/src/core/Agent.cpp || cmake_object_order_depends_target_APIAgent
   DEP_FILE = CMakeFiles\APIAgent.dir\src\core\Agent.cpp.obj.d
   FLAGS = -std=gnu++20
@@ -212,7 +204,7 @@ build CMakeFiles/APIAgent.dir/src/utils/Env.cpp.obj: CXX_COMPILER__APIAgent_unsc
 #############################################
 # Link the executable APIAgent.exe
 
-build APIAgent.exe: CXX_EXECUTABLE_LINKER__APIAgent_ CMakeFiles/APIAgent.dir/main.cpp.obj CMakeFiles/APIAgent.dir/src/agents/Observe.cpp.obj CMakeFiles/APIAgent.dir/src/agents/State.cpp.obj CMakeFiles/APIAgent.dir/src/agents/Strategy.cpp.obj CMakeFiles/APIAgent.dir/src/communication/Event.cpp.obj CMakeFiles/APIAgent.dir/src/communication/User.cpp.obj CMakeFiles/APIAgent.dir/src/core/Agent.cpp.obj CMakeFiles/APIAgent.dir/src/core/Result.cpp.obj CMakeFiles/APIAgent.dir/src/core/Task.cpp.obj CMakeFiles/APIAgent.dir/src/core/User.cpp.obj CMakeFiles/APIAgent.dir/src/orchestration/Executor.cpp.obj CMakeFiles/APIAgent.dir/src/orchestration/Memory.cpp.obj CMakeFiles/APIAgent.dir/src/orchestration/Planner.cpp.obj CMakeFiles/APIAgent.dir/src/providers/GeminiProvider.cpp.obj CMakeFiles/APIAgent.dir/src/providers/GroqProvider.cpp.obj CMakeFiles/APIAgent.dir/src/providers/HttpClient.cpp.obj CMakeFiles/APIAgent.dir/src/providers/ILLMProvider.cpp.obj CMakeFiles/APIAgent.dir/src/providers/OpenAICompatibleProvider.cpp.obj CMakeFiles/APIAgent.dir/src/providers/OpenRouterProvider.cpp.obj CMakeFiles/APIAgent.dir/src/utils/Env.cpp.obj | D$:/work/msys2/mingw64/lib/libcurl.dll.a
+build APIAgent.exe: CXX_EXECUTABLE_LINKER__APIAgent_ CMakeFiles/APIAgent.dir/main.cpp.obj CMakeFiles/APIAgent.dir/src/agents/Observe.cpp.obj CMakeFiles/APIAgent.dir/src/agents/State.cpp.obj CMakeFiles/APIAgent.dir/src/agents/Strategy.cpp.obj CMakeFiles/APIAgent.dir/src/communication/Event.cpp.obj CMakeFiles/APIAgent.dir/src/core/Agent.cpp.obj CMakeFiles/APIAgent.dir/src/core/Result.cpp.obj CMakeFiles/APIAgent.dir/src/core/Task.cpp.obj CMakeFiles/APIAgent.dir/src/core/User.cpp.obj CMakeFiles/APIAgent.dir/src/orchestration/Executor.cpp.obj CMakeFiles/APIAgent.dir/src/orchestration/Memory.cpp.obj CMakeFiles/APIAgent.dir/src/orchestration/Planner.cpp.obj CMakeFiles/APIAgent.dir/src/providers/GeminiProvider.cpp.obj CMakeFiles/APIAgent.dir/src/providers/GroqProvider.cpp.obj CMakeFiles/APIAgent.dir/src/providers/HttpClient.cpp.obj CMakeFiles/APIAgent.dir/src/providers/ILLMProvider.cpp.obj CMakeFiles/APIAgent.dir/src/providers/OpenAICompatibleProvider.cpp.obj CMakeFiles/APIAgent.dir/src/providers/OpenRouterProvider.cpp.obj CMakeFiles/APIAgent.dir/src/utils/Env.cpp.obj | D$:/work/msys2/mingw64/lib/libcurl.dll.a
   LINK_LIBRARIES = D:/work/msys2/mingw64/lib/libcurl.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\APIAgent.dir
   POST_BUILD = cd .
