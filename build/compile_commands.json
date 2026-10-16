@@ -31,12 +31,6 @@
 },
 {
   "directory": "D:/work/programs/prj/APIAgent/build",
-  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\communication\\User.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\communication\\User.cpp",
-  "file": "D:/work/programs/prj/APIAgent/src/communication/User.cpp",
-  "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/communication/User.cpp.obj"
-},
-{
-  "directory": "D:/work/programs/prj/APIAgent/build",
   "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\core\\Agent.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\core\\Agent.cpp",
   "file": "D:/work/programs/prj/APIAgent/src/core/Agent.cpp",
   "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/core/Agent.cpp.obj"

@@ -21,7 +21,7 @@ namespace maf::core {
         TaskStatus status;
 
     public:
-        Task(std::string TaskID, std::string desc);
+        Task(std::string TaskID , std::string input);
         
         std::string getId() const;
         std::string getDesc() const;

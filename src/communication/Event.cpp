@@ -2,17 +2,24 @@
 
 namespace maf::communication
 {
-    std::string _input()
+    void Event::_input()
     {
-        std::string input;
         std::cout << "Question: ";
         std::cin.ignore();
-        std::getline(std::cin , input);
-
-        return input;
+        std::getline(std::cin , this -> input);
     }
 
-    void _print_task(const maf::core::Task &task)
+    void Event::_print_input()
+    {
+        std::cout << "Input: " << this -> input << "\n";
+    }
+
+    std::string Event::_return_input()
+    {
+        return this -> input;
+    }
+
+    void Event::_print_task(const maf::core::Task &task)
     {
         std::cout << "\n===== TASK =====\n";
         std::cout << "ID: " << task.getId() << '\n';
