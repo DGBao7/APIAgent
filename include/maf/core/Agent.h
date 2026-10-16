@@ -20,24 +20,7 @@ namespace maf::core
         std::string agentName;
         maf::providers::ILLMProvider *provider;
 
-<<<<<<< Updated upstream
-class Agent {
-private:
-    std::string agentId;
-    std::string agentName;
-
-public:
-    Agent(std::string id, std::string name);
-    virtual ~Agent();
-
-    std::string getId() const;
-    std::string getName() const;
-    
-    virtual Result execute(Task& task) = 0;
-};
-=======
         std::string validateTask(const Task& task) const;
->>>>>>> Stashed changes
 
         Result performTask(Task& task);
     public:
@@ -46,9 +29,6 @@ public:
             maf::providers::ILLMProvider *provider
         );
 
-<<<<<<< Updated upstream
-#endif
-=======
         ~Agent();
         std::string getId() const;
         std::string getName() const;
@@ -59,4 +39,3 @@ public:
 }
 
 #endif
->>>>>>> Stashed changes

@@ -20,3 +20,12 @@
 43	5897	8136665492456647	CMakeFiles/APIAgent.dir/src/providers/GeminiProvider.cpp.obj	d0ebc0a544a46803
 1346	1700	8138477517884234	APIAgent.exe	a92af5286913aeaa
 42	2021	8135758382978721	CMakeFiles/APIAgent.dir/src/providers/ILLMProvider.cpp.obj	c5d55d6c90924c3b
+76	850	8138487427018589	CMakeFiles/APIAgent.dir/src/core/User.cpp.obj	69d1b580e0c17f2d
+36	953	8138487426616543	CMakeFiles/APIAgent.dir/src/communication/Event.cpp.obj	5bfc656b5d0c797a
+53	960	8138487426792508	CMakeFiles/APIAgent.dir/src/core/Result.cpp.obj	1e4941294735351b
+64	990	8138487426897356	CMakeFiles/APIAgent.dir/src/core/Task.cpp.obj	7fdf4dc66f9a993
+44	1186	8138487426646059	CMakeFiles/APIAgent.dir/src/core/Agent.cpp.obj	380f94d965b6f8e0
+25	1501	8138487426518878	CMakeFiles/APIAgent.dir/main.cpp.obj	3f74fdecebfee4c3
+91	1570	8138487427182010	CMakeFiles/APIAgent.dir/src/orchestration/Executor.cpp.obj	bdcb96e6e3ab72be
+104	1671	8138487427286026	CMakeFiles/APIAgent.dir/src/orchestration/Planner.cpp.obj	f2c33b18348146e1
+1671	2064	8138487442969822	APIAgent.exe	a92af5286913aeaa

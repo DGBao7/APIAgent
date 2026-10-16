@@ -2,16 +2,6 @@
 #include "maf/core/Result.h"
 #include "maf/providers/ILLMProvider.h"
 
-<<<<<<< Updated upstream
-namespace maf::core 
-{
-    Agent::Agent(std::string id, std::string name)
-        : agentId(id), agentName(name) {}
-
-    Agent::~Agent() 
-    {
-        // Destructor ảo (có thể để trống nếu không có tài nguyên động cần cấp phát/thu hồi thủ công)
-=======
 #include <vector>
 
 namespace maf::core
@@ -24,7 +14,6 @@ namespace maf::core
         this -> agentId = std::move(id);
         this -> agentName = std::move(name);
         this -> provider = provider;
->>>>>>> Stashed changes
     }
     
     maf::core::Result Agent::performTask(
@@ -36,18 +25,6 @@ namespace maf::core
             {"user", task.getDesc()}
         };
 
-<<<<<<< Updated upstream
-    std::string Agent::getId() const 
-    {
-        return agentId;
-    }
-
-    std::string Agent::getName() const 
-    {
-        return agentName;
-    }
-} 
-=======
         const auto response = provider->_chat(messages);
 
         if (!response.ok)
@@ -141,4 +118,3 @@ namespace maf::core
         return;
     }
 }
->>>>>>> Stashed changes
