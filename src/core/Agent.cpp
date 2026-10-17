@@ -1,8 +1,4 @@
 #include "maf/core/Agent.h"
-#include "maf/core/Result.h"
-#include "maf/providers/ILLMProvider.h"
-
-#include <vector>
 
 namespace maf::core
 {
@@ -47,74 +43,244 @@ namespace maf::core
         return agentName;
     }
 
-    std::string Agent::validateTask(const Task task) const
+    bool Agent::_check_task_status(Task &task)
     {
-        if (task.getStatus() != TaskStatus::PENDING) {return "Task must be PENDING before execution.";}
-        const auto hasNonWhitespace = [](const std::string& value) {
-            return std::any_of(value.begin(), value.end(), [](unsigned char ch) {
+        if (task.getStatus() != TaskStatus::PENDING)
+        {
+            return false;
+        }
+
+        task.setStatus(TaskStatus::RUNNING);
+
+        return true;
+    }
+
+    std::string Agent::validateTask(const Task &task) const
+    {
+        if (task.getStatus() != TaskStatus::PENDING) 
+        {
+            return "Task must be PENDING before execution.";
+        }
+        
+        const auto hasNonWhitespace = [](const std::string& value) 
+        {
+            return std::any_of(value.begin(), value.end(), [](unsigned char ch) 
+            {
                 return !std::isspace(ch);
             });
         };
 
-        if (!hasNonWhitespace(task.getId())) {
-            return "Task ID cannot be empty or whitespace only.";
+        if (!hasNonWhitespace(task.getDesc()))
+        {
+            return "You need to say something";
         }
 
-        if (!hasNonWhitespace(task.getDesc())) {
-            return "Task description cannot be empty or whitespace only.";
-        }
-
-            return "";
+        return "";
     }
 
-    Result Agent::execute(Task task)
+    Result Agent::_workflow(
+        Task &task,
+        maf::agents::strategy::Strategy &strategy,
+        maf::agents::strategy::LLMStrategyContext &context,
+        maf::orchestration::Planner &planner,
+        maf::orchestration::Executor &executor,
+        maf::orchestration::Memory &memory
+    )
     {
-        const std::string validationError = validateTask(task);
-        if (!validationError.empty()) 
+        const std::string validation_error = this -> validateTask(task);
+
+        if (!validation_error.empty())
         {
-            if (task.getStatus() == TaskStatus::PENDING) {
+            if (task.getStatus() == TaskStatus::PENDING)
+            {
                 task.setStatus(TaskStatus::FAILED);
             }
-            return Result(false, "", validationError);
+
+            return Result(false , "" , validation_error);
         }
 
-        try 
+        if (!this -> _check_task_status(task))
         {
-            task.setStatus(TaskStatus::RUNNING);
+            return Result(
+                false , 
+                "" ,
+                "Task must be PENDING before execution."
+            );
+        }
 
-            Result result = this -> performTask(task);
+        try
+        {
+            const auto decision = strategy.decide(task , context);
 
-            task.setStatus(result.isSuccess()
-                            ? TaskStatus::COMPLETED
-                            : TaskStatus::FAILED);
-            return result;
-        } 
-        catch (const std::exception& e) 
+            // std::cout << "\n===== Strategy =====\n";
+            // std::cout << "Strategy result:\n";
+            // std::cout << "Success: " << decision.isSuccess << '\n';
+            // std::cout << "Selected provider: "
+                    // << decision.selectedProvider << '\n';
+            // std::cout << "Max tokens: "
+                    // << decision.maxTokens << '\n';
+
+            // std::cout << "Provider ranking:\n";
+
+            // for (const auto &name : decision.providerRanking)
+            // {
+            //     std::cout << "- " << name << '\n';
+            // }
+
+            // std::cout << "Used fallback: "
+                    // << decision.usedFallback << '\n';
+
+            std::cout << "Error: "
+                    << decision.errorMessage << '\n';
+
+            if (!decision.isSuccess)
+            {
+                task.setStatus(TaskStatus::FAILED);
+
+                const std::string error = decision.errorMessage.empty()
+                    ? "Strategy failed to select a provider."
+                    : decision.errorMessage;
+
+                return Result(false , "" , error);
+            }
+
+            // std::cout << "\n[DEBUG] Strategy passed\n";
+
+            const std::vector<std::string> tool_names = executor.getToolRepository().listTools();
+
+            // std::cout << "[DEBUG] Registered tools: "
+                    // << tool_names.size() << '\n';
+
+            // for (const auto &name : tool_names)
+            // {
+            //     // std::cout << "[DEBUG] Tool: " << name << '\n';
+            // }
+
+            if (tool_names.empty())
+            {
+                task.setStatus(TaskStatus::FAILED);
+
+                return Result(
+                    false,
+                    "",
+                    "Executor has no tools registered."
+                );
+            }
+
+            std::string available_tools;
+
+            for (const auto &tool_name : tool_names)
+            {
+                if (!available_tools.empty())
+                {
+                    available_tools += ", ";
+                }
+
+                available_tools += tool_name;
+            }
+
+            memory.setFact("available_tools" , available_tools);
+
+            memory.setFact("available_tools", available_tools);
+
+// std::cout << "[DEBUG] Calling Planner\n";
+
+            const auto plan = planner.createPlan(
+                task , 
+                context ,
+                memory
+            );
+
+// std::cout << "[DEBUG] Planner returned "
+        //   << plan.size() << " steps\n";
+
+// std::cout << "\n===== GENERATED PLAN =====\n";
+// for (const auto &step : plan)
+// {
+//     std::cout << "Step " << step.index << '\n';
+//     std::cout << "Tool: " << step.toolName << '\n';
+//     std::cout << "Instruction: " << step.instruction << "\n\n";
+// }
+
+// std::cout << "[DEBUG] Calling Executor\n";
+
+            Result result = executor.executePlan(plan , memory);
+
+            task.setStatus(
+                result.isSuccess()
+                    ? TaskStatus::COMPLETED
+                    : TaskStatus::FAILED
+            );
+
+// std::cout << "[DEBUG] Executor finished\n";
+// std::cout << "[DEBUG] Success: " << result.isSuccess() << '\n';
+// std::cout << "[DEBUG] Error: " << result.getError() << '\n';
+
+            if (!result.isSuccess())
+            {
+                return result;
+            }            
+
+            // đọc memory
+            const std::string memory_context = memory.buildContext();
+
+            std::vector<maf::providers::Message> messages = {
+                {
+                    "system",
+                    "You are a helpful AI agent. "
+                    "Answer the user's request using the tool execution results "
+                    "provided in the context. Do not invent results."
+                },
+                {
+                    "user",
+                    "Original request: " + task.getDesc()
+                    + "\n\nExecution context:\n" + memory_context
+                    + "\n\nProvide the final answer to the user."
+                }
+            };
+
+            const auto provider = context.getProvider();
+
+            if (!provider)
+            {
+                return Result(
+                    false , 
+                    result.getData() ,
+                    "No active provider available for final response."
+                );
+            }
+
+            // response
+            const auto response = provider -> _chat(messages);
+
+            if (!response.ok)
+            {
+                return Result(false, result.getData(), response.error);
+            }
+
+            memory.addEntry("assistant" , response.text);
+
+            return Result(true, response.text, "");
+
+            // return result;
+        }
+        catch (const std::exception &error)
+        {
+            std::cerr << "[ERROR] " << error.what() << '\n';
+
+            task.setStatus(TaskStatus::FAILED);
+
+            return Result(false , "" , error.what());
+        }
+        catch (...)
         {
             task.setStatus(TaskStatus::FAILED);
-            return Result(false, "", e.what());
-        } 
-        catch (...) 
-        {
-            task.setStatus(TaskStatus::FAILED);
-            return Result(false, "", "Unknown error during Agent execution.");
+
+            return Result(
+                false , 
+                "" ,
+                "Unknown error during Agent workflow."
+            );
         }
-    }
-
-    void Agent::_workflow(maf::core::Task task)
-    {
-        std::cout << "===== Execute =====" << "\n";
-        maf::core::Result result = this -> execute(task);
-        result._print_result();
-
-        std::cout << "===== Is validate =====" << "\n";
-        std::string is_validate = this -> validateTask(task);
-
-        if (is_validate == "")
-        {
-            this -> performTask(task);
-        }
-
-        return;
     }
 }

@@ -6,10 +6,18 @@
 #include <cctype>
 #include <exception>
 #include <utility>
+#include <vector>
 
 #include "maf/core/Result.h"
 #include "maf/core/Task.h"
+
 #include "maf/providers/ILLMProvider.h"
+
+#include "maf/agents/Strategy.h"
+
+#include "maf/orchestration/Planner.h"
+#include "maf/orchestration/Executor.h"
+#include "maf/orchestration/Memory.h"
 
 namespace maf::core
 {
@@ -24,16 +32,25 @@ namespace maf::core
             std::string id, std::string name ,
             maf::providers::ILLMProvider *provider
         );
-
-        Result performTask(Task task);
         ~Agent();
+        
         std::string getId() const;
         std::string getName() const;
-        Result execute(Task task);
 
-        std::string validateTask(const Task task) const;
+        Result performTask(Task task);
 
-        void _workflow(maf::core::Task task);
+        std::string validateTask(const Task &task) const;
+
+        bool _check_task_status(Task &task);
+
+        Result _workflow(
+            Task &task,
+            maf::agents::strategy::Strategy &strategy,
+            maf::agents::strategy::LLMStrategyContext &context,
+            maf::orchestration::Planner &planner,
+            maf::orchestration::Executor &executor,
+            maf::orchestration::Memory &memory
+        );
     };
 };
 

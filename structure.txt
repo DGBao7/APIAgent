@@ -1,47 +1,121 @@
-APIAgent/
-│
-├── CMakeLists.txt
-│
-├── main.cpp
-│
-├── include/
-│   └── maf/
-│       ├── core/
-│       │   ├── Task.h
-│       │   ├── Agent.h
-│       │   ├── User.h
-│       │   └── Result.h
-│       │
-│       │
-│       ├── orchestration/
-│       │   ├── Memory.h
-│       │   ├── Planner.h
-│       │   └── Executor.h 
-│       │
-│       │
-│       ├── agents/
-│       │   ├── Strategy.h
+# Project Structure
+
+```
+├── build
+│   ├── CMakeFiles
+│   │   ├── 4.4.2
+│   │   │   ├── CompilerIdC
+│   │   │   │   ├── tmp
+│   │   │   │   ├── a.exe
+│   │   │   │   └── CMakeCCompilerId.c
+│   │   │   ├── CompilerIdCXX
+│   │   │   │   ├── tmp
+│   │   │   │   ├── a.exe
+│   │   │   │   └── CMakeCXXCompilerId.cpp
+│   │   │   ├── CMakeCCompiler.cmake
+│   │   │   ├── CMakeCXXCompiler.cmake
+│   │   │   ├── CMakeDetermineCompilerABI_C.bin
+│   │   │   ├── CMakeDetermineCompilerABI_CXX.bin
+│   │   │   ├── CMakeRCCompiler.cmake
+│   │   │   └── CMakeSystem.cmake
+│   │   ├── APIAgent.dir
+│   │   │   ├── src
+│   │   │   │   ├── agents
+│   │   │   │   │   ├── Observe.cpp.obj
+│   │   │   │   │   ├── State.cpp.obj
+│   │   │   │   │   └── Strategy.cpp.obj
+│   │   │   │   ├── communication
+│   │   │   │   │   ├── Event.cpp.obj
+│   │   │   │   │   └── User.cpp.obj
+│   │   │   │   ├── core
+│   │   │   │   │   ├── Agent.cpp.obj
+│   │   │   │   │   ├── Result.cpp.obj
+│   │   │   │   │   ├── Task.cpp.obj
+│   │   │   │   │   └── User.cpp.obj
+│   │   │   │   ├── orchestration
+│   │   │   │   │   ├── Executor.cpp.obj
+│   │   │   │   │   ├── Memory.cpp.obj
+│   │   │   │   │   └── Planner.cpp.obj
+│   │   │   │   ├── providers
+│   │   │   │   │   ├── GeminiProvider.cpp.obj
+│   │   │   │   │   ├── GroqProvider.cpp.obj
+│   │   │   │   │   ├── HttpClient.cpp.obj
+│   │   │   │   │   ├── ILLMProvider.cpp.obj
+│   │   │   │   │   ├── OpenAICompatibleProvider.cpp.obj
+│   │   │   │   │   └── OpenRouterProvider.cpp.obj
+│   │   │   │   └── utils
+│   │   │   │       └── Env.cpp.obj
+│   │   │   └── main.cpp.obj
+│   │   ├── pkgRedirects
+│   │   ├── cmake.check_cache
+│   │   ├── CMakeConfigureLog.yaml
+│   │   ├── InstallScripts.json
+│   │   ├── rules.ninja
+│   │   └── TargetDirectories.txt
+│   ├── APIAgent.exe
+│   ├── build.ninja
+│   ├── cmake_install.cmake
+│   ├── CMakeCache.txt
+│   └── compile_commands.json
+├── include
+│   └── maf
+│       ├── agents
 │       │   ├── Observe.h
-│       │   └── State.h
-│       │
-│       ├── providers/
-│       │   ├── ILLMProvider.h
-│       │   └── OpenAiProvider.h
-│       │
-│       │
-│       ├── communication/
-│       │   ├── Event.h
+│       │   ├── State.h
+│       │   └── Strategy.h
+│       ├── communication
+│       │   └── Event.h
+│       ├── core
+│       │   ├── Agent.h
+│       │   ├── Result.h
+│       │   ├── Task.h
 │       │   └── User.h
-│       │
-│       ├ ui/
-│       │
-│       │
-│       └ utils/
-└── src/
-    ├── core/
-    ├── orchestration/ 
-    ├── agents/ 
-    ├── providers/ 
-    ├── communication/
-    ├── ui/
-    └── utils/
+│       ├── orchestration
+│       │   ├── Executor.h
+│       │   ├── Memory.h
+│       │   └── Planner.h
+│       ├── providers
+│       │   ├── GeminiProvider.h
+│       │   ├── GroqProvider.h
+│       │   ├── HttpClient.h
+│       │   ├── ILLMProvider.h
+│       │   ├── OpenAICompatibleProvider.h
+│       │   └── OpenRouterProvider.h
+│       ├── ui
+│       └── utils
+│           └── Env.h
+├── nlohmann
+│   └── json.hpp
+├── src
+│   ├── agents
+│   │   ├── Observe.cpp
+│   │   ├── State.cpp
+│   │   └── Strategy.cpp
+│   ├── communication
+│   │   └── Event.cpp
+│   ├── core
+│   │   ├── Agent.cpp
+│   │   ├── Result.cpp
+│   │   ├── Task.cpp
+│   │   └── User.cpp
+│   ├── orchestration
+│   │   ├── Executor.cpp
+│   │   ├── Memory.cpp
+│   │   └── Planner.cpp
+│   ├── providers
+│   │   ├── GeminiProvider.cpp
+│   │   ├── GroqProvider.cpp
+│   │   ├── HttpClient.cpp
+│   │   ├── ILLMProvider.cpp
+│   │   ├── OpenAICompatibleProvider.cpp
+│   │   └── OpenRouterProvider.cpp
+│   ├── ui
+│   └── utils
+│       └── Env.cpp
+├── CMakeLists.txt
+├── main.cpp
+├── run.txt
+├── structure.txt
+├── workflow.png
+└── workflow.txt
+```

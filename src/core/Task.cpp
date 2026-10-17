@@ -36,7 +36,6 @@ namespace maf::core
 
     void Task::_print_task()
     {
-        std::cout << "===== Task =====" << "\n";
         std::cout << "Task ID: " << this -> getId() << '\n';
         std::cout << "Description: " << this -> getDesc() << '\n';
         std::cout << "Status: " << static_cast<int>(this -> getStatus()) << '\n';
