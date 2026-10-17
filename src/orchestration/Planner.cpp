@@ -239,7 +239,8 @@ std::vector<PlanStep> Planner::createPlan(
     const maf::core::Task& task,
     maf::agents::strategy::LLMStrategyContext& llmContext,
     Memory& memory
-) const {
+) const 
+{
     const std::string description = trimCopy(task.getDesc());
     if (description.empty()) {
         throw std::invalid_argument("Planner::createPlan: task description is empty");
@@ -250,54 +251,212 @@ std::vector<PlanStep> Planner::createPlan(
         throw std::runtime_error("Planner::createPlan: no LLM provider configured");
     }
 
+const std::size_t provider_count =
+    llmContext.getProviderNames().size();
+
+std::cout << "\n[Planner] Strategy selected provider: "
+          << provider -> _name() << '\n';
+
     const std::vector<std::string> allowedTools =
         splitList(memory.getFact(kFactAvailableTools), ',');
 
    
-    const std::string context = truncateTail(memory.buildContext(), kMaxContextChars);
     memory.setFact("current_task_id", task.getId());
     memory.setFact("current_task", description);
+    const std::string context = truncateTail(memory.buildContext(), kMaxContextChars);
+
+    // const std::string context = truncateTail(memory.buildContext(), kMaxContextChars);
+    // memory.setFact("current_task_id", task.getId());
+    // memory.setFact("current_task", description);
 
     std::vector<maf::providers::Message> messages;
     messages.push_back(maf::providers::Message{"system", buildSystemPrompt(allowedTools)});
     messages.push_back(maf::providers::Message{
         "user", buildUserPrompt(task.getId(), description, context)});
 
-    std::string lastFailure = "unknown error";
+    // std::string lastFailure = "unknown error";
 
-    for (int attempt = 1; attempt <= kMaxAttempts; ++attempt) {
-        const maf::providers::LLMResponse response =
-            provider->_chat(messages, kTemperature, kMaxTokens);
+    // for (int attempt = 1; attempt <= kMaxAttempts; ++attempt) {
+    //     const maf::providers::LLMResponse response =
+    //         provider->_chat(messages, kTemperature, kMaxTokens);
 
-        if (!response.ok) {
-            lastFailure = "provider '" + provider->_name() + "' failed (HTTP " +
-                          std::to_string(response.status_code) + "): " + response.error;
-            continue;  
-        }
-        if (trimCopy(response.text).empty()) {
-            lastFailure = "the LLM returned an empty answer";
-            continue;
-        }
+    //     if (!response.ok) {
+    //         lastFailure = "provider '" + provider->_name() + "' failed (HTTP " +
+    //                       std::to_string(response.status_code) + "): " + response.error;
+    //         continue;  
+    //     }
+    //     if (trimCopy(response.text).empty()) {
+    //         lastFailure = "the LLM returned an empty answer";
+    //         continue;
+    //     }
 
-        ParseOutcome parsed = parsePlanText(response.text, allowedTools);
-        if (parsed.steps.empty() && parsed.problems.empty()) {
-            parsed.problems.push_back("No step found in the answer.");
-        }
+    //     ParseOutcome parsed = parsePlanText(response.text, allowedTools);
+    //     if (parsed.steps.empty() && parsed.problems.empty()) {
+    //         parsed.problems.push_back("No step found in the answer.");
+    //     }
 
-        if (parsed.problems.empty()) {
-            memory.addEntry("assistant", describePlan(task.getId(), parsed.steps));
-            return std::move(parsed.steps);
-        }
+    //     if (parsed.problems.empty()) {
+    //         memory.addEntry("assistant", describePlan(task.getId(), parsed.steps));
+    //         return std::move(parsed.steps);
+    //     }
 
        
-        lastFailure = "invalid plan (" + joinList(parsed.problems, " ") + ")";
-        messages.push_back(maf::providers::Message{"assistant", response.text});
-        messages.push_back(maf::providers::Message{
-            "user", buildFeedback(parsed.problems, allowedTools)});
+    //     lastFailure = "invalid plan (" + joinList(parsed.problems, " ") + ")";
+    //     messages.push_back(maf::providers::Message{"assistant", response.text});
+    //     messages.push_back(maf::providers::Message{
+    //         "user", buildFeedback(parsed.problems, allowedTools)});
+    // }
+
+    // throw std::runtime_error("Planner::createPlan: could not create a plan after " +
+    //                          std::to_string(kMaxAttempts) + " attempts: " + lastFailure);
+
+    
+    std::string lastFailure = "unknown error";
+
+    for (std::size_t provider_index = 0;
+         provider_index < provider_count;
+         ++provider_index)
+    {
+        const auto provider = llmContext.getProvider();
+
+        if (!provider)
+        {
+            lastFailure = "No active LLM provider.";
+            break;
+        }
+
+// std::cout << "\n[Planner] Trying provider: "
+//           << provider -> _name()
+//           << " (" << provider_index + 1
+//           << "/" << provider_count << ")\n";
+
+        std::vector<maf::providers::Message> provider_messages =
+            messages;
+
+        bool api_failed = false;
+
+        for (int attempt = 1; attempt <= kMaxAttempts; ++attempt)
+        {
+// std::cout << "[Planner] Attempt "
+//           << attempt << "/" << kMaxAttempts
+//           << " with " << provider -> _name()
+//           << '\n';
+
+            const maf::providers::LLMResponse response =
+                provider -> _chat(
+                    provider_messages,
+                    kTemperature,
+                    kMaxTokens
+                );
+
+            if (!response.ok)
+            {
+                lastFailure =
+                    "provider '" + provider -> _name()
+                    + "' failed (HTTP "
+                    + std::to_string(response.status_code)
+                    + "): " + response.error;
+
+                std::cerr << "\n[AI ERROR] Provider: "
+                          << provider -> _name()
+                          << "\nHTTP status: "
+                          << response.status_code
+                          << "\nReason: "
+                          << response.error
+                          << "\n";
+
+                api_failed = true;
+
+                break;
+            }
+
+            if (trimCopy(response.text).empty())
+            {
+                lastFailure =
+                    "Provider '" + provider -> _name()
+                    + "' returned an empty answer.";
+
+                continue;
+            }
+
+            ParseOutcome parsed =
+                parsePlanText(response.text, allowedTools);
+
+            if (parsed.steps.empty() && parsed.problems.empty())
+            {
+                parsed.problems.push_back(
+                    "No step found in the answer."
+                );
+            }
+
+            if (parsed.problems.empty())
+            {
+                memory.addEntry(
+                    "assistant",
+                    describePlan(task.getId(), parsed.steps)
+                );
+
+                // std::cout << "[Planner] Plan created successfully "
+                        //   << "by " << provider -> _name()
+                        //   << '\n';
+
+                return std::move(parsed.steps);
+            }
+
+            lastFailure =
+                "invalid plan from provider '"
+                + provider -> _name()
+                + "' (" + joinList(parsed.problems, " ") + ")";
+
+            provider_messages.push_back(
+                maf::providers::Message{
+                    "assistant",
+                    response.text
+                }
+            );
+
+            provider_messages.push_back(
+                maf::providers::Message{
+                    "user",
+                    buildFeedback(parsed.problems, allowedTools)
+                }
+            );
+        }
+
+        if (!api_failed)
+        {
+            break;
+        }
+
+        const std::string failed_provider_name =
+            provider -> _name();
+
+        if (!llmContext.switchToNextProvider())
+        {
+            std::cerr << "[Planner] No more providers available.\n";
+            break;
+        }
+
+        const auto next_provider = llmContext.getProvider();
+
+        if (!next_provider)
+        {
+            lastFailure = "No active provider after switching.";
+            break;
+        }
+
+        std::cout << "[Planner] Switching provider: "
+                  << failed_provider_name
+                  << " -> "
+                  << next_provider -> _name()
+                  << '\n';
     }
 
-    throw std::runtime_error("Planner::createPlan: could not create a plan after " +
-                             std::to_string(kMaxAttempts) + " attempts: " + lastFailure);
+    throw std::runtime_error(
+        "Planner::createPlan: could not create a plan: "
+        + lastFailure
+    );
+
 }
 
 }  

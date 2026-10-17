@@ -7,57 +7,61 @@
 #include <vector>
 
 namespace maf::orchestration {
+    void Memory::addEntry(const std::string& role, const std::string& content) {
+        history_.push_back(MemoryEntry{role, content});
 
-void Memory::addEntry(const std::string& role, const std::string& content) {
-    history_.push_back(MemoryEntry{role, content});
-}
-
-const std::vector<MemoryEntry>& Memory::getHistory() const noexcept {
-    return history_;
-}
-
-void Memory::setFact(const std::string& key, const std::string& value) {
-    facts_[key] = value;  
-}
-
-std::string Memory::getFact(const std::string& key) const {
-    auto it = facts_.find(key);
-    if (it != facts_.end()) {
-        return it->second;
+// std::cout << "\n===== MEMORY UPDATED =====\n";
+// std::cout << buildContext() << '\n';
     }
-    return "";
-}
 
-bool Memory::hasFact(const std::string& key) const {
-    return facts_.find(key) != facts_.end();
-}
+    const std::vector<MemoryEntry>& Memory::getHistory() const noexcept {
+        return history_;
+    }
 
+    void Memory::setFact(const std::string& key, const std::string& value) {
+        facts_[key] = value;  
 
-std::string Memory::buildContext() const {
-    std::ostringstream oss;
+// std::cout << "\n===== MEMORY UPDATED =====\n";
+// std::cout << buildContext() << '\n';
+    }
 
-    if (!facts_.empty()) {
-        const std::map<std::string, std::string> sortedFacts(facts_.begin(), facts_.end());
-        oss << "=== Key Facts ===\n";
-        for (const auto& [key, value] : sortedFacts) {
-            oss << key << ": " << value << "\n";
+    std::string Memory::getFact(const std::string& key) const {
+        auto it = facts_.find(key);
+        if (it != facts_.end()) {
+            return it->second;
         }
-        oss << "\n";
+        return "";
     }
 
-    if (!history_.empty()) {
-        oss << "=== Conversation History ===\n";
-        for (const auto& entry : history_) {
-            oss << entry.role << ": " << entry.content << "\n";
+    bool Memory::hasFact(const std::string& key) const {
+        return facts_.find(key) != facts_.end();
+    }
+
+
+    std::string Memory::buildContext() const {
+        std::ostringstream oss;
+
+        if (!facts_.empty()) {
+            const std::map<std::string, std::string> sortedFacts(facts_.begin(), facts_.end());
+            oss << "=== Key Facts ===\n";
+            for (const auto& [key, value] : sortedFacts) {
+                oss << key << ": " << value << "\n";
+            }
+            oss << "\n";
         }
+
+// if (!history_.empty()) {
+//     oss << "=== Conversation History ===\n";
+//     for (const auto& entry : history_) {
+//         oss << entry.role << ": " << entry.content << "\n";
+//     }
+// }
+
+        return oss.str();
     }
 
-    return oss.str();
-}
-
-void Memory::clear() {
-    history_.clear();
-    facts_.clear();
-}
-
+    void Memory::clear() {
+        history_.clear();
+        facts_.clear();
+    }
 }  

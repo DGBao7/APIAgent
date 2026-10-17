@@ -1,73 +1,94 @@
-┌─────────────────────────────┐
-│          main.cpp           │
-│     Điểm khởi chạy prj      │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│         utils/Env.h         │
-│      Đọc cấu hình API       │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│   providers/*.h và *.cpp    │
-│  Gemini / Groq / OpenRouter │
-│    Khởi tạo AI provider     │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│       communication/        │
-│          User.h             │
-│    Nhận thông tin user      │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│          core/Task.h        │
-│      Biểu diễn yêu cầu      │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│         core/Agent.h        │
-│     Agent xử lý Task        │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│       agents/Strategy.h     │
-│   Lấy provider đã chọn      │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│   orchestration/Planner.cpp │
-│    Lập kế hoạch thực hiện   │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│  orchestration/Executor.cpp │
-│       Chạy các tool         │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│   providers/*.cpp           │
-│    Gửi request đến API      │
-│     Nhận phản hồi AI        │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│         core/Result.h       │
-│   Đóng gói kết quả xử lý    │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│       main.cpp → cout       │
-│      Hiển thị kết quả       │
-└─────────────────────────────┘
+main.cpp
+│
+├─ Env::_load(...)
+│
+├─ Khởi tạo providers
+│    ├─ GeminiProvider
+│    ├─ GroqProvider
+│    └─ OpenRouterProvider
+│
+├─ Event::_input()
+│    └─ Nhận input từ người dùng
+│
+├─ Observer::parseInput(raw_input)
+│    ├─ Tạo Observation
+│    ├─ Observation.goal
+│    ├─ Observation.requirements
+│    └─ Observation.constraints
+│
+├─ Tạo Task từ Observation.goal
+│
+├─ Khởi tạo LLMStrategyContext
+├─ Khởi tạo Strategy
+├─ Khởi tạo Planner
+├─ Khởi tạo Executor
+├─ Khởi tạo Memory
+│    ├─ Memory.setFact("observed_goal", ...)
+│    ├─ Memory.setFact("observed_requirements", ...)
+│    ├─ Memory.setFact("observed_constraints", ...)
+│    ├─ Đăng ký các tool
+│    └─ Memory.setFact("available_tools", ...)
+│
+└─ Agent::_workflow(task, strategy, context, planner, executor, memory)
+   │
+   ├─ AgentState: IDLE
+   │
+   ├─ Agent::validateTask(task)
+   │    ├─ Hợp lệ → tiếp tục
+   │    └─ Không hợp lệ → FAILED
+   │
+   ├─ Kiểm tra TaskStatus
+   │    └─ PENDING → RUNNING
+   │
+   ├─ AgentState: THINKING
+   │
+   ├─ Strategy::decide(task, llmContext)
+   │    ├─ Chọn thứ tự provider
+   │    ├─ Chọn maxTokens
+   │    └─ Xác định fallback
+   │
+   ├─ Kiểm tra Strategy result
+   │    └─ Thất bại → FAILED
+   │
+   ├─ Planner::createPlan(task, llmContext, memory)
+   │    ├─ Đọc Task + context + Memory
+   │    ├─ Lấy provider đang được chọn
+   │    ├─ Gửi yêu cầu cho AI
+   │    ├─ Fallback nếu provider thất bại
+   │    └─ Trả về vector<PlanStep>
+   │
+   ├─ AgentState: EXECUTING
+   │
+   ├─ Executor::executePlan(plan, memory)
+   │    ├─ Tìm tool cho từng step
+   │    ├─ Thay thế placeholder bằng facts trong Memory
+   │    ├─ Chạy tool
+   │    ├─ Memory.addEntry("tool", ...)
+   │    ├─ Memory.setFact("step_X_output", ...)
+   │    ├─ Memory.setFact("last_output", ...)
+   │    └─ Trả về Result
+   │
+   ├─ Kiểm tra Executor result
+   │    ├─ Thất bại → TaskStatus::FAILED
+   │    │            AgentState: FAILED
+   │    └─ Thành công
+   │
+   ├─ AgentState: THINKING
+   │
+   ├─ Memory::buildContext()
+   │    └─ Lấy facts + lịch sử thực thi
+   │
+   ├─ AI tổng hợp câu trả lời
+   │    ├─ Gửi yêu cầu gốc + Memory cho provider
+   │    ├─ Đọc kết quả từ Executor
+   │    └─ Trả về câu trả lời cuối
+   │
+   ├─ Cập nhật Memory
+   │    └─ Memory.addEntry("assistant", response.text)
+   │
+   ├─ Cập nhật trạng thái cuối
+   │    ├─ TaskStatus::COMPLETED
+   │    └─ AgentState: COMPLETED
+   │
+   └─ Trả Result về main.cpp
+        └─ In FINAL ANSWER
