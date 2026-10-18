@@ -14,7 +14,7 @@ MainWindow::MainWindow(QWidget *parent)
     setStyleSheet(ui::theme::_style_sheet());
 
     m_conversation->_append_ai_message(
-        "Chào anh! Em là APIAgent. Anh có thể nhập yêu cầu ở bên dưới.");
+        "Hỏi gì hỏi mau, hỏi ít thôi k hết token của t");
 
     connect(
         m_input_bar,
@@ -89,4 +89,13 @@ void MainWindow::_append_ai_message(const QString &message)
 void MainWindow::_set_busy(bool busy)
 {
     m_input_bar->setEnabled(!busy);
+}
+
+void MainWindow::_set_agent_statuses(
+    const std::vector<
+        std::shared_ptr<maf::agents::AgentStatus>
+    > &statuses
+)
+{
+    m_history->_set_agent_statuses(statuses);
 }

@@ -6,6 +6,11 @@
 #include "maf/ui/InputBar.h"
 #include "maf/ui/theme/Color.h"
 
+#include "maf/agents/State.h"
+
+#include <memory>
+#include <vector>
+
 #include <QHBoxLayout>
 #include <QLabel>
 #include <QMainWindow>
@@ -27,6 +32,12 @@ public:
 
     void _append_ai_message(const QString &message);
     void _set_busy(bool busy);
+
+    void _set_agent_statuses(
+        const std::vector<
+            std::shared_ptr<maf::agents::AgentStatus>
+        > &statuses
+    );
 
 signals:
     void user_message_submitted(const QString &message);

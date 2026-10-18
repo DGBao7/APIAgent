@@ -25,7 +25,7 @@ Conversation::Conversation(QWidget *parent)
 
 void Conversation::_append_user_message(const QString &content)
 {
-    _append_message("Anh", content, true);
+    _append_message("You: ", content, true);
 }
 
 void Conversation::_append_ai_message(const QString &content)
@@ -61,8 +61,13 @@ void Conversation::_append_message(const QString &speaker,
             .arg(speaker.toHtmlEscaped(), escaped_content);
     }
 
-    m_conversation_view->moveCursor(QTextCursor::End);
-    m_conversation_view->insertHtml(html);
-    m_conversation_view->moveCursor(QTextCursor::End);
+    QTextCursor cursor = m_conversation_view->textCursor();
+
+    cursor.movePosition(QTextCursor::End);
+    cursor.insertBlock();
+    cursor.insertHtml(html);
+    cursor.insertBlock();
+
+    m_conversation_view->setTextCursor(cursor);
     m_conversation_view->ensureCursorVisible();
 }

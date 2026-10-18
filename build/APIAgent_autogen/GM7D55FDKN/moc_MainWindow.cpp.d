@@ -242,6 +242,7 @@ D:/work/programs/prj/APIAgent/build/APIAgent_autogen/GM7D55FDKN/moc_MainWindow.c
   D:/work/msys2/mingw64/include/pthread_time.h \
   D:/work/msys2/mingw64/include/pthread_unistd.h \
   D:/work/msys2/mingw64/include/qt6/QtCore/QString \
+  D:/work/msys2/mingw64/include/qt6/QtCore/QTimer \
   D:/work/msys2/mingw64/include/qt6/QtCore/q17memory.h \
   D:/work/msys2/mingw64/include/qt6/QtCore/q20bit.h \
   D:/work/msys2/mingw64/include/qt6/QtCore/q20functional.h \
@@ -251,6 +252,7 @@ D:/work/programs/prj/APIAgent/build/APIAgent_autogen/GM7D55FDKN/moc_MainWindow.c
   D:/work/msys2/mingw64/include/qt6/QtCore/q20utility.h \
   D:/work/msys2/mingw64/include/qt6/QtCore/q23type_traits.h \
   D:/work/msys2/mingw64/include/qt6/QtCore/q23utility.h \
+  D:/work/msys2/mingw64/include/qt6/QtCore/qabstracteventdispatcher.h \
   D:/work/msys2/mingw64/include/qt6/QtCore/qabstractitemmodel.h \
   D:/work/msys2/mingw64/include/qt6/QtCore/qalgorithms.h \
   D:/work/msys2/mingw64/include/qt6/QtCore/qalloc.h \
@@ -262,6 +264,7 @@ D:/work/programs/prj/APIAgent/build/APIAgent_autogen/GM7D55FDKN/moc_MainWindow.c
   D:/work/msys2/mingw64/include/qt6/QtCore/qatomic.h \
   D:/work/msys2/mingw64/include/qt6/QtCore/qatomic_cxx11.h \
   D:/work/msys2/mingw64/include/qt6/QtCore/qbasicatomic.h \
+  D:/work/msys2/mingw64/include/qt6/QtCore/qbasictimer.h \
   D:/work/msys2/mingw64/include/qt6/QtCore/qbindingstorage.h \
   D:/work/msys2/mingw64/include/qt6/QtCore/qbytearray.h \
   D:/work/msys2/mingw64/include/qt6/QtCore/qbytearrayalgorithms.h \
@@ -281,8 +284,10 @@ D:/work/programs/prj/APIAgent/build/APIAgent_autogen/GM7D55FDKN/moc_MainWindow.c
   D:/work/msys2/mingw64/include/qt6/QtCore/qcontiguouscache.h \
   D:/work/msys2/mingw64/include/qt6/QtCore/qdarwinhelpers.h \
   D:/work/msys2/mingw64/include/qt6/QtCore/qdatastream.h \
+  D:/work/msys2/mingw64/include/qt6/QtCore/qdeadlinetimer.h \
   D:/work/msys2/mingw64/include/qt6/QtCore/qdebug.h \
   D:/work/msys2/mingw64/include/qt6/QtCore/qendian.h \
+  D:/work/msys2/mingw64/include/qt6/QtCore/qeventloop.h \
   D:/work/msys2/mingw64/include/qt6/QtCore/qexceptionhandling.h \
   D:/work/msys2/mingw64/include/qt6/QtCore/qflags.h \
   D:/work/msys2/mingw64/include/qt6/QtCore/qfloat16.h \
@@ -359,6 +364,7 @@ D:/work/programs/prj/APIAgent/build/APIAgent_autogen/GM7D55FDKN/moc_MainWindow.c
   D:/work/msys2/mingw64/include/qt6/QtCore/qtenvironmentvariables.h \
   D:/work/msys2/mingw64/include/qt6/QtCore/qtextstream.h \
   D:/work/msys2/mingw64/include/qt6/QtCore/qtformat_impl.h \
+  D:/work/msys2/mingw64/include/qt6/QtCore/qtimer.h \
   D:/work/msys2/mingw64/include/qt6/QtCore/qtmetamacros.h \
   D:/work/msys2/mingw64/include/qt6/QtCore/qtnoop.h \
   D:/work/msys2/mingw64/include/qt6/QtCore/qtpreprocessorsupport.h \
@@ -473,6 +479,7 @@ D:/work/programs/prj/APIAgent/build/APIAgent_autogen/GM7D55FDKN/moc_MainWindow.c
   D:/work/msys2/mingw64/include/wctype.h \
   D:/work/msys2/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/mm_malloc.h \
   D:/work/msys2/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/stdbool.h \
+  D:/work/programs/prj/APIAgent/include/maf/agents/State.h \
   D:/work/programs/prj/APIAgent/include/maf/ui/Conversation.h \
   D:/work/programs/prj/APIAgent/include/maf/ui/History.h \
   D:/work/programs/prj/APIAgent/include/maf/ui/InputBar.h \
