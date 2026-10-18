@@ -78,6 +78,23 @@ rule RERUN_CMAKE
 
 
 #############################################
+# Rule for re-checking globbed directories.
+
+rule VERIFY_GLOBS
+  command = D:\work\msys2\mingw64\bin\cmake.exe -P D:\work\programs\prj\APIAgent\build\CMakeFiles\VerifyGlobs.cmake
+  description = Re-checking globbed directories...
+  generator = 1
+
+
+#############################################
+# Rule for cleaning additional files.
+
+rule CLEAN_ADDITIONAL
+  command = D:\work\msys2\mingw64\bin\cmake.exe -DCONFIG=$CONFIG -P CMakeFiles\clean_additional.cmake
+  description = Cleaning additional files...
+
+
+#############################################
 # Rule for cleaning all built files.
 
 rule CLEAN
