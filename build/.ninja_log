@@ -13,12 +13,13 @@
 42	1007	8138780660035096	CMakeFiles/APIAgent.dir/src/core/Task.cpp.obj	7fdf4dc66f9a993
 40	699	8135767709772156	CMakeFiles/APIAgent.dir/src/providers/GroqProvider.cpp.obj	e2384b3297ce974f
 49	711	8135767709772156	CMakeFiles/APIAgent.dir/src/providers/OpenRouterProvider.cpp.obj	695f37062c87b990
-41	3741	8139718913192323	CMakeFiles/APIAgent.dir/main.cpp.obj	3f74fdecebfee4c3
+33	10392	8140107757019021	CMakeFiles/APIAgent.dir/main.cpp.obj	3f74fdecebfee4c3
 58	878	8135767709877108	CMakeFiles/APIAgent.dir/src/utils/Env.cpp.obj	2a1fe74148ef7f4e
 76	2004	8135751432057038	CMakeFiles/APIAgent.dir/src/providers/HttpClient.cpp.obj	52fca5c0ee4ada82
 56	3610	8116270458955521	CMakeFiles/APIAgent.dir/src/providers/OpenAICompatibleProvider.cpp.obj	2156fcbeb5bc5e1d
 43	5897	8136665492456647	CMakeFiles/APIAgent.dir/src/providers/GeminiProvider.cpp.obj	d0ebc0a544a46803
-22	444	8139719034968079	APIAgent.exe	a92af5286913aeaa
-42	2021	8135758382978721	CMakeFiles/APIAgent.dir/src/providers/ILLMProvider.cpp.obj	c5d55d6c90924c3b
-33	10392	8140107757019021	CMakeFiles/APIAgent.dir/main.cpp.obj	3f74fdecebfee4c3
 10393	11289	8140107860683669	APIAgent.exe	a92af5286913aeaa
+42	2021	8135758382978721	CMakeFiles/APIAgent.dir/src/providers/ILLMProvider.cpp.obj	c5d55d6c90924c3b
+37	174	8140109639001048	CMakeFiles/APIAgent.dir/src/agents/State.cpp.obj	37e063af38369311
+26	2068	8140109638898827	CMakeFiles/APIAgent.dir/src/agents/Observe.cpp.obj	4fba9b4dfc93fd78
+2069	2516	8140109659309447	APIAgent.exe	a92af5286913aeaa
