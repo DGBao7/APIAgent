@@ -7,6 +7,7 @@
 #include <exception>
 #include <utility>
 #include <vector>
+#include <memory>
 
 #include "maf/core/Result.h"
 #include "maf/core/Task.h"
@@ -29,7 +30,7 @@ namespace maf::core
         std::string agentName;
         maf::providers::ILLMProvider *provider;
 
-        maf::agents::AgentState agent_state = maf::agents::AgentState::IDLE;
+        std::shared_ptr<maf::agents::AgentStatus> agent_status;
     public:
         Agent(
             std::string id, std::string name ,
@@ -58,6 +59,7 @@ namespace maf::core
             maf::orchestration::Memory &memory
         );
 
+        std::shared_ptr<maf::agents::AgentStatus> _get_status() const;
         maf::agents::AgentState _get_state() const noexcept;
     };
 };

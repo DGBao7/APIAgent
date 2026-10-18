@@ -3,13 +3,22 @@
 namespace maf::core
 {
     Agent::Agent(
-        std::string id, std::string name ,
+        std::string id, std::string name,
         maf::providers::ILLMProvider *provider
     )
     {
         this -> agentId = std::move(id);
         this -> agentName = std::move(name);
         this -> provider = provider;
+
+        this -> agent_status =
+            std::make_shared<maf::agents::AgentStatus>(agentName);
+    }
+
+    std::shared_ptr<maf::agents::AgentStatus>
+    Agent::_get_status() const
+    {
+        return agent_status;
     }
     
     Result Agent::performTask(
@@ -85,7 +94,7 @@ namespace maf::core
 
     maf::agents::AgentState Agent::_get_state() const noexcept
     {
-        return this -> agent_state;
+        return this -> agent_status -> state.load();
     }
 
     // agents gửi câu hỏi đến từng api riêng
@@ -94,7 +103,9 @@ namespace maf::core
         std::string input
     )
     {
-        this -> agent_state = maf::agents::AgentState::THINKING;
+        this -> agent_status -> state.store(
+            maf::agents::AgentState::THINKING
+        );
 
         try
         {
@@ -108,18 +119,24 @@ namespace maf::core
 
             if (response.ok)
             {
-                this -> agent_state = maf::agents::AgentState::COMPLETED;
+                this -> agent_status -> state.store(
+                    maf::agents::AgentState::COMPLETED
+                );
             }
             else
             {
-                this -> agent_state = maf::agents::AgentState::FAILED;
+                this -> agent_status -> state.store(
+                    maf::agents::AgentState::FAILED
+                );
             }
 
             return response;
         }
         catch (const std::exception &error)
         {
-            this -> agent_state = maf::agents::AgentState::FAILED;
+            this -> agent_status -> state.store(
+                maf::agents::AgentState::FAILED
+            );
 
             maf::providers::LLMResponse response;
             response.ok = false;
@@ -245,7 +262,9 @@ namespace maf::core
             memory.setFact("available_tools", available_tools);
 
 // std::cout << "[DEBUG] Calling Planner\n";
-            this -> agent_state = maf::agents::AgentState::THINKING;
+            this -> agent_status -> state.store(
+                maf::agents::AgentState::THINKING
+            );
 
             const auto plan = planner.createPlan(
                 task , 
@@ -278,7 +297,9 @@ namespace maf::core
 // }
 
 // std::cout << "[DEBUG] Calling Executor\n";
-            this -> agent_state = maf::agents::AgentState::EXECUTING;
+            this -> agent_status -> state.store(
+                maf::agents::AgentState::EXECUTING
+            );
 
             Result result = executor.executePlan(plan , memory);
 
@@ -297,7 +318,9 @@ namespace maf::core
                 return result;
             }         
             
-            this -> agent_state = maf::agents::AgentState::THINKING;
+            this -> agent_status -> state.store(
+                maf::agents::AgentState::THINKING
+            );
 
             // đọc memory
             const std::string memory_context = memory.buildContext();
@@ -338,7 +361,9 @@ namespace maf::core
 
             memory.addEntry("assistant" , response.text);
 
-            this -> agent_state = maf::agents::AgentState::COMPLETED;
+            this -> agent_status -> state.store(
+                maf::agents::AgentState::COMPLETED
+            );
 
             return Result(true, response.text, "");
 
@@ -346,7 +371,9 @@ namespace maf::core
         }
         catch (const std::exception &error)
         {
-            this -> agent_state = maf::agents::AgentState::FAILED;
+            this -> agent_status -> state.store(
+                maf::agents::AgentState::FAILED
+            );
 
             std::cerr << "[ERROR] " << error.what() << '\n';
 
@@ -356,7 +383,9 @@ namespace maf::core
         }
         catch (...)
         {
-            this -> agent_state = maf::agents::AgentState::FAILED;
+            this -> agent_status -> state.store(
+                maf::agents::AgentState::FAILED
+            );  
 
             task.setStatus(TaskStatus::FAILED);
 
