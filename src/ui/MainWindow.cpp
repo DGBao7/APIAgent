@@ -16,8 +16,12 @@ MainWindow::MainWindow(QWidget *parent)
     m_conversation->_append_ai_message(
         "Chào anh! Em là APIAgent. Anh có thể nhập yêu cầu ở bên dưới.");
 
-    connect(m_input_bar, &InputBar::message_submitted,
-            this, &MainWindow::_handle_user_message);
+    connect(
+        m_input_bar,
+        &InputBar::message_submitted,
+        this,
+        &MainWindow::_handle_user_message
+    );
 }
 
 void MainWindow::_setup_layout()
@@ -30,6 +34,7 @@ void MainWindow::_setup_layout()
 
     QWidget *top_bar = new QWidget(central_widget);
     top_bar->setObjectName("topBar");
+
     QHBoxLayout *top_layout = new QHBoxLayout(top_bar);
     top_layout->setContentsMargins(24, 16, 24, 16);
     top_layout->setSpacing(12);
@@ -74,4 +79,14 @@ void MainWindow::_handle_user_message(const QString &message)
 {
     m_conversation->_append_user_message(message);
     emit user_message_submitted(message);
+}
+
+void MainWindow::_append_ai_message(const QString &message)
+{
+    m_conversation->_append_ai_message(message);
+}
+
+void MainWindow::_set_busy(bool busy)
+{
+    m_input_bar->setEnabled(!busy);
 }

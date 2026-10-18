@@ -8,11 +8,11 @@
 
 #include <QHBoxLayout>
 #include <QLabel>
+#include <QMainWindow>
 #include <QSplitter>
+#include <QString>
 #include <QVBoxLayout>
 #include <QWidget>
-#include <QMainWindow>
-#include <QString>
 
 class Conversation;
 class History;
@@ -24,6 +24,9 @@ class MainWindow : public QMainWindow
 
 public:
     explicit MainWindow(QWidget *parent = nullptr);
+
+    void _append_ai_message(const QString &message);
+    void _set_busy(bool busy);
 
 signals:
     void user_message_submitted(const QString &message);
