@@ -43,6 +43,11 @@ namespace maf::core
         return agentName;
     }
 
+    maf::providers::ILLMProvider *Agent::_get_provider() const
+    {
+        return this -> provider;
+    }
+
     bool Agent::_check_task_status(Task &task)
     {
         if (task.getStatus() != TaskStatus::PENDING)
@@ -77,6 +82,52 @@ namespace maf::core
 
         return "";
     }
+
+    maf::agents::AgentState Agent::_get_state() const noexcept
+    {
+        return this -> agent_state;
+    }
+
+    // agents gửi câu hỏi đến từng api riêng
+    maf::providers::LLMResponse Agent::_run(
+        std::string prompt ,
+        std::string input
+    )
+    {
+        this -> agent_state = maf::agents::AgentState::THINKING;
+
+        try
+        {
+            std::vector<maf::providers::Message> messages = {
+                {"system" , prompt} ,
+                {"user" , input}
+            };
+
+            maf::providers::LLMResponse response =
+                this -> provider -> _chat(messages);
+
+            if (response.ok)
+            {
+                this -> agent_state = maf::agents::AgentState::COMPLETED;
+            }
+            else
+            {
+                this -> agent_state = maf::agents::AgentState::FAILED;
+            }
+
+            return response;
+        }
+        catch (const std::exception &error)
+        {
+            this -> agent_state = maf::agents::AgentState::FAILED;
+
+            maf::providers::LLMResponse response;
+            response.ok = false;
+            response.error = error.what();
+
+            return response;
+        }
+    } 
 
     Result Agent::_workflow(
         Task &task,
@@ -130,8 +181,8 @@ namespace maf::core
             // std::cout << "Used fallback: "
                     // << decision.usedFallback << '\n';
 
-            std::cout << "Error: "
-                    << decision.errorMessage << '\n';
+            // std::cout << "Error: "
+            //         << decision.errorMessage << '\n';
 
             if (!decision.isSuccess)
             {
@@ -142,6 +193,16 @@ namespace maf::core
                     : decision.errorMessage;
 
                 return Result(false , "" , error);
+            }
+
+            maf::providers::LLMResponse research_result;
+
+            if (this -> getName() == "Planner")
+            {
+                research_result = maf::providers::LLMResponse{
+                    .ok = true,
+                    .text = memory.getFact("research_result")
+                };
             }
 
             // std::cout << "\n[DEBUG] Strategy passed\n";
@@ -184,12 +245,26 @@ namespace maf::core
             memory.setFact("available_tools", available_tools);
 
 // std::cout << "[DEBUG] Calling Planner\n";
+            this -> agent_state = maf::agents::AgentState::THINKING;
 
             const auto plan = planner.createPlan(
                 task , 
                 context ,
                 memory
             );
+
+            std::string plan_context;
+
+            for (const auto &step : plan)
+            {
+                plan_context +=
+                    "Step " + std::to_string(step.index)
+                    + ": " + step.toolName
+                    + "\nInstruction: " + step.instruction
+                    + "\n\n";
+            }
+
+            memory.setFact("plan", plan_context);
 
 // std::cout << "[DEBUG] Planner returned "
         //   << plan.size() << " steps\n";
@@ -203,6 +278,7 @@ namespace maf::core
 // }
 
 // std::cout << "[DEBUG] Calling Executor\n";
+            this -> agent_state = maf::agents::AgentState::EXECUTING;
 
             Result result = executor.executePlan(plan , memory);
 
@@ -219,7 +295,9 @@ namespace maf::core
             if (!result.isSuccess())
             {
                 return result;
-            }            
+            }         
+            
+            this -> agent_state = maf::agents::AgentState::THINKING;
 
             // đọc memory
             const std::string memory_context = memory.buildContext();
@@ -260,12 +338,16 @@ namespace maf::core
 
             memory.addEntry("assistant" , response.text);
 
+            this -> agent_state = maf::agents::AgentState::COMPLETED;
+
             return Result(true, response.text, "");
 
             // return result;
         }
         catch (const std::exception &error)
         {
+            this -> agent_state = maf::agents::AgentState::FAILED;
+
             std::cerr << "[ERROR] " << error.what() << '\n';
 
             task.setStatus(TaskStatus::FAILED);
@@ -274,6 +356,8 @@ namespace maf::core
         }
         catch (...)
         {
+            this -> agent_state = maf::agents::AgentState::FAILED;
+
             task.setStatus(TaskStatus::FAILED);
 
             return Result(

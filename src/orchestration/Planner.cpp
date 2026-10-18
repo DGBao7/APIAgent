@@ -251,11 +251,11 @@ std::vector<PlanStep> Planner::createPlan(
         throw std::runtime_error("Planner::createPlan: no LLM provider configured");
     }
 
-const std::size_t provider_count =
-    llmContext.getProviderNames().size();
+    const std::size_t provider_count =
+        llmContext.getProviderNames().size();
 
-std::cout << "\n[Planner] Strategy selected provider: "
-          << provider -> _name() << '\n';
+// std::cout << "\n[Planner] Strategy selected provider: "
+//           << provider -> _name() << '\n';
 
     const std::vector<std::string> allowedTools =
         splitList(memory.getFact(kFactAvailableTools), ',');

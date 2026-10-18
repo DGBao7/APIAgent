@@ -1,0 +1,7 @@
+cho vector agents chứa nhiều agent làm research và plan
+
+agent 1 chạy lưu kết quả thông qua orches/memory
+
+agent 2 lấy kết quả để chạy tiếp
+
+nên khi có 2 agent chưa cần phải viết riêng tạo riêng hẳn

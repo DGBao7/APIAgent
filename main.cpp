@@ -13,6 +13,8 @@
 #include "maf/core/Result.h"
 
 #include "maf/agents/Strategy.h"
+#include "maf/agents/State.h"
+#include "maf/agents/Observe.h"
 
 #include "maf/orchestration/Planner.h"
 #include "maf/orchestration/Executor.h"
@@ -50,12 +52,12 @@ std::vector<maf::providers::ILLMProvider*> _start_API()
         {"user" , "Hello. Explain what an agent is in one sentence."}
     };
 
-    static maf::providers::GeminiProvider gemini;
+    // static maf::providers::GeminiProvider gemini;
     static maf::providers::GroqProvider groq;
     static maf::providers::OpenRouterProvider open_router;
 
     std::vector<maf::providers::ILLMProvider*> providers = {
-        &gemini ,
+        // &gemini ,
         &groq ,
         &open_router
     };
@@ -90,13 +92,18 @@ std::vector<maf::core::Agent> _start_agents(
 {
     std::vector<maf::core::Agent> agents;
 
-    for (int i = 0; i < providers.size(); i ++)
+    const std::vector<std::string> agents_name = {
+        "Researcher" ,
+        "Planner"
+    };
+
+    for (size_t i = 0; i < providers.size(); i ++)
     {
-        agents.push_back(maf::core::Agent(
+        agents.emplace_back(
             std::to_string(i) ,
-            "Bon" + std::to_string(i) ,
+            agents_name[i] ,
             providers[i]
-        ));
+        );
     }
 
     return agents;
@@ -143,8 +150,8 @@ public:
                 break;
             }
 
-std::cout << "[DEBUG] Provider: "
-        << provider -> _name() << "\n";
+// std::cout << "[DEBUG] Provider: "
+//         << provider -> _name() << "\n";
 
             const auto response = provider -> _chat(
                 messages ,
@@ -152,10 +159,10 @@ std::cout << "[DEBUG] Provider: "
                 context -> getMaxTokens()
             );
 
-std::cout << "[DEBUG] Provider: "
-        << provider -> _name() << "\n";
-std::cout << "[DEBUG] Response: "
-          << response.text << "\n";
+// std::cout << "[DEBUG] Provider: "
+//         << provider -> _name() << "\n";
+// std::cout << "[DEBUG] Response: "
+//           << response.text << "\n";
 
             if (response.ok)
             {
@@ -176,7 +183,7 @@ std::cout << "[DEBUG] Response: "
     }
 };
 
-int main()
+void _one_run_only()
 {
     // debug terminal only
     SetConsoleOutputCP(CP_UTF8);
@@ -195,8 +202,28 @@ int main()
 // std::cout << "===== Input =====" << "\n";
 // event._print_input();
 
-    // biểu diễn yêu cầu
-    maf::core::Task task("001" , event._return_input());
+    // lấy input, khởi tạo quan sát, quản lý tải
+    maf::core::Observer observe;
+
+    const std::string input = event._return_input();
+
+    const maf::core::Observation observation =
+        observe.parseInput(input);
+
+    maf::core::Task task("001" , observation.goal);
+
+std::cout << "===== OBSERVATION =====\n";
+std::cout << "Goal: " << observation.goal << '\n';
+
+for (const auto& requirement : observation.requirements)
+{
+    std::cout << "Requirement: " << requirement << '\n';
+}
+
+for (const auto& constraint : observation.constraints)
+{
+    std::cout << "Constraint: " << constraint << '\n';
+}
 // std::cout << "===== Task =====" << "\n";
 // task._print_task();
     
@@ -224,6 +251,35 @@ int main()
 
     // tạo memory
     maf::orchestration::Memory memory;
+
+    memory.setFact("observed_goal" , observation.goal);
+
+    const auto join_items = [](const std::vector<std::string> &items)
+    {
+        std::string joined;
+
+        for (const auto &item: items)
+        {
+            if (!joined.empty())
+            {
+                joined += ", ";
+            }
+
+            joined += item;
+        }
+
+        return joined.empty() ? std::string("None") : joined;
+    };
+
+    memory.setFact(
+        "observed_requirements",
+        join_items(observation.requirements)
+    );
+
+    memory.setFact(
+        "observed_constraints",
+        join_items(observation.constraints)
+    );
 
     // đăng ký tool
     executor.registerTool(
@@ -253,7 +309,143 @@ int main()
     // std::cout << "\n\n===== Result =====" << "\n";
     // result._print_result();
 
-    std::string unclose;
-    std::getline(std::cin , unclose);
-    std::getline(std::cin , unclose);
+    std::string dung;
+    std::getline(std::cin , dung);
+    std::getline(std::cin , dung);
+}
+
+void _run_multiple()
+{
+    // debug terminal only
+    SetConsoleOutputCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8);
+
+    // đọc cấu hình api
+    // khởi tại ai providers
+    std::vector<maf::providers::ILLMProvider*> providers = _start_API();
+
+    // nhận thông tin user
+    maf::core::User user = _start_user();
+
+    // lấy input
+    maf::communication::Event event;
+    event._input();
+// std::cout << "===== Input =====" << "\n";
+// event._print_input();
+
+    // lấy input, khởi tạo quan sát, quản lý tải
+    maf::core::Observer observe;
+
+    const std::string input = event._return_input();
+
+    const maf::core::Observation observation =
+        observe.parseInput(input);
+
+    maf::core::Task task("001" , observation.goal);
+
+std::cout << "===== OBSERVATION =====\n";
+std::cout << "Goal: " << observation.goal << '\n';
+
+for (const auto& requirement : observation.requirements)
+{
+    std::cout << "Requirement: " << requirement << '\n';
+}
+
+for (const auto& constraint : observation.constraints)
+{
+    std::cout << "Constraint: " << constraint << '\n';
+}
+// std::cout << "===== Task =====" << "\n";
+// task._print_task();
+    
+    // chuyển kiểu dữ liệu để agent dùng
+    std::vector<std::shared_ptr<maf::providers::ILLMProvider>> converted_providers = 
+        maf::agents::strategy::borrowProviders(providers);
+
+    // tạo context và agent
+    maf::agents::strategy::LLMStrategyContext context(
+        converted_providers ,
+        1024 ,
+        3 ,
+        4096
+    );
+    std::vector<maf::core::Agent> agents = _start_agents(providers);
+
+    // tạo strategy
+    maf::agents::strategy::LLMSelectionStrategy strategy(*providers[0]);
+
+    // tạo planner
+    maf::orchestration::Planner planner;
+
+    // tạo executor
+    maf::orchestration::Executor executor;
+
+    // tạo memory
+    maf::orchestration::Memory memory;
+
+    memory.setFact("observed_goal" , observation.goal);
+
+    const auto join_items = [](const std::vector<std::string> &items)
+    {
+        std::string joined;
+
+        for (const auto &item: items)
+        {
+            if (!joined.empty())
+            {
+                joined += ", ";
+            }
+
+            joined += item;
+        }
+
+        return joined.empty() ? std::string("None") : joined;
+    };
+
+    memory.setFact(
+        "observed_requirements",
+        join_items(observation.requirements)
+    );
+
+    memory.setFact(
+        "observed_constraints",
+        join_items(observation.constraints)
+    );
+
+    // đăng ký tool
+    executor.registerTool(
+        std::make_shared<LLMChatTool>(context)
+    );
+
+    maf::core::Result result = observe._coordinate_agents(
+        agents[0] ,
+        agents[1] ,
+        task , 
+        strategy ,
+        context ,
+        planner ,
+        executor ,
+        memory
+    );
+
+    std::cout << "\n===== FINAL ANSWER =====\n";
+
+    if (result.isSuccess())
+    {
+        std::cout << result.getData() << "\n";
+    }
+    else
+    {
+        std::cout << "Error: " << result.getError() << "\n";
+    }
+
+    std::string dung;
+    std::getline(std::cin , dung);
+    std::getline(std::cin , dung);
+}
+
+int main()
+{
+    // _one_run_only();
+    _run_multiple();
 }
