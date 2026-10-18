@@ -14,6 +14,7 @@
 #include "maf/providers/ILLMProvider.h"
 
 #include "maf/agents/Strategy.h"
+#include "maf/agents/State.h"
 
 #include "maf/orchestration/Planner.h"
 #include "maf/orchestration/Executor.h"
@@ -27,6 +28,8 @@ namespace maf::core
         std::string agentId;
         std::string agentName;
         maf::providers::ILLMProvider *provider;
+
+        maf::agents::AgentState agent_state = maf::agents::AgentState::IDLE;
     public:
         Agent(
             std::string id, std::string name ,
@@ -36,12 +39,15 @@ namespace maf::core
         
         std::string getId() const;
         std::string getName() const;
+        maf::providers::ILLMProvider *_get_provider() const;
 
         Result performTask(Task task);
 
         std::string validateTask(const Task &task) const;
 
         bool _check_task_status(Task &task);
+
+        maf::providers::LLMResponse _run(std::string prompt , std::string input);
 
         Result _workflow(
             Task &task,
@@ -51,6 +57,8 @@ namespace maf::core
             maf::orchestration::Executor &executor,
             maf::orchestration::Memory &memory
         );
+
+        maf::agents::AgentState _get_state() const noexcept;
     };
 };
 
