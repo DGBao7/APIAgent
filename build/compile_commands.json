@@ -1,115 +1,151 @@
 [
 {
   "directory": "D:/work/programs/prj/APIAgent/build",
-  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\main.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\main.cpp",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -ID:/work/programs/prj/APIAgent/build/APIAgent_autogen/include -ID:/work/programs/prj/APIAgent/include -ID:/work/programs/prj/APIAgent -isystem D:/work/msys2/mingw64/include/qt6/QtWidgets -isystem D:/work/msys2/mingw64/include/qt6 -isystem D:/work/msys2/mingw64/include/qt6/QtCore -isystem D:/work/msys2/mingw64/share/qt6/mkspecs/win32-g++ -isystem D:/work/msys2/mingw64/include/qt6/QtGui -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\APIAgent_autogen\\mocs_compilation.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\build\\APIAgent_autogen\\mocs_compilation.cpp",
+  "file": "D:/work/programs/prj/APIAgent/build/APIAgent_autogen/mocs_compilation.cpp",
+  "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/APIAgent_autogen/mocs_compilation.cpp.obj"
+},
+{
+  "directory": "D:/work/programs/prj/APIAgent/build",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -ID:/work/programs/prj/APIAgent/build/APIAgent_autogen/include -ID:/work/programs/prj/APIAgent/include -ID:/work/programs/prj/APIAgent -isystem D:/work/msys2/mingw64/include/qt6/QtWidgets -isystem D:/work/msys2/mingw64/include/qt6 -isystem D:/work/msys2/mingw64/include/qt6/QtCore -isystem D:/work/msys2/mingw64/share/qt6/mkspecs/win32-g++ -isystem D:/work/msys2/mingw64/include/qt6/QtGui -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\main.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\main.cpp",
   "file": "D:/work/programs/prj/APIAgent/main.cpp",
   "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/main.cpp.obj"
 },
 {
   "directory": "D:/work/programs/prj/APIAgent/build",
-  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\agents\\Observe.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\agents\\Observe.cpp",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -ID:/work/programs/prj/APIAgent/build/APIAgent_autogen/include -ID:/work/programs/prj/APIAgent/include -ID:/work/programs/prj/APIAgent -isystem D:/work/msys2/mingw64/include/qt6/QtWidgets -isystem D:/work/msys2/mingw64/include/qt6 -isystem D:/work/msys2/mingw64/include/qt6/QtCore -isystem D:/work/msys2/mingw64/share/qt6/mkspecs/win32-g++ -isystem D:/work/msys2/mingw64/include/qt6/QtGui -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\agents\\Observe.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\agents\\Observe.cpp",
   "file": "D:/work/programs/prj/APIAgent/src/agents/Observe.cpp",
   "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/agents/Observe.cpp.obj"
 },
 {
   "directory": "D:/work/programs/prj/APIAgent/build",
-  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\agents\\State.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\agents\\State.cpp",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -ID:/work/programs/prj/APIAgent/build/APIAgent_autogen/include -ID:/work/programs/prj/APIAgent/include -ID:/work/programs/prj/APIAgent -isystem D:/work/msys2/mingw64/include/qt6/QtWidgets -isystem D:/work/msys2/mingw64/include/qt6 -isystem D:/work/msys2/mingw64/include/qt6/QtCore -isystem D:/work/msys2/mingw64/share/qt6/mkspecs/win32-g++ -isystem D:/work/msys2/mingw64/include/qt6/QtGui -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\agents\\State.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\agents\\State.cpp",
   "file": "D:/work/programs/prj/APIAgent/src/agents/State.cpp",
   "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/agents/State.cpp.obj"
 },
 {
   "directory": "D:/work/programs/prj/APIAgent/build",
-  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\agents\\Strategy.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\agents\\Strategy.cpp",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -ID:/work/programs/prj/APIAgent/build/APIAgent_autogen/include -ID:/work/programs/prj/APIAgent/include -ID:/work/programs/prj/APIAgent -isystem D:/work/msys2/mingw64/include/qt6/QtWidgets -isystem D:/work/msys2/mingw64/include/qt6 -isystem D:/work/msys2/mingw64/include/qt6/QtCore -isystem D:/work/msys2/mingw64/share/qt6/mkspecs/win32-g++ -isystem D:/work/msys2/mingw64/include/qt6/QtGui -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\agents\\Strategy.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\agents\\Strategy.cpp",
   "file": "D:/work/programs/prj/APIAgent/src/agents/Strategy.cpp",
   "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/agents/Strategy.cpp.obj"
 },
 {
   "directory": "D:/work/programs/prj/APIAgent/build",
-  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\communication\\Event.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\communication\\Event.cpp",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -ID:/work/programs/prj/APIAgent/build/APIAgent_autogen/include -ID:/work/programs/prj/APIAgent/include -ID:/work/programs/prj/APIAgent -isystem D:/work/msys2/mingw64/include/qt6/QtWidgets -isystem D:/work/msys2/mingw64/include/qt6 -isystem D:/work/msys2/mingw64/include/qt6/QtCore -isystem D:/work/msys2/mingw64/share/qt6/mkspecs/win32-g++ -isystem D:/work/msys2/mingw64/include/qt6/QtGui -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\communication\\Event.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\communication\\Event.cpp",
   "file": "D:/work/programs/prj/APIAgent/src/communication/Event.cpp",
   "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/communication/Event.cpp.obj"
 },
 {
   "directory": "D:/work/programs/prj/APIAgent/build",
-  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\core\\Agent.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\core\\Agent.cpp",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -ID:/work/programs/prj/APIAgent/build/APIAgent_autogen/include -ID:/work/programs/prj/APIAgent/include -ID:/work/programs/prj/APIAgent -isystem D:/work/msys2/mingw64/include/qt6/QtWidgets -isystem D:/work/msys2/mingw64/include/qt6 -isystem D:/work/msys2/mingw64/include/qt6/QtCore -isystem D:/work/msys2/mingw64/share/qt6/mkspecs/win32-g++ -isystem D:/work/msys2/mingw64/include/qt6/QtGui -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\core\\Agent.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\core\\Agent.cpp",
   "file": "D:/work/programs/prj/APIAgent/src/core/Agent.cpp",
   "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/core/Agent.cpp.obj"
 },
 {
   "directory": "D:/work/programs/prj/APIAgent/build",
-  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\core\\Result.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\core\\Result.cpp",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -ID:/work/programs/prj/APIAgent/build/APIAgent_autogen/include -ID:/work/programs/prj/APIAgent/include -ID:/work/programs/prj/APIAgent -isystem D:/work/msys2/mingw64/include/qt6/QtWidgets -isystem D:/work/msys2/mingw64/include/qt6 -isystem D:/work/msys2/mingw64/include/qt6/QtCore -isystem D:/work/msys2/mingw64/share/qt6/mkspecs/win32-g++ -isystem D:/work/msys2/mingw64/include/qt6/QtGui -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\core\\Result.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\core\\Result.cpp",
   "file": "D:/work/programs/prj/APIAgent/src/core/Result.cpp",
   "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/core/Result.cpp.obj"
 },
 {
   "directory": "D:/work/programs/prj/APIAgent/build",
-  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\core\\Task.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\core\\Task.cpp",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -ID:/work/programs/prj/APIAgent/build/APIAgent_autogen/include -ID:/work/programs/prj/APIAgent/include -ID:/work/programs/prj/APIAgent -isystem D:/work/msys2/mingw64/include/qt6/QtWidgets -isystem D:/work/msys2/mingw64/include/qt6 -isystem D:/work/msys2/mingw64/include/qt6/QtCore -isystem D:/work/msys2/mingw64/share/qt6/mkspecs/win32-g++ -isystem D:/work/msys2/mingw64/include/qt6/QtGui -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\core\\Task.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\core\\Task.cpp",
   "file": "D:/work/programs/prj/APIAgent/src/core/Task.cpp",
   "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/core/Task.cpp.obj"
 },
 {
   "directory": "D:/work/programs/prj/APIAgent/build",
-  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\core\\User.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\core\\User.cpp",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -ID:/work/programs/prj/APIAgent/build/APIAgent_autogen/include -ID:/work/programs/prj/APIAgent/include -ID:/work/programs/prj/APIAgent -isystem D:/work/msys2/mingw64/include/qt6/QtWidgets -isystem D:/work/msys2/mingw64/include/qt6 -isystem D:/work/msys2/mingw64/include/qt6/QtCore -isystem D:/work/msys2/mingw64/share/qt6/mkspecs/win32-g++ -isystem D:/work/msys2/mingw64/include/qt6/QtGui -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\core\\User.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\core\\User.cpp",
   "file": "D:/work/programs/prj/APIAgent/src/core/User.cpp",
   "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/core/User.cpp.obj"
 },
 {
   "directory": "D:/work/programs/prj/APIAgent/build",
-  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\orchestration\\Executor.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\orchestration\\Executor.cpp",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -ID:/work/programs/prj/APIAgent/build/APIAgent_autogen/include -ID:/work/programs/prj/APIAgent/include -ID:/work/programs/prj/APIAgent -isystem D:/work/msys2/mingw64/include/qt6/QtWidgets -isystem D:/work/msys2/mingw64/include/qt6 -isystem D:/work/msys2/mingw64/include/qt6/QtCore -isystem D:/work/msys2/mingw64/share/qt6/mkspecs/win32-g++ -isystem D:/work/msys2/mingw64/include/qt6/QtGui -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\orchestration\\Executor.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\orchestration\\Executor.cpp",
   "file": "D:/work/programs/prj/APIAgent/src/orchestration/Executor.cpp",
   "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/orchestration/Executor.cpp.obj"
 },
 {
   "directory": "D:/work/programs/prj/APIAgent/build",
-  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\orchestration\\Memory.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\orchestration\\Memory.cpp",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -ID:/work/programs/prj/APIAgent/build/APIAgent_autogen/include -ID:/work/programs/prj/APIAgent/include -ID:/work/programs/prj/APIAgent -isystem D:/work/msys2/mingw64/include/qt6/QtWidgets -isystem D:/work/msys2/mingw64/include/qt6 -isystem D:/work/msys2/mingw64/include/qt6/QtCore -isystem D:/work/msys2/mingw64/share/qt6/mkspecs/win32-g++ -isystem D:/work/msys2/mingw64/include/qt6/QtGui -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\orchestration\\Memory.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\orchestration\\Memory.cpp",
   "file": "D:/work/programs/prj/APIAgent/src/orchestration/Memory.cpp",
   "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/orchestration/Memory.cpp.obj"
 },
 {
   "directory": "D:/work/programs/prj/APIAgent/build",
-  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\orchestration\\Planner.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\orchestration\\Planner.cpp",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -ID:/work/programs/prj/APIAgent/build/APIAgent_autogen/include -ID:/work/programs/prj/APIAgent/include -ID:/work/programs/prj/APIAgent -isystem D:/work/msys2/mingw64/include/qt6/QtWidgets -isystem D:/work/msys2/mingw64/include/qt6 -isystem D:/work/msys2/mingw64/include/qt6/QtCore -isystem D:/work/msys2/mingw64/share/qt6/mkspecs/win32-g++ -isystem D:/work/msys2/mingw64/include/qt6/QtGui -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\orchestration\\Planner.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\orchestration\\Planner.cpp",
   "file": "D:/work/programs/prj/APIAgent/src/orchestration/Planner.cpp",
   "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/orchestration/Planner.cpp.obj"
 },
 {
   "directory": "D:/work/programs/prj/APIAgent/build",
-  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\providers\\GeminiProvider.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\providers\\GeminiProvider.cpp",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -ID:/work/programs/prj/APIAgent/build/APIAgent_autogen/include -ID:/work/programs/prj/APIAgent/include -ID:/work/programs/prj/APIAgent -isystem D:/work/msys2/mingw64/include/qt6/QtWidgets -isystem D:/work/msys2/mingw64/include/qt6 -isystem D:/work/msys2/mingw64/include/qt6/QtCore -isystem D:/work/msys2/mingw64/share/qt6/mkspecs/win32-g++ -isystem D:/work/msys2/mingw64/include/qt6/QtGui -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\providers\\GeminiProvider.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\providers\\GeminiProvider.cpp",
   "file": "D:/work/programs/prj/APIAgent/src/providers/GeminiProvider.cpp",
   "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/providers/GeminiProvider.cpp.obj"
 },
 {
   "directory": "D:/work/programs/prj/APIAgent/build",
-  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\providers\\GroqProvider.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\providers\\GroqProvider.cpp",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -ID:/work/programs/prj/APIAgent/build/APIAgent_autogen/include -ID:/work/programs/prj/APIAgent/include -ID:/work/programs/prj/APIAgent -isystem D:/work/msys2/mingw64/include/qt6/QtWidgets -isystem D:/work/msys2/mingw64/include/qt6 -isystem D:/work/msys2/mingw64/include/qt6/QtCore -isystem D:/work/msys2/mingw64/share/qt6/mkspecs/win32-g++ -isystem D:/work/msys2/mingw64/include/qt6/QtGui -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\providers\\GroqProvider.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\providers\\GroqProvider.cpp",
   "file": "D:/work/programs/prj/APIAgent/src/providers/GroqProvider.cpp",
   "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/providers/GroqProvider.cpp.obj"
 },
 {
   "directory": "D:/work/programs/prj/APIAgent/build",
-  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\providers\\HttpClient.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\providers\\HttpClient.cpp",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -ID:/work/programs/prj/APIAgent/build/APIAgent_autogen/include -ID:/work/programs/prj/APIAgent/include -ID:/work/programs/prj/APIAgent -isystem D:/work/msys2/mingw64/include/qt6/QtWidgets -isystem D:/work/msys2/mingw64/include/qt6 -isystem D:/work/msys2/mingw64/include/qt6/QtCore -isystem D:/work/msys2/mingw64/share/qt6/mkspecs/win32-g++ -isystem D:/work/msys2/mingw64/include/qt6/QtGui -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\providers\\HttpClient.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\providers\\HttpClient.cpp",
   "file": "D:/work/programs/prj/APIAgent/src/providers/HttpClient.cpp",
   "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/providers/HttpClient.cpp.obj"
 },
 {
   "directory": "D:/work/programs/prj/APIAgent/build",
-  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\providers\\ILLMProvider.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\providers\\ILLMProvider.cpp",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -ID:/work/programs/prj/APIAgent/build/APIAgent_autogen/include -ID:/work/programs/prj/APIAgent/include -ID:/work/programs/prj/APIAgent -isystem D:/work/msys2/mingw64/include/qt6/QtWidgets -isystem D:/work/msys2/mingw64/include/qt6 -isystem D:/work/msys2/mingw64/include/qt6/QtCore -isystem D:/work/msys2/mingw64/share/qt6/mkspecs/win32-g++ -isystem D:/work/msys2/mingw64/include/qt6/QtGui -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\providers\\ILLMProvider.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\providers\\ILLMProvider.cpp",
   "file": "D:/work/programs/prj/APIAgent/src/providers/ILLMProvider.cpp",
   "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/providers/ILLMProvider.cpp.obj"
 },
 {
   "directory": "D:/work/programs/prj/APIAgent/build",
-  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\providers\\OpenAICompatibleProvider.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\providers\\OpenAICompatibleProvider.cpp",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -ID:/work/programs/prj/APIAgent/build/APIAgent_autogen/include -ID:/work/programs/prj/APIAgent/include -ID:/work/programs/prj/APIAgent -isystem D:/work/msys2/mingw64/include/qt6/QtWidgets -isystem D:/work/msys2/mingw64/include/qt6 -isystem D:/work/msys2/mingw64/include/qt6/QtCore -isystem D:/work/msys2/mingw64/share/qt6/mkspecs/win32-g++ -isystem D:/work/msys2/mingw64/include/qt6/QtGui -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\providers\\OpenAICompatibleProvider.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\providers\\OpenAICompatibleProvider.cpp",
   "file": "D:/work/programs/prj/APIAgent/src/providers/OpenAICompatibleProvider.cpp",
   "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/providers/OpenAICompatibleProvider.cpp.obj"
 },
 {
   "directory": "D:/work/programs/prj/APIAgent/build",
-  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\providers\\OpenRouterProvider.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\providers\\OpenRouterProvider.cpp",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -ID:/work/programs/prj/APIAgent/build/APIAgent_autogen/include -ID:/work/programs/prj/APIAgent/include -ID:/work/programs/prj/APIAgent -isystem D:/work/msys2/mingw64/include/qt6/QtWidgets -isystem D:/work/msys2/mingw64/include/qt6 -isystem D:/work/msys2/mingw64/include/qt6/QtCore -isystem D:/work/msys2/mingw64/share/qt6/mkspecs/win32-g++ -isystem D:/work/msys2/mingw64/include/qt6/QtGui -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\providers\\OpenRouterProvider.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\providers\\OpenRouterProvider.cpp",
   "file": "D:/work/programs/prj/APIAgent/src/providers/OpenRouterProvider.cpp",
   "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/providers/OpenRouterProvider.cpp.obj"
 },
 {
   "directory": "D:/work/programs/prj/APIAgent/build",
-  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -ID:/work/programs/prj/APIAgent/include -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\utils\\Env.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\utils\\Env.cpp",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -ID:/work/programs/prj/APIAgent/build/APIAgent_autogen/include -ID:/work/programs/prj/APIAgent/include -ID:/work/programs/prj/APIAgent -isystem D:/work/msys2/mingw64/include/qt6/QtWidgets -isystem D:/work/msys2/mingw64/include/qt6 -isystem D:/work/msys2/mingw64/include/qt6/QtCore -isystem D:/work/msys2/mingw64/share/qt6/mkspecs/win32-g++ -isystem D:/work/msys2/mingw64/include/qt6/QtGui -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\ui\\Conversation.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\ui\\Conversation.cpp",
+  "file": "D:/work/programs/prj/APIAgent/src/ui/Conversation.cpp",
+  "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/ui/Conversation.cpp.obj"
+},
+{
+  "directory": "D:/work/programs/prj/APIAgent/build",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -ID:/work/programs/prj/APIAgent/build/APIAgent_autogen/include -ID:/work/programs/prj/APIAgent/include -ID:/work/programs/prj/APIAgent -isystem D:/work/msys2/mingw64/include/qt6/QtWidgets -isystem D:/work/msys2/mingw64/include/qt6 -isystem D:/work/msys2/mingw64/include/qt6/QtCore -isystem D:/work/msys2/mingw64/share/qt6/mkspecs/win32-g++ -isystem D:/work/msys2/mingw64/include/qt6/QtGui -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\ui\\History.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\ui\\History.cpp",
+  "file": "D:/work/programs/prj/APIAgent/src/ui/History.cpp",
+  "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/ui/History.cpp.obj"
+},
+{
+  "directory": "D:/work/programs/prj/APIAgent/build",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -ID:/work/programs/prj/APIAgent/build/APIAgent_autogen/include -ID:/work/programs/prj/APIAgent/include -ID:/work/programs/prj/APIAgent -isystem D:/work/msys2/mingw64/include/qt6/QtWidgets -isystem D:/work/msys2/mingw64/include/qt6 -isystem D:/work/msys2/mingw64/include/qt6/QtCore -isystem D:/work/msys2/mingw64/share/qt6/mkspecs/win32-g++ -isystem D:/work/msys2/mingw64/include/qt6/QtGui -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\ui\\InputBar.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\ui\\InputBar.cpp",
+  "file": "D:/work/programs/prj/APIAgent/src/ui/InputBar.cpp",
+  "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/ui/InputBar.cpp.obj"
+},
+{
+  "directory": "D:/work/programs/prj/APIAgent/build",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -ID:/work/programs/prj/APIAgent/build/APIAgent_autogen/include -ID:/work/programs/prj/APIAgent/include -ID:/work/programs/prj/APIAgent -isystem D:/work/msys2/mingw64/include/qt6/QtWidgets -isystem D:/work/msys2/mingw64/include/qt6 -isystem D:/work/msys2/mingw64/include/qt6/QtCore -isystem D:/work/msys2/mingw64/share/qt6/mkspecs/win32-g++ -isystem D:/work/msys2/mingw64/include/qt6/QtGui -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\ui\\MainWindow.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\ui\\MainWindow.cpp",
+  "file": "D:/work/programs/prj/APIAgent/src/ui/MainWindow.cpp",
+  "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/ui/MainWindow.cpp.obj"
+},
+{
+  "directory": "D:/work/programs/prj/APIAgent/build",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -ID:/work/programs/prj/APIAgent/build/APIAgent_autogen/include -ID:/work/programs/prj/APIAgent/include -ID:/work/programs/prj/APIAgent -isystem D:/work/msys2/mingw64/include/qt6/QtWidgets -isystem D:/work/msys2/mingw64/include/qt6 -isystem D:/work/msys2/mingw64/include/qt6/QtCore -isystem D:/work/msys2/mingw64/share/qt6/mkspecs/win32-g++ -isystem D:/work/msys2/mingw64/include/qt6/QtGui -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\ui\\theme\\Color.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\ui\\theme\\Color.cpp",
+  "file": "D:/work/programs/prj/APIAgent/src/ui/theme/Color.cpp",
+  "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/ui/theme/Color.cpp.obj"
+},
+{
+  "directory": "D:/work/programs/prj/APIAgent/build",
+  "command": "D:\\work\\msys2\\mingw64\\bin\\c++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -ID:/work/programs/prj/APIAgent/build/APIAgent_autogen/include -ID:/work/programs/prj/APIAgent/include -ID:/work/programs/prj/APIAgent -isystem D:/work/msys2/mingw64/include/qt6/QtWidgets -isystem D:/work/msys2/mingw64/include/qt6 -isystem D:/work/msys2/mingw64/include/qt6/QtCore -isystem D:/work/msys2/mingw64/share/qt6/mkspecs/win32-g++ -isystem D:/work/msys2/mingw64/include/qt6/QtGui -std=gnu++20 -o CMakeFiles\\APIAgent.dir\\src\\utils\\Env.cpp.obj -c D:\\work\\programs\\prj\\APIAgent\\src\\utils\\Env.cpp",
   "file": "D:/work/programs/prj/APIAgent/src/utils/Env.cpp",
   "output": "D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir/src/utils/Env.cpp.obj"
 }

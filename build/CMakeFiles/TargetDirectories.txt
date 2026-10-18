@@ -1,3 +1,5 @@
 D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent.dir
 D:/work/programs/prj/APIAgent/build/CMakeFiles/edit_cache.dir
 D:/work/programs/prj/APIAgent/build/CMakeFiles/rebuild_cache.dir
+D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent_autogen_timestamp_deps.dir
+D:/work/programs/prj/APIAgent/build/CMakeFiles/APIAgent_autogen.dir

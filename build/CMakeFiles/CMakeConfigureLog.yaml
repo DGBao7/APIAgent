@@ -4235,3 +4235,1823 @@ events:
         - "D:/work/msys2/mingw64"
         - "C:/Program Files (x86)/APIAgent"
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/work/msys2/mingw64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:81 (try_compile)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CheckCXXSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/FindThreads.cmake:162 (check_cxx_source_compiles)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/FindThreads.cmake:226 (_threads_check_libc)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/Qt6Dependencies.cmake:38 (_qt_internal_find_third_party_dependencies)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/Qt6Config.cmake:196 (include)"
+      - "CMakeLists.txt:13 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "D:/work/programs/prj/APIAgent/build/CMakeFiles/CMakeScratch/TryCompile-aim0ul"
+      binary: "D:/work/programs/prj/APIAgent/build/CMakeFiles/CMakeScratch/TryCompile-aim0ul"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/work/msys2/mingw64/lib/cmake/Qt6;D:/work/msys2/mingw64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;D:/work/msys2/mingw64/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/work/programs/prj/APIAgent/build/CMakeFiles/CMakeScratch/TryCompile-aim0ul'
+        
+        Run Build Command(s): D:/work/msys2/mingw64/bin/ninja.exe -v cmTC_25e84
+        [1/2] D:\\work\\msys2\\mingw64\\bin\\c++.exe -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++20 -o CMakeFiles/cmTC_25e84.dir/src.cxx.obj -c D:/work/programs/prj/APIAgent/build/CMakeFiles/CMakeScratch/TryCompile-aim0ul/src.cxx
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\work\\msys2\\mingw64\\bin\\c++.exe   CMakeFiles/cmTC_25e84.dir/src.cxx.obj -o cmTC_25e84.exe -Wl,--out-implib,libcmTC_25e84.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:100 (find_package)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake:14 (_qt_internal_find_tool_dependencies)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake:36 (include)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:100 (find_package)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:43 (_qt_internal_find_tool_dependencies)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:40 (include)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/Qt6Config.cmake:257 (find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    name: "Qt6CoreTools"
+    configs:
+      -
+        filename: "Qt6CoreTools.cps"
+        kind: "cps"
+      -
+        filename: "qt6coretools.cps"
+        kind: "cps"
+      -
+        filename: "Qt6CoreToolsConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "qt6coretools-config.cmake"
+        kind: "cmake"
+    version_request:
+      version: "6.11.2"
+      version_complete: "6.11.2"
+      exact: false
+    settings:
+      required: "optional"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "Qt6CoreTools"
+      search_paths:
+        - "D:/work/msys2/mingw64/lib/cmake/Qt6WidgetsTools/.."
+        - "D:/work/msys2/mingw64/lib/cmake"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/Qt6CoreToolsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/qt6coretools-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/lib/cps/Qt6CoreTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/lib/cps/qt6coretools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/share/cps/Qt6CoreTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/share/cps/qt6coretools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/Qt6CoreToolsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/qt6coretools-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cps/Qt6CoreTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cps/qt6coretools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/share/cps/Qt6CoreTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/share/cps/qt6coretools.cps"
+        mode: "cps"
+        reason: "no_exist"
+    found:
+      path: "D:/work/msys2/mingw64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake"
+      mode: "config"
+      version: "6.11.2"
+    search_context:
+      ENV{PATH}:
+        - "D:\\work\\msys2\\mingw64\\bin"
+        - "D:\\work\\msys2\\usr\\local\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "D:\\work\\msys2\\usr\\bin\\site_perl"
+        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
+        - "D:\\work\\msys2\\usr\\bin\\core_perl"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/APIAgent"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "D:/work/msys2/mingw64"
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/work/msys2/mingw64"
+        - "C:/Program Files (x86)/APIAgent"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:100 (find_package)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake:14 (_qt_internal_find_tool_dependencies)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake:36 (include)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:100 (find_package)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:43 (_qt_internal_find_tool_dependencies)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:40 (include)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/Qt6Config.cmake:257 (find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    name: "Qt6GuiTools"
+    configs:
+      -
+        filename: "Qt6GuiTools.cps"
+        kind: "cps"
+      -
+        filename: "qt6guitools.cps"
+        kind: "cps"
+      -
+        filename: "Qt6GuiToolsConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "qt6guitools-config.cmake"
+        kind: "cmake"
+    version_request:
+      version: "6.11.2"
+      version_complete: "6.11.2"
+      exact: false
+    settings:
+      required: "optional"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "Qt6GuiTools"
+      search_paths:
+        - "D:/work/msys2/mingw64/lib/cmake/Qt6WidgetsTools/.."
+        - "D:/work/msys2/mingw64/lib/cmake"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/Qt6GuiToolsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/qt6guitools-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/lib/cps/Qt6GuiTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/lib/cps/qt6guitools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/share/cps/Qt6GuiTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/share/cps/qt6guitools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/Qt6GuiToolsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/qt6guitools-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cps/Qt6GuiTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cps/qt6guitools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/share/cps/Qt6GuiTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/share/cps/qt6guitools.cps"
+        mode: "cps"
+        reason: "no_exist"
+    found:
+      path: "D:/work/msys2/mingw64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake"
+      mode: "config"
+      version: "6.11.2"
+    search_context:
+      ENV{PATH}:
+        - "D:\\work\\msys2\\mingw64\\bin"
+        - "D:\\work\\msys2\\usr\\local\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "D:\\work\\msys2\\usr\\bin\\site_perl"
+        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
+        - "D:\\work\\msys2\\usr\\bin\\core_perl"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/APIAgent"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "D:/work/msys2/mingw64"
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/work/msys2/mingw64"
+        - "C:/Program Files (x86)/APIAgent"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:100 (find_package)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:43 (_qt_internal_find_tool_dependencies)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:40 (include)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/Qt6Config.cmake:257 (find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    name: "Qt6WidgetsTools"
+    configs:
+      -
+        filename: "Qt6WidgetsTools.cps"
+        kind: "cps"
+      -
+        filename: "qt6widgetstools.cps"
+        kind: "cps"
+      -
+        filename: "Qt6WidgetsToolsConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "qt6widgetstools-config.cmake"
+        kind: "cmake"
+    version_request:
+      version: "6.11.2"
+      version_complete: "6.11.2"
+      exact: false
+    settings:
+      required: "optional"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "Qt6WidgetsTools"
+      search_paths:
+        - "D:/work/msys2/mingw64/lib/cmake/Qt6Widgets/.."
+        - "D:/work/msys2/mingw64/lib/cmake"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/Qt6WidgetsToolsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/qt6widgetstools-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/lib/cps/Qt6WidgetsTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/lib/cps/qt6widgetstools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/share/cps/Qt6WidgetsTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/share/cps/qt6widgetstools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/Qt6WidgetsToolsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/qt6widgetstools-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cps/Qt6WidgetsTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cps/qt6widgetstools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/share/cps/Qt6WidgetsTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/share/cps/qt6widgetstools.cps"
+        mode: "cps"
+        reason: "no_exist"
+    found:
+      path: "D:/work/msys2/mingw64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake"
+      mode: "config"
+      version: "6.11.2"
+    search_context:
+      ENV{PATH}:
+        - "D:\\work\\msys2\\mingw64\\bin"
+        - "D:\\work\\msys2\\usr\\local\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "D:\\work\\msys2\\usr\\bin\\site_perl"
+        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
+        - "D:\\work\\msys2\\usr\\bin\\core_perl"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/APIAgent"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "D:/work/msys2/mingw64"
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/work/msys2/mingw64"
+        - "C:/Program Files (x86)/APIAgent"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/work/msys2/mingw64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:81 (try_compile)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CheckCXXSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/FindWrapAtomic.cmake:36 (check_cxx_source_compiles)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake:37 (_qt_internal_find_third_party_dependencies)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:42 (include)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:142 (find_dependency)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:51 (_qt_internal_find_qt_dependencies)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:40 (include)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/Qt6Config.cmake:257 (find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    checks:
+      - "Performing Test HAVE_STDATOMIC"
+    directories:
+      source: "D:/work/programs/prj/APIAgent/build/CMakeFiles/CMakeScratch/TryCompile-7ksc2z"
+      binary: "D:/work/programs/prj/APIAgent/build/CMakeFiles/CMakeScratch/TryCompile-7ksc2z"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/work/msys2/mingw64/lib/cmake/Qt6;D:/work/msys2/mingw64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;D:/work/msys2/mingw64/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "HAVE_STDATOMIC"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/work/programs/prj/APIAgent/build/CMakeFiles/CMakeScratch/TryCompile-7ksc2z'
+        
+        Run Build Command(s): D:/work/msys2/mingw64/bin/ninja.exe -v cmTC_747da
+        [1/2] D:\\work\\msys2\\mingw64\\bin\\c++.exe -DHAVE_STDATOMIC  -std=gnu++20 -o CMakeFiles/cmTC_747da.dir/src.cxx.obj -c D:/work/programs/prj/APIAgent/build/CMakeFiles/CMakeScratch/TryCompile-7ksc2z/src.cxx
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\work\\msys2\\mingw64\\bin\\c++.exe   CMakeFiles/cmTC_747da.dir/src.cxx.obj -o cmTC_747da.exe -Wl,--out-implib,libcmTC_747da.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:142 (find_dependency)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake:52 (_qt_internal_find_qt_dependencies)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:42 (include)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:142 (find_dependency)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:51 (_qt_internal_find_qt_dependencies)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:40 (include)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/Qt6Config.cmake:257 (find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    name: "Qt6EntryPointPrivate"
+    configs:
+      -
+        filename: "Qt6EntryPointPrivate.cps"
+        kind: "cps"
+      -
+        filename: "qt6entrypointprivate.cps"
+        kind: "cps"
+      -
+        filename: "Qt6EntryPointPrivateConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "qt6entrypointprivate-config.cmake"
+        kind: "cmake"
+    version_request:
+      version: "6.11.2"
+      version_complete: "6.11.2"
+      exact: false
+    settings:
+      required: "optional"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "Qt6EntryPointPrivate"
+      search_paths:
+        - "D:/work/msys2/mingw64/lib/cmake/Qt6Core/.."
+        - "D:/work/msys2/mingw64/lib/cmake"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: false
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/Qt6EntryPointPrivateConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/qt6entrypointprivate-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/lib/cps/Qt6EntryPointPrivate.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/lib/cps/qt6entrypointprivate.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/share/cps/Qt6EntryPointPrivate.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/share/cps/qt6entrypointprivate.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6EntryPointPrivateConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/qt6entrypointprivate-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "D:/work/msys2/mingw64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfig.cmake"
+      mode: "config"
+      version: "6.11.2"
+    search_context:
+      ENV{PATH}:
+        - "D:\\work\\msys2\\mingw64\\bin"
+        - "D:\\work\\msys2\\usr\\local\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "D:\\work\\msys2\\usr\\bin\\site_perl"
+        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
+        - "D:\\work\\msys2\\usr\\bin\\core_perl"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/APIAgent"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "D:/work/msys2/mingw64"
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/work/msys2/mingw64"
+        - "C:/Program Files (x86)/APIAgent"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:3177 (find_program)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Core/Qt6CoreConfigExtras.cmake:30 (_qt_internal_setup_deploy_support)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:194 (include)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:142 (find_dependency)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:51 (_qt_internal_find_qt_dependencies)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:40 (include)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/Qt6Config.cmake:257 (find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    mode: "program"
+    variable: "WINDEPLOYQT_EXECUTABLE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "windeployqt"
+    candidate_directories:
+      - "D:/work/msys2/mingw64/bin/"
+      - "D:/work/msys2/usr/local/bin/"
+      - "D:/work/msys2/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "D:/work/msys2/usr/bin/site_perl/"
+      - "D:/work/msys2/usr/bin/vendor_perl/"
+      - "D:/work/msys2/usr/bin/core_perl/"
+      - "D:/work/msys2/mingw64/bin/"
+      - "D:/work/msys2/mingw64/sbin/"
+      - "D:/work/msys2/mingw64/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files (x86)/APIAgent/bin/"
+      - "C:/Program Files (x86)/APIAgent/sbin/"
+      - "C:/Program Files (x86)/APIAgent/"
+    searched_directories:
+      - "D:/work/msys2/mingw64/bin/windeployqt.com"
+    found: "D:/work/msys2/mingw64/bin/windeployqt.exe"
+    search_context:
+      ENV{PATH}:
+        - "D:\\work\\msys2\\mingw64\\bin"
+        - "D:\\work\\msys2\\usr\\local\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "D:\\work\\msys2\\usr\\bin\\site_perl"
+        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
+        - "D:\\work\\msys2\\usr\\bin\\core_perl"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/APIAgent"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "D:/work/msys2/mingw64"
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/work/msys2/mingw64"
+        - "C:/Program Files (x86)/APIAgent"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:142 (find_dependency)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:51 (_qt_internal_find_qt_dependencies)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:40 (include)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/Qt6Config.cmake:257 (find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    name: "Qt6Core"
+    configs:
+      -
+        filename: "Qt6Core.cps"
+        kind: "cps"
+      -
+        filename: "qt6core.cps"
+        kind: "cps"
+      -
+        filename: "Qt6CoreConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "qt6core-config.cmake"
+        kind: "cmake"
+    version_request:
+      version: "6.11.2"
+      version_complete: "6.11.2"
+      exact: false
+    settings:
+      required: "optional"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "Qt6Core"
+      search_paths:
+        - "D:/work/msys2/mingw64/lib/cmake/Qt6Widgets/.."
+        - "D:/work/msys2/mingw64/lib/cmake"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: false
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/Qt6CoreConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/qt6core-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/lib/cps/Qt6Core.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/lib/cps/qt6core.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/share/cps/Qt6Core.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/share/cps/qt6core.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6CoreConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/qt6core-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6CoreTools/Qt6CoreConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6CoreTools/qt6core-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6CorePrivate/Qt6CoreConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6CorePrivate/qt6core-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "D:/work/msys2/mingw64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake"
+      mode: "config"
+      version: "6.11.2"
+    search_context:
+      ENV{PATH}:
+        - "D:\\work\\msys2\\mingw64\\bin"
+        - "D:\\work\\msys2\\usr\\local\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "D:\\work\\msys2\\usr\\bin\\site_perl"
+        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
+        - "D:\\work\\msys2\\usr\\bin\\core_perl"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/APIAgent"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "D:/work/msys2/mingw64"
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/work/msys2/mingw64"
+        - "C:/Program Files (x86)/APIAgent"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "D:/work/msys2/mingw64/share/cmake/Modules/FindVulkan.cmake:453 (find_path)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake:13 (find_package)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:37 (_qt_internal_find_third_party_dependencies)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:142 (find_dependency)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:51 (_qt_internal_find_qt_dependencies)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:40 (include)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/Qt6Config.cmake:257 (find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    mode: "path"
+    variable: "Vulkan_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "vulkan/vulkan.h"
+    candidate_directories:
+      - "D:/work/msys2/mingw64/bin/"
+      - "D:/work/msys2/usr/local/bin/"
+      - "D:/work/msys2/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "D:/work/msys2/usr/bin/site_perl/"
+      - "D:/work/msys2/usr/bin/vendor_perl/"
+      - "D:/work/msys2/usr/bin/core_perl/"
+      - "D:/work/msys2/mingw64/include/"
+      - "D:/work/msys2/mingw64/"
+      - "C:/Program Files/include/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/include/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files (x86)/APIAgent/include/"
+      - "C:/Program Files (x86)/APIAgent/"
+    searched_directories:
+      - "D:/work/msys2/mingw64/bin/vulkan/vulkan.h"
+      - "D:/work/msys2/usr/local/bin/vulkan/vulkan.h"
+      - "D:/work/msys2/usr/bin/vulkan/vulkan.h"
+      - "C:/Windows/System32/vulkan/vulkan.h"
+      - "C:/Windows/vulkan/vulkan.h"
+      - "C:/Windows/System32/wbem/vulkan/vulkan.h"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/vulkan/vulkan.h"
+      - "D:/work/msys2/usr/bin/site_perl/vulkan/vulkan.h"
+      - "D:/work/msys2/usr/bin/vendor_perl/vulkan/vulkan.h"
+      - "D:/work/msys2/usr/bin/core_perl/vulkan/vulkan.h"
+    found: "D:/work/msys2/mingw64/include/"
+    search_context:
+      ENV{PATH}:
+        - "D:\\work\\msys2\\mingw64\\bin"
+        - "D:\\work\\msys2\\usr\\local\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "D:\\work\\msys2\\usr\\bin\\site_perl"
+        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
+        - "D:\\work\\msys2\\usr\\bin\\core_perl"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/APIAgent"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "D:/work/msys2/mingw64"
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/work/msys2/mingw64"
+        - "C:/Program Files (x86)/APIAgent"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "D:/work/msys2/mingw64/share/cmake/Modules/FindVulkan.cmake:460 (find_library)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake:13 (find_package)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:37 (_qt_internal_find_third_party_dependencies)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:142 (find_dependency)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:51 (_qt_internal_find_qt_dependencies)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:40 (include)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/Qt6Config.cmake:257 (find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    mode: "library"
+    variable: "Vulkan_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "vulkan-1"
+    candidate_directories:
+      - "D:/work/msys2/mingw64/bin/"
+      - "D:/work/msys2/usr/local/bin/"
+      - "D:/work/msys2/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "D:/work/msys2/usr/bin/site_perl/"
+      - "D:/work/msys2/usr/bin/vendor_perl/"
+      - "D:/work/msys2/usr/bin/core_perl/"
+      - "D:/work/msys2/mingw64/lib/"
+      - "D:/work/msys2/mingw64/"
+      - "C:/Program Files/lib/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/lib/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files (x86)/APIAgent/lib/"
+      - "C:/Program Files (x86)/APIAgent/"
+      - "C:/Program Files (x86)/APIAgent/bin/"
+      - "/bin/"
+    searched_directories:
+      - "D:/work/msys2/mingw64/bin/"
+      - "D:/work/msys2/usr/local/bin/"
+      - "D:/work/msys2/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "D:/work/msys2/usr/bin/site_perl/"
+      - "D:/work/msys2/usr/bin/vendor_perl/"
+      - "D:/work/msys2/usr/bin/core_perl/"
+    found: "D:/work/msys2/mingw64/lib/libvulkan-1.dll.a"
+    search_context:
+      ENV{PATH}:
+        - "D:\\work\\msys2\\mingw64\\bin"
+        - "D:\\work\\msys2\\usr\\local\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "D:\\work\\msys2\\usr\\bin\\site_perl"
+        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
+        - "D:\\work\\msys2\\usr\\bin\\core_perl"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/APIAgent"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "D:/work/msys2/mingw64"
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/work/msys2/mingw64"
+        - "C:/Program Files (x86)/APIAgent"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files (x86)/APIAgent/bin"
+        - "D:/work/msys2/mingw64/bin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "D:/work/msys2/mingw64/share/cmake/Modules/FindVulkan.cmake:493 (find_program)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake:13 (find_package)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:37 (_qt_internal_find_third_party_dependencies)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:142 (find_dependency)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:51 (_qt_internal_find_qt_dependencies)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:40 (include)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/Qt6Config.cmake:257 (find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    mode: "program"
+    variable: "Vulkan_GLSLC_EXECUTABLE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "glslc"
+    candidate_directories:
+      - "D:/work/msys2/mingw64/bin/"
+      - "D:/work/msys2/usr/local/bin/"
+      - "D:/work/msys2/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "D:/work/msys2/usr/bin/site_perl/"
+      - "D:/work/msys2/usr/bin/vendor_perl/"
+      - "D:/work/msys2/usr/bin/core_perl/"
+      - "D:/work/msys2/mingw64/bin/"
+      - "D:/work/msys2/mingw64/sbin/"
+      - "D:/work/msys2/mingw64/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files (x86)/APIAgent/bin/"
+      - "C:/Program Files (x86)/APIAgent/sbin/"
+      - "C:/Program Files (x86)/APIAgent/"
+    searched_directories:
+      - "D:/work/msys2/mingw64/bin/glslc.com"
+      - "D:/work/msys2/mingw64/bin/glslc.exe"
+      - "D:/work/msys2/mingw64/bin/glslc"
+      - "D:/work/msys2/usr/local/bin/glslc.com"
+      - "D:/work/msys2/usr/local/bin/glslc.exe"
+      - "D:/work/msys2/usr/local/bin/glslc"
+      - "D:/work/msys2/usr/bin/glslc.com"
+      - "D:/work/msys2/usr/bin/glslc.exe"
+      - "D:/work/msys2/usr/bin/glslc"
+      - "C:/Windows/System32/glslc.com"
+      - "C:/Windows/System32/glslc.exe"
+      - "C:/Windows/System32/glslc"
+      - "C:/Windows/glslc.com"
+      - "C:/Windows/glslc.exe"
+      - "C:/Windows/glslc"
+      - "C:/Windows/System32/wbem/glslc.com"
+      - "C:/Windows/System32/wbem/glslc.exe"
+      - "C:/Windows/System32/wbem/glslc"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/glslc.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/glslc.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/glslc"
+      - "D:/work/msys2/usr/bin/site_perl/glslc.com"
+      - "D:/work/msys2/usr/bin/site_perl/glslc.exe"
+      - "D:/work/msys2/usr/bin/site_perl/glslc"
+      - "D:/work/msys2/usr/bin/vendor_perl/glslc.com"
+      - "D:/work/msys2/usr/bin/vendor_perl/glslc.exe"
+      - "D:/work/msys2/usr/bin/vendor_perl/glslc"
+      - "D:/work/msys2/usr/bin/core_perl/glslc.com"
+      - "D:/work/msys2/usr/bin/core_perl/glslc.exe"
+      - "D:/work/msys2/usr/bin/core_perl/glslc"
+      - "D:/work/msys2/mingw64/bin/glslc.com"
+      - "D:/work/msys2/mingw64/bin/glslc.exe"
+      - "D:/work/msys2/mingw64/bin/glslc"
+      - "D:/work/msys2/mingw64/sbin/glslc.com"
+      - "D:/work/msys2/mingw64/sbin/glslc.exe"
+      - "D:/work/msys2/mingw64/sbin/glslc"
+      - "D:/work/msys2/mingw64/glslc.com"
+      - "D:/work/msys2/mingw64/glslc.exe"
+      - "D:/work/msys2/mingw64/glslc"
+      - "C:/Program Files/bin/glslc.com"
+      - "C:/Program Files/bin/glslc.exe"
+      - "C:/Program Files/bin/glslc"
+      - "C:/Program Files/sbin/glslc.com"
+      - "C:/Program Files/sbin/glslc.exe"
+      - "C:/Program Files/sbin/glslc"
+      - "C:/Program Files/glslc.com"
+      - "C:/Program Files/glslc.exe"
+      - "C:/Program Files/glslc"
+      - "C:/Program Files (x86)/bin/glslc.com"
+      - "C:/Program Files (x86)/bin/glslc.exe"
+      - "C:/Program Files (x86)/bin/glslc"
+      - "C:/Program Files (x86)/sbin/glslc.com"
+      - "C:/Program Files (x86)/sbin/glslc.exe"
+      - "C:/Program Files (x86)/sbin/glslc"
+      - "C:/Program Files (x86)/glslc.com"
+      - "C:/Program Files (x86)/glslc.exe"
+      - "C:/Program Files (x86)/glslc"
+      - "C:/Program Files (x86)/APIAgent/bin/glslc.com"
+      - "C:/Program Files (x86)/APIAgent/bin/glslc.exe"
+      - "C:/Program Files (x86)/APIAgent/bin/glslc"
+      - "C:/Program Files (x86)/APIAgent/sbin/glslc.com"
+      - "C:/Program Files (x86)/APIAgent/sbin/glslc.exe"
+      - "C:/Program Files (x86)/APIAgent/sbin/glslc"
+      - "C:/Program Files (x86)/APIAgent/glslc.com"
+      - "C:/Program Files (x86)/APIAgent/glslc.exe"
+      - "C:/Program Files (x86)/APIAgent/glslc"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "D:\\work\\msys2\\mingw64\\bin"
+        - "D:\\work\\msys2\\usr\\local\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "D:\\work\\msys2\\usr\\bin\\site_perl"
+        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
+        - "D:\\work\\msys2\\usr\\bin\\core_perl"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/APIAgent"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "D:/work/msys2/mingw64"
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/work/msys2/mingw64"
+        - "C:/Program Files (x86)/APIAgent"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "D:/work/msys2/mingw64/share/cmake/Modules/FindVulkan.cmake:501 (find_program)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake:13 (find_package)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:34 (find_package)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:37 (_qt_internal_find_third_party_dependencies)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:40 (include)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:142 (find_dependency)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:51 (_qt_internal_find_qt_dependencies)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:40 (include)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/Qt6Config.cmake:257 (find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    mode: "program"
+    variable: "Vulkan_GLSLANG_VALIDATOR_EXECUTABLE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "glslangValidator"
+    candidate_directories:
+      - "D:/work/msys2/mingw64/bin/"
+      - "D:/work/msys2/usr/local/bin/"
+      - "D:/work/msys2/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "D:/work/msys2/usr/bin/site_perl/"
+      - "D:/work/msys2/usr/bin/vendor_perl/"
+      - "D:/work/msys2/usr/bin/core_perl/"
+      - "D:/work/msys2/mingw64/bin/"
+      - "D:/work/msys2/mingw64/sbin/"
+      - "D:/work/msys2/mingw64/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files (x86)/APIAgent/bin/"
+      - "C:/Program Files (x86)/APIAgent/sbin/"
+      - "C:/Program Files (x86)/APIAgent/"
+    searched_directories:
+      - "D:/work/msys2/mingw64/bin/glslangValidator.com"
+      - "D:/work/msys2/mingw64/bin/glslangValidator.exe"
+      - "D:/work/msys2/mingw64/bin/glslangValidator"
+      - "D:/work/msys2/usr/local/bin/glslangValidator.com"
+      - "D:/work/msys2/usr/local/bin/glslangValidator.exe"
+      - "D:/work/msys2/usr/local/bin/glslangValidator"
+      - "D:/work/msys2/usr/bin/glslangValidator.com"
+      - "D:/work/msys2/usr/bin/glslangValidator.exe"
+      - "D:/work/msys2/usr/bin/glslangValidator"
+      - "C:/Windows/System32/glslangValidator.com"
+      - "C:/Windows/System32/glslangValidator.exe"
+      - "C:/Windows/System32/glslangValidator"
+      - "C:/Windows/glslangValidator.com"
+      - "C:/Windows/glslangValidator.exe"
+      - "C:/Windows/glslangValidator"
+      - "C:/Windows/System32/wbem/glslangValidator.com"
+      - "C:/Windows/System32/wbem/glslangValidator.exe"
+      - "C:/Windows/System32/wbem/glslangValidator"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/glslangValidator.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/glslangValidator.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/glslangValidator"
+      - "D:/work/msys2/usr/bin/site_perl/glslangValidator.com"
+      - "D:/work/msys2/usr/bin/site_perl/glslangValidator.exe"
+      - "D:/work/msys2/usr/bin/site_perl/glslangValidator"
+      - "D:/work/msys2/usr/bin/vendor_perl/glslangValidator.com"
+      - "D:/work/msys2/usr/bin/vendor_perl/glslangValidator.exe"
+      - "D:/work/msys2/usr/bin/vendor_perl/glslangValidator"
+      - "D:/work/msys2/usr/bin/core_perl/glslangValidator.com"
+      - "D:/work/msys2/usr/bin/core_perl/glslangValidator.exe"
+      - "D:/work/msys2/usr/bin/core_perl/glslangValidator"
+      - "D:/work/msys2/mingw64/bin/glslangValidator.com"
+      - "D:/work/msys2/mingw64/bin/glslangValidator.exe"
+      - "D:/work/msys2/mingw64/bin/glslangValidator"
+      - "D:/work/msys2/mingw64/sbin/glslangValidator.com"
+      - "D:/work/msys2/mingw64/sbin/glslangValidator.exe"
+      - "D:/work/msys2/mingw64/sbin/glslangValidator"
+      - "D:/work/msys2/mingw64/glslangValidator.com"
+      - "D:/work/msys2/mingw64/glslangValidator.exe"
+      - "D:/work/msys2/mingw64/glslangValidator"
+      - "C:/Program Files/bin/glslangValidator.com"
+      - "C:/Program Files/bin/glslangValidator.exe"
+      - "C:/Program Files/bin/glslangValidator"
+      - "C:/Program Files/sbin/glslangValidator.com"
+      - "C:/Program Files/sbin/glslangValidator.exe"
+      - "C:/Program Files/sbin/glslangValidator"
+      - "C:/Program Files/glslangValidator.com"
+      - "C:/Program Files/glslangValidator.exe"
+      - "C:/Program Files/glslangValidator"
+      - "C:/Program Files (x86)/bin/glslangValidator.com"
+      - "C:/Program Files (x86)/bin/glslangValidator.exe"
+      - "C:/Program Files (x86)/bin/glslangValidator"
+      - "C:/Program Files (x86)/sbin/glslangValidator.com"
+      - "C:/Program Files (x86)/sbin/glslangValidator.exe"
+      - "C:/Program Files (x86)/sbin/glslangValidator"
+      - "C:/Program Files (x86)/glslangValidator.com"
+      - "C:/Program Files (x86)/glslangValidator.exe"
+      - "C:/Program Files (x86)/glslangValidator"
+      - "C:/Program Files (x86)/APIAgent/bin/glslangValidator.com"
+      - "C:/Program Files (x86)/APIAgent/bin/glslangValidator.exe"
+      - "C:/Program Files (x86)/APIAgent/bin/glslangValidator"
+      - "C:/Program Files (x86)/APIAgent/sbin/glslangValidator.com"
+      - "C:/Program Files (x86)/APIAgent/sbin/glslangValidator.exe"
+      - "C:/Program Files (x86)/APIAgent/sbin/glslangValidator"
+      - "C:/Program Files (x86)/APIAgent/glslangValidator.com"
+      - "C:/Program Files (x86)/APIAgent/glslangValidator.exe"
+      - "C:/Program Files (x86)/APIAgent/glslangValidator"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "D:\\work\\msys2\\mingw64\\bin"
+        - "D:\\work\\msys2\\usr\\local\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "D:\\work\\msys2\\usr\\bin\\site_perl"
+        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
+        - "D:\\work\\msys2\\usr\\bin\\core_perl"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/APIAgent"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "D:/work/msys2/mingw64"
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/work/msys2/mingw64"
+        - "C:/Program Files (x86)/APIAgent"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:142 (find_dependency)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:51 (_qt_internal_find_qt_dependencies)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:40 (include)"
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/Qt6Config.cmake:257 (find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    name: "Qt6Gui"
+    configs:
+      -
+        filename: "Qt6Gui.cps"
+        kind: "cps"
+      -
+        filename: "qt6gui.cps"
+        kind: "cps"
+      -
+        filename: "Qt6GuiConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "qt6gui-config.cmake"
+        kind: "cmake"
+    version_request:
+      version: "6.11.2"
+      version_complete: "6.11.2"
+      exact: false
+    settings:
+      required: "optional"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "Qt6Gui"
+      search_paths:
+        - "D:/work/msys2/mingw64/lib/cmake/Qt6Widgets/.."
+        - "D:/work/msys2/mingw64/lib/cmake"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: false
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/Qt6GuiConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/qt6gui-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/lib/cps/Qt6Gui.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/lib/cps/qt6gui.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/share/cps/Qt6Gui.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/share/cps/qt6gui.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6GuiConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/qt6gui-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6GuiTools/Qt6GuiConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6GuiTools/qt6gui-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6GuiPrivate/Qt6GuiConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6GuiPrivate/qt6gui-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "D:/work/msys2/mingw64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake"
+      mode: "config"
+      version: "6.11.2"
+    search_context:
+      ENV{PATH}:
+        - "D:\\work\\msys2\\mingw64\\bin"
+        - "D:\\work\\msys2\\usr\\local\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "D:\\work\\msys2\\usr\\bin\\site_perl"
+        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
+        - "D:\\work\\msys2\\usr\\bin\\core_perl"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/APIAgent"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "D:/work/msys2/mingw64"
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/work/msys2/mingw64"
+        - "C:/Program Files (x86)/APIAgent"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "D:/work/msys2/mingw64/lib/cmake/Qt6/Qt6Config.cmake:257 (find_package)"
+      - "CMakeLists.txt:13 (find_package)"
+    name: "Qt6Widgets"
+    configs:
+      -
+        filename: "Qt6Widgets.cps"
+        kind: "cps"
+      -
+        filename: "qt6widgets.cps"
+        kind: "cps"
+      -
+        filename: "Qt6WidgetsConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "qt6widgets-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "Qt6Widgets"
+      search_paths:
+        - "D:/work/msys2/mingw64/lib/cmake"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: false
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/Qt6WidgetsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/qt6widgets-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/lib/cps/Qt6Widgets.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/lib/cps/qt6widgets.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/share/cps/Qt6Widgets.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/share/cps/qt6widgets.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6WidgetsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/qt6widgets-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6WidgetsTools/qt6widgets-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6WidgetsPrivate/Qt6WidgetsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6WidgetsPrivate/qt6widgets-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "D:/work/msys2/mingw64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake"
+      mode: "config"
+      version: "6.11.2"
+    search_context:
+      ENV{PATH}:
+        - "D:\\work\\msys2\\mingw64\\bin"
+        - "D:\\work\\msys2\\usr\\local\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "D:\\work\\msys2\\usr\\bin\\site_perl"
+        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
+        - "D:\\work\\msys2\\usr\\bin\\core_perl"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/APIAgent"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "D:/work/msys2/mingw64"
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/work/msys2/mingw64"
+        - "C:/Program Files (x86)/APIAgent"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:13 (find_package)"
+    name: "Qt6"
+    components:
+      -
+        name: "Widgets"
+        required: true
+        found: false
+    configs:
+      -
+        filename: "Qt6.cps"
+        kind: "cps"
+      -
+        filename: "qt6.cps"
+        kind: "cps"
+      -
+        filename: "Qt6Config.cmake"
+        kind: "cmake"
+      -
+        filename: "qt6-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "Qt6"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/lib/cps/Qt6.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/lib/cps/qt6.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/share/cps/Qt6.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/programs/prj/APIAgent/build/CMakeFiles/pkgRedirects/share/cps/qt6.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cps/Qt6.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cps/qt6.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/share/cps/Qt6.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/share/cps/qt6.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6XmlPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6XmlPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6Xml/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6Xml/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6WidgetsTools/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6WidgetsTools/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6WidgetsPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6WidgetsPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6Widgets/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6Widgets/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6TestPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6TestPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6TestInternalsPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6TestInternalsPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6Test/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6Test/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6SqlPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6SqlPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6Sql/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6Sql/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6PrintSupportPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6PrintSupportPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6PrintSupport/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6PrintSupport/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6OpenGLWidgets/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6OpenGLWidgets/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6OpenGLPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6OpenGLPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6OpenGL/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6OpenGL/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6NetworkPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6NetworkPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6Network/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6Network/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6HostInfo/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6HostInfo/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6GuiTools/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6GuiTools/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6GuiPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6GuiPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6Gui/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6Gui/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6FbSupportPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6FbSupportPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6EntryPointPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6EntryPointPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6DeviceDiscoverySupportPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6DeviceDiscoverySupportPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6DBusTools/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6DBusTools/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6DBusPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6DBusPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6DBus/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6DBus/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6CoreTools/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6CoreTools/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6CorePrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6CorePrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6Core/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6Core/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6Concurrent/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6Concurrent/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6BuildInternals/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "D:/work/msys2/mingw64/lib/cmake/Qt6BuildInternals/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "D:/work/msys2/mingw64/lib/cmake/Qt6/Qt6Config.cmake"
+      mode: "config"
+      version: "6.11.2"
+    search_context:
+      ENV{PATH}:
+        - "D:\\work\\msys2\\mingw64\\bin"
+        - "D:\\work\\msys2\\usr\\local\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "D:\\work\\msys2\\usr\\bin\\site_perl"
+        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
+        - "D:\\work\\msys2\\usr\\bin\\core_perl"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/APIAgent"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "D:/work/msys2/mingw64"
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "D:/work/msys2/mingw64"
+        - "C:/Program Files (x86)/APIAgent"
+      CMAKE_MODULE_PATH:
+        - "D:/work/msys2/mingw64/lib/cmake/Qt6"
+        - "D:/work/msys2/mingw64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "D:/work/msys2/mingw64/lib/cmake/Qt6/3rdparty/kwin"
+...
