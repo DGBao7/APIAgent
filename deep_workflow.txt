@@ -1,0 +1,64 @@
+﻿APIAgent — WORKFLOW CHÍNH CHI TIẾT TỪNG HÀM
+==============================================
+
+============================================================
+1. TOÀN BỘ LUỒNG CHÍNH
+============================================================
+
+main()
+     Lấy API Keys
+          -> _start_API()
+          
+     Khởi chạy UI
+          -> MainWindow::MainWindow()
+          -> InputBar::_submit_message()
+          -> MainWindow::_handle_user_message(message)
+          -> signal user_message_submitted(message)
+
+     Lấy Input
+          -> lambda callback được đăng ký trong main()
+          -> tạo worker thread
+          -> _process_request(input, providers, on_statuses_ready)
+          -> Observer::parseInput(input)
+
+     Tạo task
+          -> tạo Task
+          -> borrowProviders(providers)
+          -> tạo LLMStrategyContext
+
+     Khởi tạo agents, strategy, planner, executor, memory
+     Phối hợp làm việc giữa Core và Orchestration
+          -> _start_agents(providers)
+          -> Agent::_get_status() cho từng Agent
+          -> tạo LLMSelectionStrategy, Planner, Executor, Memory
+          -> Memory::setFact(...) cho dữ liệu quan sát
+          -> Executor::registerTool(LLMChatTool)
+          -> Observer::_coordinate_agents(...)
+               -> Researcher Agent::_run(prompt, task.getDesc())
+               -> Memory::setFact("research_result", ...)
+               -> Observer::_send_message("Researcher", "Planner", ...)
+               -> Planner Agent::_workflow(...)
+                    -> Agent::validateTask(task)
+                    -> Agent::_check_task_status(task)
+                    -> Strategy::decide(task, context)
+                    -> Executor::getToolRepository().listTools()
+                    -> Planner::createPlan(task, context, memory)
+                         -> buildSystemPrompt(...)
+                         -> buildUserPrompt(...)
+                         -> provider->_chat(...)
+                         -> parsePlanText(...)
+                         -> buildFeedback(...) nếu plan sai
+                    -> Memory::setFact("plan", ...)
+                    -> Executor::executePlan(plan, memory)
+                         -> Memory::addEntry(...)
+                         -> Memory::setFact("step_N_output", ...)
+                         -> Memory::setFact("last_output", ...)
+                    -> Memory::buildContext()
+                    -> provider->_chat(messages) để tạo câu trả lời cuối
+                    -> trả Result
+
+               -> Observer trả Result về _process_request()
+
+  -> _process_request() đổi Result thành std::string
+  -> worker đổi std::string thành QString
+  -> MainWindow::_append_ai_message(answer)

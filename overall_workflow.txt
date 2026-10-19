@@ -1,0 +1,128 @@
+
+============================================================
+          1. WORKFLOW THUC TE CUA APIAGENT
+============================================================
+
++----------------------------------------------------------+
+|                        main()                            |
+| Khoi tao QApplication, khoi tao Provider va hien thi UI  |
++-----------------------------+----------------------------+
+                              |
+                              v
++----------------------------------------------------------+
+|                     _start_API()                         |
+| Goi Env::_load(".env")                                   |
+| Khoi tao GroqProvider va OpenRouterProvider               |
++-----------------------------+----------------------------+
+                              |
+                              v
++----------------------------------------------------------+
+|                  MainWindow + UI                         |
+| Nhan tin nhan nguoi dung qua user_message_submitted      |
+| Chuyen yeu cau sang worker thread                        |
++-----------------------------+----------------------------+
+                              |
+                              v
++----------------------------------------------------------+
+|                   _process_request()                     |
+| Tiep nhan noi dung nguoi dung va bat dau xu ly           |
++-----------------------------+----------------------------+
+                              |
+                              v
++----------------------------------------------------------+
+|                  Observer::parseInput()                  |
+| Tao Observation gom goal, requirements, constraints      |
++-----------------------------+----------------------------+
+                              |
+                              v
++----------------------------------------------------------+
+|                   Khoi tao Task                          |
+| Task("001", observation.goal)                             |
+| Khoi tao Strategy Context, Strategy, Planner,            |
+| Executor, Memory va cac Agent                            |
++-----------------------------+----------------------------+
+                              |
+                              v
++----------------------------------------------------------+
+|              Observer::_coordinate_agents()              |
+| Dieu phoi Researcher va Planner Agent                    |
++-----------------------------+----------------------------+
+                              |
+                              v
++----------------------------------------------------------+
+|                    Researcher::_run()                    |
+| Gui yeu cau den AI Provider cua Researcher               |
+| Nhan ket qua nghien cuu                                  |
++-----------------------------+----------------------------+
+                              |
+                              v
++----------------------------------------------------------+
+|                     Memory + Observer                    |
+| Luu research_result vao Memory                           |
+| Gui ket qua tu Researcher sang Planner                   |
++-----------------------------+----------------------------+
+                              |
+                              v
++----------------------------------------------------------+
+|                 Planner Agent::_workflow()               |
+| Kiem tra Task va trang thai PENDING                      |
+| Chuyen Task sang RUNNING                                 |
++-----------------------------+----------------------------+
+                              |
+                              v
++----------------------------------------------------------+
+|                  Strategy::decide()                      |
+| Danh gia va lua chon AI Provider                         |
+| Tra ve quyet dinh lua chon Provider                      |
++-----------------------------+----------------------------+
+                              |
+                              v
++----------------------------------------------------------+
+|                 Planner::createPlan()                    |
+| Tao cac buoc thuc hien dua tren Task, Context, Memory    |
+| Luu ke hoach vao Memory                                  |
++-----------------------------+----------------------------+
+                              |
+                              v
++----------------------------------------------------------+
+|                Executor::executePlan()                   |
+| Thuc thi cac buoc trong ke hoach                         |
+| Su dung LLMChatTool de goi AI Provider                   |
++-----------------------------+----------------------------+
+                              |
+                              v
++----------------------------------------------------------+
+|                    Kiem tra Result                       |
+| Neu that bai: Task = FAILED                              |
+| Neu thanh cong: Task = COMPLETED                         |
++-----------------------------+----------------------------+
+                              |
+                              v
++----------------------------------------------------------+
+|                  Memory::buildContext()                  |
+| Tong hop ngu canh va ket qua thuc thi                    |
+| Gui ngu canh cung yeu cau goc den AI Provider            |
+| De tao cau tra loi cuoi cung                             |
++-----------------------------+----------------------------+
+                              |
+                              v
++----------------------------------------------------------+
+|                    core/Result.cpp                       |
+| Tra Result thanh cong hoac Result loi                   |
+| Chua cau tra loi hoac thong tin loi                      |
++-----------------------------+----------------------------+
+                              |
+                              v
++----------------------------------------------------------+
+|                 _process_request()                       |
+| Lay result.getData() neu thanh cong                      |
+| Hoac tra ve thong bao loi                                |
++-----------------------------+----------------------------+
+                              |
+                              v
++----------------------------------------------------------+
+|                    main.cpp / UI                         |
+| Nhan ket qua tu worker thread                            |
+| Goi _append_ai_message() de hien thi phan hoi            |
+| Cap nhat trang thai giao dien                            |
++----------------------------------------------------------+
