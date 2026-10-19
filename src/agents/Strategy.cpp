@@ -117,17 +117,17 @@ namespace maf::agents::strategy {
 
     std::shared_ptr<maf::providers::ILLMProvider>
         LLMStrategyContext::getProvider() const 
-        {
-            if (activeIndex_ >= providers_.size()) return nullptr;
-            return providers_[activeIndex_];
-        }
+    {
+        if (activeIndex_ >= providers_.size()) return nullptr;
+        return providers_[activeIndex_];
+    }
 
-        bool LLMStrategyContext::switchToNextProvider() 
-        {
-            if (activeIndex_ + 1 >= providers_.size()) return false;
-            ++activeIndex_;
-            return true;
-        }
+    bool LLMStrategyContext::switchToNextProvider() 
+    {
+        if (activeIndex_ + 1 >= providers_.size()) return false;
+        ++activeIndex_;
+        return true;
+    }
 
     int LLMStrategyContext::getMaxTokens() const { return maxTokens_; }
     int LLMStrategyContext::getDefaultMaxTokens() const { return defaultMaxTokens_; }

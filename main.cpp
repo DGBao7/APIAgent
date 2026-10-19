@@ -31,10 +31,7 @@
 #include <thread>
 #include <vector>
 #include <functional>
-
-#ifdef _WIN32
 #include <windows.h>
-#endif
 
 std::vector<maf::providers::ILLMProvider *> _start_API()
 {
@@ -254,10 +251,8 @@ std::string _process_request(
 
 int main(int argc, char *argv[])
 {
-#ifdef _WIN32
     SetConsoleOutputCP(CP_UTF8);
     SetConsoleCP(CP_UTF8);
-#endif
 
     QApplication app(argc, argv);
     app.setApplicationName("APIAgent");
