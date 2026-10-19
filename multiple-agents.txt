@@ -1,9 +1,0 @@
-User Input
-    ↓
-Researcher (Groq)
-    ↓
-Research result
-    ↓
-Planner (OpenRouter)
-    ↓
-Final result

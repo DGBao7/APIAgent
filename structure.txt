@@ -1,7 +1,23 @@
 # Project Structure
 
 ```
+APIAgent/
 ├── build
+│   ├── APIAgent_autogen
+│   │   ├── GM7D55FDKN
+│   │   │   ├── moc_Conversation.cpp
+│   │   │   ├── moc_Conversation.cpp.d
+│   │   │   ├── moc_History.cpp
+│   │   │   ├── moc_History.cpp.d
+│   │   │   ├── moc_InputBar.cpp
+│   │   │   ├── moc_InputBar.cpp.d
+│   │   │   ├── moc_MainWindow.cpp
+│   │   │   └── moc_MainWindow.cpp.d
+│   │   ├── include
+│   │   ├── deps
+│   │   ├── moc_predefs.h
+│   │   ├── mocs_compilation.cpp
+│   │   └── timestamp
 │   ├── CMakeFiles
 │   │   ├── 4.4.2
 │   │   │   ├── CompilerIdC
@@ -18,7 +34,13 @@
 │   │   │   ├── CMakeDetermineCompilerABI_CXX.bin
 │   │   │   ├── CMakeRCCompiler.cmake
 │   │   │   └── CMakeSystem.cmake
+│   │   ├── APIAgent_autogen.dir
+│   │   │   ├── AutogenInfo.json
+│   │   │   ├── AutogenUsed.txt
+│   │   │   └── ParseCache.txt
 │   │   ├── APIAgent.dir
+│   │   │   ├── APIAgent_autogen
+│   │   │   │   └── mocs_compilation.cpp.obj
 │   │   │   ├── src
 │   │   │   │   ├── agents
 │   │   │   │   │   ├── Observe.cpp.obj
@@ -43,15 +65,25 @@
 │   │   │   │   │   ├── ILLMProvider.cpp.obj
 │   │   │   │   │   ├── OpenAICompatibleProvider.cpp.obj
 │   │   │   │   │   └── OpenRouterProvider.cpp.obj
+│   │   │   │   ├── ui
+│   │   │   │   │   ├── theme
+│   │   │   │   │   ├── Conversation.cpp.obj
+│   │   │   │   │   ├── History.cpp.obj
+│   │   │   │   │   ├── InputBar.cpp.obj
+│   │   │   │   │   └── MainWindow.cpp.obj
 │   │   │   │   └── utils
 │   │   │   │       └── Env.cpp.obj
 │   │   │   └── main.cpp.obj
+│   │   ├── d
 │   │   ├── pkgRedirects
+│   │   ├── clean_additional.cmake
 │   │   ├── cmake.check_cache
+│   │   ├── cmake.verify_globs
 │   │   ├── CMakeConfigureLog.yaml
 │   │   ├── InstallScripts.json
 │   │   ├── rules.ninja
-│   │   └── TargetDirectories.txt
+│   │   ├── TargetDirectories.txt
+│   │   └── VerifyGlobs.cmake
 │   ├── APIAgent.exe
 │   ├── build.ninja
 │   ├── cmake_install.cmake
@@ -82,6 +114,12 @@
 │       │   ├── OpenAICompatibleProvider.h
 │       │   └── OpenRouterProvider.h
 │       ├── ui
+│       │   ├── theme
+│       │   │   └── Color.h
+│       │   ├── Conversation.h
+│       │   ├── History.h
+│       │   ├── InputBar.h
+│       │   └── MainWindow.h
 │       └── utils
 │           └── Env.h
 ├── nlohmann
@@ -110,6 +148,12 @@
 │   │   ├── OpenAICompatibleProvider.cpp
 │   │   └── OpenRouterProvider.cpp
 │   ├── ui
+│   │   ├── theme
+│   │   │   └── Color.cpp
+│   │   ├── Conversation.cpp
+│   │   ├── History.cpp
+│   │   ├── InputBar.cpp
+│   │   └── MainWindow.cpp
 │   └── utils
 │       └── Env.cpp
 ├── CMakeLists.txt
