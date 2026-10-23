@@ -86,7 +86,7 @@ namespace maf::core
 
         if (!hasNonWhitespace(task.getDesc()))
         {
-            return "You need to say something";
+            return "say sth";
         }
 
         return "";
@@ -206,7 +206,7 @@ namespace maf::core
                 task.setStatus(TaskStatus::FAILED);
 
                 const std::string error = decision.errorMessage.empty()
-                    ? "Strategy failed to select a provider."
+                    ? "core/agent cant take provider"
                     : decision.errorMessage;
 
                 return Result(false , "" , error);

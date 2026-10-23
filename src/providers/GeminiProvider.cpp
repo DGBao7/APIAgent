@@ -39,7 +39,7 @@ LLMResponse GeminiProvider::_chat(
 
     if (api_key.empty())
     {
-        result.error = "Gemini API key is empty";
+        result.error = "Gemini empty";
 
         return result;
     }
