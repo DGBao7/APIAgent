@@ -175,7 +175,8 @@ std::string _process_request(
     const std::vector<maf::providers::ILLMProvider *> &providers,
     const std::function<void(
         const std::vector<std::shared_ptr<maf::agents::AgentStatus>> &
-    )> &on_statuses_ready
+    )> &on_statuses_ready ,
+    maf::orchestration::Memory *memory
 )
 {
     if (providers.size() < 2)
@@ -214,14 +215,14 @@ std::string _process_request(
 
     maf::orchestration::Planner planner;
     maf::orchestration::Executor executor;
-    maf::orchestration::Memory memory;
+    // maf::orchestration::Memory memory;
 
-    memory.setFact("observed_goal", observation.goal);
-    memory.setFact(
+    memory -> setFact("observed_goal", observation.goal);
+    memory -> setFact(
         "observed_requirements",
         _join_items(observation.requirements)
     );
-    memory.setFact(
+    memory -> setFact(
         "observed_constraints",
         _join_items(observation.constraints)
     );
@@ -238,7 +239,7 @@ std::string _process_request(
         context,
         planner,
         executor,
-        memory
+        *memory
     );
 
     if (result.isSuccess())
@@ -258,6 +259,7 @@ int main(int argc, char *argv[])
     app.setApplicationName("APIAgent");
 
     std::vector<maf::providers::ILLMProvider *> providers;
+    maf::orchestration::Memory memory;
 
     try
     {
@@ -298,7 +300,7 @@ int main(int argc, char *argv[])
             try
             {
                 worker = std::thread(
-                    [&window, &providers, &request_in_progress, message]()
+                    [&window, &providers, &request_in_progress, &memory, message]()
                     {
                         QString answer;
 
@@ -324,7 +326,8 @@ int main(int argc, char *argv[])
                                             },
                                             Qt::QueuedConnection
                                         );
-                                    }
+                                    } ,
+                                    &memory
                                 )
                             );
                         }
