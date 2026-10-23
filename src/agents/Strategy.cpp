@@ -27,7 +27,7 @@ namespace maf::agents::strategy {
         {
             // std::cout << "Strategy: provider list cannot be empty." << "\n";
             // return;
-            throw std::invalid_argument("Strategy: provider list cannot be empty.");
+            throw std::invalid_argument("agents/strategy: provider list empty.");
         }
 
         std::unordered_set<std::string> seen;
@@ -38,7 +38,7 @@ namespace maf::agents::strategy {
             {
                 // std::cout << "Strategy: a provider is null." << "\n";
                 // return;
-                throw std::invalid_argument("Strategy: a provider is null.");
+                throw std::invalid_argument("agents/strategy: a provider is null.");
             }
 
             const std::string name = provider -> _name();
@@ -47,7 +47,7 @@ namespace maf::agents::strategy {
             {
                 // std::cout << "Strategy: provider names must be nonempty and unique." << "\n";
                 // return;
-                throw std::invalid_argument("Strategy: provider names must be nonempty and unique.");
+                throw std::invalid_argument("agents/strategy: provider names empty and unique.");
             }
         }
     }
@@ -65,7 +65,7 @@ namespace maf::agents::strategy {
             if (!ptr) 
             {   
                 // std::cout << "Strategy: a provider is null." << "\n";
-                throw std::invalid_argument("Strategy: a provider is null.");
+                throw std::invalid_argument("agents/strategy: provider null.");
             }
             result.emplace_back(ptr, [](maf::providers::ILLMProvider*) {});
         }
@@ -95,39 +95,39 @@ namespace maf::agents::strategy {
         const nlohmann::json value = nlohmann::json::parse(text);
         if (!value.is_object() || value.size() != 2 ||
             !value.contains("providerRanking") || !value.contains("maxTokens")) {
-            throw std::runtime_error("Strategy: expected exactly providerRanking and maxTokens.");
+            throw std::runtime_error("agents/strategy: error");
         }
         if (!value.at("providerRanking").is_array() ||
             !value.at("maxTokens").is_number_integer()) {
-            throw std::runtime_error("Strategy: invalid JSON field types.");
+            throw std::runtime_error("agents/strategy: error JSON");
         }
         RankedSelection selection;
         for (const auto& item : value.at("providerRanking")) {
             if (!item.is_string()) {
-                throw std::runtime_error("Strategy: providerRanking must contain strings.");
+                throw std::runtime_error("agents/strategy: providerRanking error.");
             }
             selection.ranking.push_back(item.get<std::string>());
         }
         selection.maxTokens = value.at("maxTokens").get<int>();
         if (selection.maxTokens <= 0) {
-            throw std::runtime_error("Strategy: maxTokens must be positive.");
+            throw std::runtime_error("agents/strategy: maxtokens negative.");
         }
         return selection;
     }
 
     std::shared_ptr<maf::providers::ILLMProvider>
         LLMStrategyContext::getProvider() const 
-        {
-            if (activeIndex_ >= providers_.size()) return nullptr;
-            return providers_[activeIndex_];
-        }
+    {
+        if (activeIndex_ >= providers_.size()) return nullptr;
+        return providers_[activeIndex_];
+    }
 
-        bool LLMStrategyContext::switchToNextProvider() 
-        {
-            if (activeIndex_ + 1 >= providers_.size()) return false;
-            ++activeIndex_;
-            return true;
-        }
+    bool LLMStrategyContext::switchToNextProvider() 
+    {
+        if (activeIndex_ + 1 >= providers_.size()) return false;
+        ++activeIndex_;
+        return true;
+    }
 
     int LLMStrategyContext::getMaxTokens() const { return maxTokens_; }
     int LLMStrategyContext::getDefaultMaxTokens() const { return defaultMaxTokens_; }
@@ -153,8 +153,7 @@ namespace maf::agents::strategy {
             this -> maxTokens_ <= 0 ||
             this -> maxRetries_ <= 0)
         {
-
-            throw std::invalid_argument("Strategy: invalid token or retry configuration.");
+            throw std::invalid_argument("agents/strategy: error token");
         }
 
         this -> maxTokens_ = std::clamp(maxTokens_, kMinOutputTokens, maxTokenLimit_);
@@ -182,7 +181,7 @@ namespace maf::agents::strategy {
         const std::vector<std::string>& ranking, int maxTokens
     ) {
         if (maxTokens <= 0 || ranking.size() != providers_.size()) {
-            throw std::invalid_argument("Strategy: invalid token count or ranking size.");
+            throw std::invalid_argument("agents/strategy: error ranking");
         }
         std::unordered_map<std::string, std::shared_ptr<maf::providers::ILLMProvider>> byName;
         for (const auto& provider : providers_) byName.emplace(provider->_name(), provider);
@@ -192,7 +191,7 @@ namespace maf::agents::strategy {
         for (const auto& name : ranking) {
             const auto iter = byName.find(name);
             if (iter == byName.end()) {
-                throw std::invalid_argument("Strategy: unknown or duplicate provider: " + name);
+                throw std::invalid_argument("agents/strategy: duplicate: " + name);
             }
             reordered.push_back(iter->second);
             byName.erase(iter);
@@ -207,7 +206,7 @@ namespace maf::agents::strategy {
     ) {
         StrategyDecision decision;
         if (!hasContent(task.getDesc())) {
-            decision.errorMessage = "Strategy: task description is empty.";
+            decision.errorMessage = "agents/strategy: desc empty.";
             return decision;
         }
         try {
@@ -228,7 +227,7 @@ namespace maf::agents::strategy {
     {
     StrategyDecision failure;
     if (!hasContent(task.getDesc())) {
-        failure.errorMessage = "Strategy: task description is empty.";
+        failure.errorMessage = "agents/strategy: desc empty.";
         return failure;
     }
 

@@ -31,10 +31,7 @@
 #include <thread>
 #include <vector>
 #include <functional>
-
-#ifdef _WIN32
 #include <windows.h>
-#endif
 
 std::vector<maf::providers::ILLMProvider *> _start_API()
 {
@@ -43,7 +40,7 @@ std::vector<maf::providers::ILLMProvider *> _start_API()
     if (!loaded)
     {
         std::cerr
-            << "Can not load .env from: "
+            << "!env"
             << std::filesystem::current_path()
             << "\n";
     }
@@ -73,7 +70,7 @@ std::vector<maf::core::Agent> _start_agents(
     if (providers.size() < agents_name.size())
     {
         throw std::runtime_error(
-            "The multi-agent workflow requires at least two LLM providers."
+            "providers.size() < agents_name.size()"
         );
     }
 
@@ -151,7 +148,7 @@ public:
         }
 
         throw std::runtime_error(
-            "All LLM providers failed. Last error: " + last_error
+            "llm fail last error: " + last_error
         );
     }
 };
@@ -184,7 +181,7 @@ std::string _process_request(
     if (providers.size() < 2)
     {
         throw std::runtime_error(
-            "The multi-agent workflow requires at least two LLM providers."
+            "providers.size() < 2"
         );
     }
 
@@ -254,10 +251,8 @@ std::string _process_request(
 
 int main(int argc, char *argv[])
 {
-#ifdef _WIN32
     SetConsoleOutputCP(CP_UTF8);
     SetConsoleCP(CP_UTF8);
-#endif
 
     QApplication app(argc, argv);
     app.setApplicationName("APIAgent");
@@ -270,7 +265,7 @@ int main(int argc, char *argv[])
     }
     catch (const std::exception &error)
     {
-        std::cerr << "Provider initialization failed: " << error.what() << '\n';
+        std::cerr << "Provider init failed: " << error.what() << '\n';
         return 1;
     }
 

@@ -54,7 +54,7 @@ namespace maf::core
         )
         {
             throw std::invalid_argument(
-                "Observer: message sender, receiver and content cannot be empty."
+                "agents/observer: receiver and content empty."
             );
         }
 

@@ -39,10 +39,10 @@ void MainWindow::_setup_layout()
     top_layout->setContentsMargins(24, 16, 24, 16);
     top_layout->setSpacing(12);
 
-    QLabel *app_title = new QLabel("✦ APIAgent", top_bar);
+    QLabel *app_title = new QLabel("✦ AI Agent", top_bar);
     app_title->setObjectName("appTitle");
 
-    QLabel *app_subtitle = new QLabel("Multi-Agent workspace", top_bar);
+    QLabel *app_subtitle = new QLabel("Multi-Agent Framework", top_bar);
     app_subtitle->setObjectName("appSubtitle");
 
     top_layout->addWidget(app_title);
