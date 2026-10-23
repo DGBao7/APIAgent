@@ -30,7 +30,7 @@ void Conversation::_append_user_message(const QString &content)
 
 void Conversation::_append_ai_message(const QString &content)
 {
-    _append_message("APIAgent", content, false);
+    _append_message("AI Agent", content, false);
 }
 
 void Conversation::_append_message(const QString &speaker,
