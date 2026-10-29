@@ -62,931 +62,6 @@ events:
     kind: "find-v1"
     backtrace:
       - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCompiler.cmake:63 (find_program)"
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:64 (_cmake_find_compiler)"
-      - "CMakeLists.txt:3 (project)"
-    mode: "program"
-    variable: "CMAKE_C_COMPILER"
-    description: "C compiler"
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: false
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "cc"
-      - "gcc"
-      - "cl"
-      - "bcc"
-      - "xlc"
-      - "icx"
-      - "clang"
-    candidate_directories:
-      - "D:/work/msys2/mingw64/bin/"
-      - "D:/work/msys2/usr/local/bin/"
-      - "D:/work/msys2/usr/bin/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "D:/work/msys2/usr/bin/site_perl/"
-      - "D:/work/msys2/usr/bin/vendor_perl/"
-      - "D:/work/msys2/usr/bin/core_perl/"
-    searched_directories:
-      - "D:/work/msys2/mingw64/bin/cc.com"
-    found: "D:/work/msys2/mingw64/bin/cc.exe"
-    search_context:
-      ENV{PATH}:
-        - "D:\\work\\msys2\\mingw64\\bin"
-        - "D:\\work\\msys2\\usr\\local\\bin"
-        - "D:\\work\\msys2\\usr\\bin"
-        - "D:\\work\\msys2\\usr\\bin"
-        - "C:\\Windows\\System32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "D:\\work\\msys2\\usr\\bin\\site_perl"
-        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
-        - "D:\\work\\msys2\\usr\\bin\\core_perl"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:501 (find_file)"
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:538 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:3 (project)"
-    mode: "file"
-    variable: "src_in"
-    description: "Path to a file."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "CMakeCCompilerId.c.in"
-    candidate_directories:
-      - "D:/work/msys2/mingw64/share/cmake/Modules/"
-    found: "D:/work/msys2/mingw64/share/cmake/Modules/CMakeCCompilerId.c.in"
-    search_context:
-      ENV{PATH}:
-        - "D:\\work\\msys2\\mingw64\\bin"
-        - "D:\\work\\msys2\\usr\\local\\bin"
-        - "D:\\work\\msys2\\usr\\bin"
-        - "D:\\work\\msys2\\usr\\bin"
-        - "C:\\Windows\\System32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "D:\\work\\msys2\\usr\\bin\\site_perl"
-        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
-        - "D:\\work\\msys2\\usr\\bin\\core_perl"
-  -
-    kind: "message-v1"
-    backtrace:
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:3 (project)"
-    message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: D:/work/msys2/mingw64/bin/cc.exe 
-      Build flags: 
-      Id flags:  
-      
-      The output was:
-      0
-      
-      
-      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
-      
-      The C compiler identification is GNU, found in:
-        D:/work/programs/prj/APIAgent/build/CMakeFiles/4.4.2/CompilerIdC/a.exe
-      
-  -
-    kind: "find-v1"
-    backtrace:
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:3 (project)"
-    mode: "program"
-    variable: "CMAKE_AR"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "ar"
-    candidate_directories:
-      - "D:/work/msys2/mingw64/bin/"
-      - "D:/work/msys2/usr/local/bin/"
-      - "D:/work/msys2/usr/bin/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "D:/work/msys2/usr/bin/site_perl/"
-      - "D:/work/msys2/usr/bin/vendor_perl/"
-      - "D:/work/msys2/usr/bin/core_perl/"
-    searched_directories:
-      - "D:/work/msys2/mingw64/bin/ar.com"
-    found: "D:/work/msys2/mingw64/bin/ar.exe"
-    search_context:
-      ENV{PATH}:
-        - "D:\\work\\msys2\\mingw64\\bin"
-        - "D:\\work\\msys2\\usr\\local\\bin"
-        - "D:\\work\\msys2\\usr\\bin"
-        - "D:\\work\\msys2\\usr\\bin"
-        - "C:\\Windows\\System32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "D:\\work\\msys2\\usr\\bin\\site_perl"
-        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
-        - "D:\\work\\msys2\\usr\\bin\\core_perl"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:3 (project)"
-    mode: "program"
-    variable: "CMAKE_RANLIB"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "ranlib"
-    candidate_directories:
-      - "D:/work/msys2/mingw64/bin/"
-      - "D:/work/msys2/usr/local/bin/"
-      - "D:/work/msys2/usr/bin/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "D:/work/msys2/usr/bin/site_perl/"
-      - "D:/work/msys2/usr/bin/vendor_perl/"
-      - "D:/work/msys2/usr/bin/core_perl/"
-    searched_directories:
-      - "D:/work/msys2/mingw64/bin/ranlib.com"
-    found: "D:/work/msys2/mingw64/bin/ranlib.exe"
-    search_context:
-      ENV{PATH}:
-        - "D:\\work\\msys2\\mingw64\\bin"
-        - "D:\\work\\msys2\\usr\\local\\bin"
-        - "D:\\work\\msys2\\usr\\bin"
-        - "D:\\work\\msys2\\usr\\bin"
-        - "C:\\Windows\\System32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "D:\\work\\msys2\\usr\\bin\\site_perl"
-        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
-        - "D:\\work\\msys2\\usr\\bin\\core_perl"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:3 (project)"
-    mode: "program"
-    variable: "CMAKE_STRIP"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "strip"
-    candidate_directories:
-      - "D:/work/msys2/mingw64/bin/"
-      - "D:/work/msys2/usr/local/bin/"
-      - "D:/work/msys2/usr/bin/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "D:/work/msys2/usr/bin/site_perl/"
-      - "D:/work/msys2/usr/bin/vendor_perl/"
-      - "D:/work/msys2/usr/bin/core_perl/"
-    searched_directories:
-      - "D:/work/msys2/mingw64/bin/strip.com"
-    found: "D:/work/msys2/mingw64/bin/strip.exe"
-    search_context:
-      ENV{PATH}:
-        - "D:\\work\\msys2\\mingw64\\bin"
-        - "D:\\work\\msys2\\usr\\local\\bin"
-        - "D:\\work\\msys2\\usr\\bin"
-        - "D:\\work\\msys2\\usr\\bin"
-        - "C:\\Windows\\System32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "D:\\work\\msys2\\usr\\bin\\site_perl"
-        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
-        - "D:\\work\\msys2\\usr\\bin\\core_perl"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:3 (project)"
-    mode: "program"
-    variable: "CMAKE_LINKER"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "ld"
-    candidate_directories:
-      - "D:/work/msys2/mingw64/bin/"
-      - "D:/work/msys2/usr/local/bin/"
-      - "D:/work/msys2/usr/bin/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "D:/work/msys2/usr/bin/site_perl/"
-      - "D:/work/msys2/usr/bin/vendor_perl/"
-      - "D:/work/msys2/usr/bin/core_perl/"
-    searched_directories:
-      - "D:/work/msys2/mingw64/bin/ld.com"
-    found: "D:/work/msys2/mingw64/bin/ld.exe"
-    search_context:
-      ENV{PATH}:
-        - "D:\\work\\msys2\\mingw64\\bin"
-        - "D:\\work\\msys2\\usr\\local\\bin"
-        - "D:\\work\\msys2\\usr\\bin"
-        - "D:\\work\\msys2\\usr\\bin"
-        - "C:\\Windows\\System32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "D:\\work\\msys2\\usr\\bin\\site_perl"
-        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
-        - "D:\\work\\msys2\\usr\\bin\\core_perl"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:3 (project)"
-    mode: "program"
-    variable: "CMAKE_NM"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "nm"
-    candidate_directories:
-      - "D:/work/msys2/mingw64/bin/"
-      - "D:/work/msys2/usr/local/bin/"
-      - "D:/work/msys2/usr/bin/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "D:/work/msys2/usr/bin/site_perl/"
-      - "D:/work/msys2/usr/bin/vendor_perl/"
-      - "D:/work/msys2/usr/bin/core_perl/"
-    searched_directories:
-      - "D:/work/msys2/mingw64/bin/nm.com"
-    found: "D:/work/msys2/mingw64/bin/nm.exe"
-    search_context:
-      ENV{PATH}:
-        - "D:\\work\\msys2\\mingw64\\bin"
-        - "D:\\work\\msys2\\usr\\local\\bin"
-        - "D:\\work\\msys2\\usr\\bin"
-        - "D:\\work\\msys2\\usr\\bin"
-        - "C:\\Windows\\System32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "D:\\work\\msys2\\usr\\bin\\site_perl"
-        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
-        - "D:\\work\\msys2\\usr\\bin\\core_perl"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:3 (project)"
-    mode: "program"
-    variable: "CMAKE_OBJDUMP"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "objdump"
-    candidate_directories:
-      - "D:/work/msys2/mingw64/bin/"
-      - "D:/work/msys2/usr/local/bin/"
-      - "D:/work/msys2/usr/bin/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "D:/work/msys2/usr/bin/site_perl/"
-      - "D:/work/msys2/usr/bin/vendor_perl/"
-      - "D:/work/msys2/usr/bin/core_perl/"
-    searched_directories:
-      - "D:/work/msys2/mingw64/bin/objdump.com"
-    found: "D:/work/msys2/mingw64/bin/objdump.exe"
-    search_context:
-      ENV{PATH}:
-        - "D:\\work\\msys2\\mingw64\\bin"
-        - "D:\\work\\msys2\\usr\\local\\bin"
-        - "D:\\work\\msys2\\usr\\bin"
-        - "D:\\work\\msys2\\usr\\bin"
-        - "C:\\Windows\\System32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "D:\\work\\msys2\\usr\\bin\\site_perl"
-        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
-        - "D:\\work\\msys2\\usr\\bin\\core_perl"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:3 (project)"
-    mode: "program"
-    variable: "CMAKE_OBJCOPY"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "objcopy"
-    candidate_directories:
-      - "D:/work/msys2/mingw64/bin/"
-      - "D:/work/msys2/usr/local/bin/"
-      - "D:/work/msys2/usr/bin/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "D:/work/msys2/usr/bin/site_perl/"
-      - "D:/work/msys2/usr/bin/vendor_perl/"
-      - "D:/work/msys2/usr/bin/core_perl/"
-    searched_directories:
-      - "D:/work/msys2/mingw64/bin/objcopy.com"
-    found: "D:/work/msys2/mingw64/bin/objcopy.exe"
-    search_context:
-      ENV{PATH}:
-        - "D:\\work\\msys2\\mingw64\\bin"
-        - "D:\\work\\msys2\\usr\\local\\bin"
-        - "D:\\work\\msys2\\usr\\bin"
-        - "D:\\work\\msys2\\usr\\bin"
-        - "C:\\Windows\\System32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "D:\\work\\msys2\\usr\\bin\\site_perl"
-        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
-        - "D:\\work\\msys2\\usr\\bin\\core_perl"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:3 (project)"
-    mode: "program"
-    variable: "CMAKE_READELF"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "readelf"
-    candidate_directories:
-      - "D:/work/msys2/mingw64/bin/"
-      - "D:/work/msys2/usr/local/bin/"
-      - "D:/work/msys2/usr/bin/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "D:/work/msys2/usr/bin/site_perl/"
-      - "D:/work/msys2/usr/bin/vendor_perl/"
-      - "D:/work/msys2/usr/bin/core_perl/"
-    searched_directories:
-      - "D:/work/msys2/mingw64/bin/readelf.com"
-    found: "D:/work/msys2/mingw64/bin/readelf.exe"
-    search_context:
-      ENV{PATH}:
-        - "D:\\work\\msys2\\mingw64\\bin"
-        - "D:\\work\\msys2\\usr\\local\\bin"
-        - "D:\\work\\msys2\\usr\\bin"
-        - "D:\\work\\msys2\\usr\\bin"
-        - "C:\\Windows\\System32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "D:\\work\\msys2\\usr\\bin\\site_perl"
-        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
-        - "D:\\work\\msys2\\usr\\bin\\core_perl"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:3 (project)"
-    mode: "program"
-    variable: "CMAKE_DLLTOOL"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "dlltool"
-    candidate_directories:
-      - "D:/work/msys2/mingw64/bin/"
-      - "D:/work/msys2/usr/local/bin/"
-      - "D:/work/msys2/usr/bin/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "D:/work/msys2/usr/bin/site_perl/"
-      - "D:/work/msys2/usr/bin/vendor_perl/"
-      - "D:/work/msys2/usr/bin/core_perl/"
-    searched_directories:
-      - "D:/work/msys2/mingw64/bin/dlltool.com"
-    found: "D:/work/msys2/mingw64/bin/dlltool.exe"
-    search_context:
-      ENV{PATH}:
-        - "D:\\work\\msys2\\mingw64\\bin"
-        - "D:\\work\\msys2\\usr\\local\\bin"
-        - "D:\\work\\msys2\\usr\\bin"
-        - "D:\\work\\msys2\\usr\\bin"
-        - "C:\\Windows\\System32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "D:\\work\\msys2\\usr\\bin\\site_perl"
-        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
-        - "D:\\work\\msys2\\usr\\bin\\core_perl"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:3 (project)"
-    mode: "program"
-    variable: "CMAKE_ADDR2LINE"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "addr2line"
-    candidate_directories:
-      - "D:/work/msys2/mingw64/bin/"
-      - "D:/work/msys2/usr/local/bin/"
-      - "D:/work/msys2/usr/bin/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "D:/work/msys2/usr/bin/site_perl/"
-      - "D:/work/msys2/usr/bin/vendor_perl/"
-      - "D:/work/msys2/usr/bin/core_perl/"
-    searched_directories:
-      - "D:/work/msys2/mingw64/bin/addr2line.com"
-    found: "D:/work/msys2/mingw64/bin/addr2line.exe"
-    search_context:
-      ENV{PATH}:
-        - "D:\\work\\msys2\\mingw64\\bin"
-        - "D:\\work\\msys2\\usr\\local\\bin"
-        - "D:\\work\\msys2\\usr\\bin"
-        - "D:\\work\\msys2\\usr\\bin"
-        - "C:\\Windows\\System32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "D:\\work\\msys2\\usr\\bin\\site_perl"
-        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
-        - "D:\\work\\msys2\\usr\\bin\\core_perl"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:3 (project)"
-    mode: "program"
-    variable: "CMAKE_TAPI"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "tapi"
-    candidate_directories:
-      - "D:/work/msys2/mingw64/bin/"
-      - "D:/work/msys2/usr/local/bin/"
-      - "D:/work/msys2/usr/bin/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "D:/work/msys2/usr/bin/site_perl/"
-      - "D:/work/msys2/usr/bin/vendor_perl/"
-      - "D:/work/msys2/usr/bin/core_perl/"
-    searched_directories:
-      - "D:/work/msys2/mingw64/bin/tapi.com"
-      - "D:/work/msys2/mingw64/bin/tapi.exe"
-      - "D:/work/msys2/mingw64/bin/tapi"
-      - "D:/work/msys2/usr/local/bin/tapi.com"
-      - "D:/work/msys2/usr/local/bin/tapi.exe"
-      - "D:/work/msys2/usr/local/bin/tapi"
-      - "D:/work/msys2/usr/bin/tapi.com"
-      - "D:/work/msys2/usr/bin/tapi.exe"
-      - "D:/work/msys2/usr/bin/tapi"
-      - "C:/Windows/System32/tapi.com"
-      - "C:/Windows/System32/tapi.exe"
-      - "C:/Windows/System32/tapi"
-      - "C:/Windows/tapi.com"
-      - "C:/Windows/tapi.exe"
-      - "C:/Windows/tapi"
-      - "C:/Windows/System32/wbem/tapi.com"
-      - "C:/Windows/System32/wbem/tapi.exe"
-      - "C:/Windows/System32/wbem/tapi"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/tapi.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/tapi.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/tapi"
-      - "D:/work/msys2/usr/bin/site_perl/tapi.com"
-      - "D:/work/msys2/usr/bin/site_perl/tapi.exe"
-      - "D:/work/msys2/usr/bin/site_perl/tapi"
-      - "D:/work/msys2/usr/bin/vendor_perl/tapi.com"
-      - "D:/work/msys2/usr/bin/vendor_perl/tapi.exe"
-      - "D:/work/msys2/usr/bin/vendor_perl/tapi"
-      - "D:/work/msys2/usr/bin/core_perl/tapi.com"
-      - "D:/work/msys2/usr/bin/core_perl/tapi.exe"
-      - "D:/work/msys2/usr/bin/core_perl/tapi"
-    found: false
-    search_context:
-      ENV{PATH}:
-        - "D:\\work\\msys2\\mingw64\\bin"
-        - "D:\\work\\msys2\\usr\\local\\bin"
-        - "D:\\work\\msys2\\usr\\bin"
-        - "D:\\work\\msys2\\usr\\bin"
-        - "C:\\Windows\\System32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "D:\\work\\msys2\\usr\\bin\\site_perl"
-        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
-        - "D:\\work\\msys2\\usr\\bin\\core_perl"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "D:/work/msys2/mingw64/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
-      - "CMakeLists.txt:3 (project)"
-    mode: "program"
-    variable: "CMAKE_C_COMPILER_AR"
-    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "gcc-ar-16.2"
-      - "gcc-ar-16"
-      - "gcc-ar16"
-      - "gcc-ar"
-    candidate_directories:
-      - "D:/work/msys2/mingw64/bin/"
-      - "D:/work/msys2/usr/local/bin/"
-      - "D:/work/msys2/usr/bin/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "D:/work/msys2/usr/bin/site_perl/"
-      - "D:/work/msys2/usr/bin/vendor_perl/"
-      - "D:/work/msys2/usr/bin/core_perl/"
-    searched_directories:
-      - "D:/work/msys2/mingw64/bin/gcc-ar-16.2.com"
-      - "D:/work/msys2/mingw64/bin/gcc-ar-16.2.exe"
-      - "D:/work/msys2/mingw64/bin/gcc-ar-16.2"
-      - "D:/work/msys2/usr/local/bin/gcc-ar-16.2.com"
-      - "D:/work/msys2/usr/local/bin/gcc-ar-16.2.exe"
-      - "D:/work/msys2/usr/local/bin/gcc-ar-16.2"
-      - "D:/work/msys2/usr/bin/gcc-ar-16.2.com"
-      - "D:/work/msys2/usr/bin/gcc-ar-16.2.exe"
-      - "D:/work/msys2/usr/bin/gcc-ar-16.2"
-      - "C:/Windows/System32/gcc-ar-16.2.com"
-      - "C:/Windows/System32/gcc-ar-16.2.exe"
-      - "C:/Windows/System32/gcc-ar-16.2"
-      - "C:/Windows/gcc-ar-16.2.com"
-      - "C:/Windows/gcc-ar-16.2.exe"
-      - "C:/Windows/gcc-ar-16.2"
-      - "C:/Windows/System32/wbem/gcc-ar-16.2.com"
-      - "C:/Windows/System32/wbem/gcc-ar-16.2.exe"
-      - "C:/Windows/System32/wbem/gcc-ar-16.2"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-16.2.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-16.2.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-16.2"
-      - "D:/work/msys2/usr/bin/site_perl/gcc-ar-16.2.com"
-      - "D:/work/msys2/usr/bin/site_perl/gcc-ar-16.2.exe"
-      - "D:/work/msys2/usr/bin/site_perl/gcc-ar-16.2"
-      - "D:/work/msys2/usr/bin/vendor_perl/gcc-ar-16.2.com"
-      - "D:/work/msys2/usr/bin/vendor_perl/gcc-ar-16.2.exe"
-      - "D:/work/msys2/usr/bin/vendor_perl/gcc-ar-16.2"
-      - "D:/work/msys2/usr/bin/core_perl/gcc-ar-16.2.com"
-      - "D:/work/msys2/usr/bin/core_perl/gcc-ar-16.2.exe"
-      - "D:/work/msys2/usr/bin/core_perl/gcc-ar-16.2"
-      - "D:/work/msys2/mingw64/bin/gcc-ar-16.com"
-      - "D:/work/msys2/mingw64/bin/gcc-ar-16.exe"
-      - "D:/work/msys2/mingw64/bin/gcc-ar-16"
-      - "D:/work/msys2/usr/local/bin/gcc-ar-16.com"
-      - "D:/work/msys2/usr/local/bin/gcc-ar-16.exe"
-      - "D:/work/msys2/usr/local/bin/gcc-ar-16"
-      - "D:/work/msys2/usr/bin/gcc-ar-16.com"
-      - "D:/work/msys2/usr/bin/gcc-ar-16.exe"
-      - "D:/work/msys2/usr/bin/gcc-ar-16"
-      - "C:/Windows/System32/gcc-ar-16.com"
-      - "C:/Windows/System32/gcc-ar-16.exe"
-      - "C:/Windows/System32/gcc-ar-16"
-      - "C:/Windows/gcc-ar-16.com"
-      - "C:/Windows/gcc-ar-16.exe"
-      - "C:/Windows/gcc-ar-16"
-      - "C:/Windows/System32/wbem/gcc-ar-16.com"
-      - "C:/Windows/System32/wbem/gcc-ar-16.exe"
-      - "C:/Windows/System32/wbem/gcc-ar-16"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-16.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-16.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-16"
-      - "D:/work/msys2/usr/bin/site_perl/gcc-ar-16.com"
-      - "D:/work/msys2/usr/bin/site_perl/gcc-ar-16.exe"
-      - "D:/work/msys2/usr/bin/site_perl/gcc-ar-16"
-      - "D:/work/msys2/usr/bin/vendor_perl/gcc-ar-16.com"
-      - "D:/work/msys2/usr/bin/vendor_perl/gcc-ar-16.exe"
-      - "D:/work/msys2/usr/bin/vendor_perl/gcc-ar-16"
-      - "D:/work/msys2/usr/bin/core_perl/gcc-ar-16.com"
-      - "D:/work/msys2/usr/bin/core_perl/gcc-ar-16.exe"
-      - "D:/work/msys2/usr/bin/core_perl/gcc-ar-16"
-      - "D:/work/msys2/mingw64/bin/gcc-ar16.com"
-      - "D:/work/msys2/mingw64/bin/gcc-ar16.exe"
-      - "D:/work/msys2/mingw64/bin/gcc-ar16"
-      - "D:/work/msys2/usr/local/bin/gcc-ar16.com"
-      - "D:/work/msys2/usr/local/bin/gcc-ar16.exe"
-      - "D:/work/msys2/usr/local/bin/gcc-ar16"
-      - "D:/work/msys2/usr/bin/gcc-ar16.com"
-      - "D:/work/msys2/usr/bin/gcc-ar16.exe"
-      - "D:/work/msys2/usr/bin/gcc-ar16"
-      - "C:/Windows/System32/gcc-ar16.com"
-      - "C:/Windows/System32/gcc-ar16.exe"
-      - "C:/Windows/System32/gcc-ar16"
-      - "C:/Windows/gcc-ar16.com"
-      - "C:/Windows/gcc-ar16.exe"
-      - "C:/Windows/gcc-ar16"
-      - "C:/Windows/System32/wbem/gcc-ar16.com"
-      - "C:/Windows/System32/wbem/gcc-ar16.exe"
-      - "C:/Windows/System32/wbem/gcc-ar16"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar16.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar16.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar16"
-      - "D:/work/msys2/usr/bin/site_perl/gcc-ar16.com"
-      - "D:/work/msys2/usr/bin/site_perl/gcc-ar16.exe"
-      - "D:/work/msys2/usr/bin/site_perl/gcc-ar16"
-      - "D:/work/msys2/usr/bin/vendor_perl/gcc-ar16.com"
-      - "D:/work/msys2/usr/bin/vendor_perl/gcc-ar16.exe"
-      - "D:/work/msys2/usr/bin/vendor_perl/gcc-ar16"
-      - "D:/work/msys2/usr/bin/core_perl/gcc-ar16.com"
-      - "D:/work/msys2/usr/bin/core_perl/gcc-ar16.exe"
-      - "D:/work/msys2/usr/bin/core_perl/gcc-ar16"
-      - "D:/work/msys2/mingw64/bin/gcc-ar.com"
-    found: "D:/work/msys2/mingw64/bin/gcc-ar.exe"
-    search_context:
-      ENV{PATH}:
-        - "D:\\work\\msys2\\mingw64\\bin"
-        - "D:\\work\\msys2\\usr\\local\\bin"
-        - "D:\\work\\msys2\\usr\\bin"
-        - "D:\\work\\msys2\\usr\\bin"
-        - "C:\\Windows\\System32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "D:\\work\\msys2\\usr\\bin\\site_perl"
-        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
-        - "D:\\work\\msys2\\usr\\bin\\core_perl"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "D:/work/msys2/mingw64/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
-      - "CMakeLists.txt:3 (project)"
-    mode: "program"
-    variable: "CMAKE_C_COMPILER_RANLIB"
-    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "gcc-ranlib-16.2"
-      - "gcc-ranlib-16"
-      - "gcc-ranlib16"
-      - "gcc-ranlib"
-    candidate_directories:
-      - "D:/work/msys2/mingw64/bin/"
-      - "D:/work/msys2/usr/local/bin/"
-      - "D:/work/msys2/usr/bin/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "D:/work/msys2/usr/bin/site_perl/"
-      - "D:/work/msys2/usr/bin/vendor_perl/"
-      - "D:/work/msys2/usr/bin/core_perl/"
-    searched_directories:
-      - "D:/work/msys2/mingw64/bin/gcc-ranlib-16.2.com"
-      - "D:/work/msys2/mingw64/bin/gcc-ranlib-16.2.exe"
-      - "D:/work/msys2/mingw64/bin/gcc-ranlib-16.2"
-      - "D:/work/msys2/usr/local/bin/gcc-ranlib-16.2.com"
-      - "D:/work/msys2/usr/local/bin/gcc-ranlib-16.2.exe"
-      - "D:/work/msys2/usr/local/bin/gcc-ranlib-16.2"
-      - "D:/work/msys2/usr/bin/gcc-ranlib-16.2.com"
-      - "D:/work/msys2/usr/bin/gcc-ranlib-16.2.exe"
-      - "D:/work/msys2/usr/bin/gcc-ranlib-16.2"
-      - "C:/Windows/System32/gcc-ranlib-16.2.com"
-      - "C:/Windows/System32/gcc-ranlib-16.2.exe"
-      - "C:/Windows/System32/gcc-ranlib-16.2"
-      - "C:/Windows/gcc-ranlib-16.2.com"
-      - "C:/Windows/gcc-ranlib-16.2.exe"
-      - "C:/Windows/gcc-ranlib-16.2"
-      - "C:/Windows/System32/wbem/gcc-ranlib-16.2.com"
-      - "C:/Windows/System32/wbem/gcc-ranlib-16.2.exe"
-      - "C:/Windows/System32/wbem/gcc-ranlib-16.2"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-16.2.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-16.2.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-16.2"
-      - "D:/work/msys2/usr/bin/site_perl/gcc-ranlib-16.2.com"
-      - "D:/work/msys2/usr/bin/site_perl/gcc-ranlib-16.2.exe"
-      - "D:/work/msys2/usr/bin/site_perl/gcc-ranlib-16.2"
-      - "D:/work/msys2/usr/bin/vendor_perl/gcc-ranlib-16.2.com"
-      - "D:/work/msys2/usr/bin/vendor_perl/gcc-ranlib-16.2.exe"
-      - "D:/work/msys2/usr/bin/vendor_perl/gcc-ranlib-16.2"
-      - "D:/work/msys2/usr/bin/core_perl/gcc-ranlib-16.2.com"
-      - "D:/work/msys2/usr/bin/core_perl/gcc-ranlib-16.2.exe"
-      - "D:/work/msys2/usr/bin/core_perl/gcc-ranlib-16.2"
-      - "D:/work/msys2/mingw64/bin/gcc-ranlib-16.com"
-      - "D:/work/msys2/mingw64/bin/gcc-ranlib-16.exe"
-      - "D:/work/msys2/mingw64/bin/gcc-ranlib-16"
-      - "D:/work/msys2/usr/local/bin/gcc-ranlib-16.com"
-      - "D:/work/msys2/usr/local/bin/gcc-ranlib-16.exe"
-      - "D:/work/msys2/usr/local/bin/gcc-ranlib-16"
-      - "D:/work/msys2/usr/bin/gcc-ranlib-16.com"
-      - "D:/work/msys2/usr/bin/gcc-ranlib-16.exe"
-      - "D:/work/msys2/usr/bin/gcc-ranlib-16"
-      - "C:/Windows/System32/gcc-ranlib-16.com"
-      - "C:/Windows/System32/gcc-ranlib-16.exe"
-      - "C:/Windows/System32/gcc-ranlib-16"
-      - "C:/Windows/gcc-ranlib-16.com"
-      - "C:/Windows/gcc-ranlib-16.exe"
-      - "C:/Windows/gcc-ranlib-16"
-      - "C:/Windows/System32/wbem/gcc-ranlib-16.com"
-      - "C:/Windows/System32/wbem/gcc-ranlib-16.exe"
-      - "C:/Windows/System32/wbem/gcc-ranlib-16"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-16.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-16.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-16"
-      - "D:/work/msys2/usr/bin/site_perl/gcc-ranlib-16.com"
-      - "D:/work/msys2/usr/bin/site_perl/gcc-ranlib-16.exe"
-      - "D:/work/msys2/usr/bin/site_perl/gcc-ranlib-16"
-      - "D:/work/msys2/usr/bin/vendor_perl/gcc-ranlib-16.com"
-      - "D:/work/msys2/usr/bin/vendor_perl/gcc-ranlib-16.exe"
-      - "D:/work/msys2/usr/bin/vendor_perl/gcc-ranlib-16"
-      - "D:/work/msys2/usr/bin/core_perl/gcc-ranlib-16.com"
-      - "D:/work/msys2/usr/bin/core_perl/gcc-ranlib-16.exe"
-      - "D:/work/msys2/usr/bin/core_perl/gcc-ranlib-16"
-      - "D:/work/msys2/mingw64/bin/gcc-ranlib16.com"
-      - "D:/work/msys2/mingw64/bin/gcc-ranlib16.exe"
-      - "D:/work/msys2/mingw64/bin/gcc-ranlib16"
-      - "D:/work/msys2/usr/local/bin/gcc-ranlib16.com"
-      - "D:/work/msys2/usr/local/bin/gcc-ranlib16.exe"
-      - "D:/work/msys2/usr/local/bin/gcc-ranlib16"
-      - "D:/work/msys2/usr/bin/gcc-ranlib16.com"
-      - "D:/work/msys2/usr/bin/gcc-ranlib16.exe"
-      - "D:/work/msys2/usr/bin/gcc-ranlib16"
-      - "C:/Windows/System32/gcc-ranlib16.com"
-      - "C:/Windows/System32/gcc-ranlib16.exe"
-      - "C:/Windows/System32/gcc-ranlib16"
-      - "C:/Windows/gcc-ranlib16.com"
-      - "C:/Windows/gcc-ranlib16.exe"
-      - "C:/Windows/gcc-ranlib16"
-      - "C:/Windows/System32/wbem/gcc-ranlib16.com"
-      - "C:/Windows/System32/wbem/gcc-ranlib16.exe"
-      - "C:/Windows/System32/wbem/gcc-ranlib16"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib16.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib16.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib16"
-      - "D:/work/msys2/usr/bin/site_perl/gcc-ranlib16.com"
-      - "D:/work/msys2/usr/bin/site_perl/gcc-ranlib16.exe"
-      - "D:/work/msys2/usr/bin/site_perl/gcc-ranlib16"
-      - "D:/work/msys2/usr/bin/vendor_perl/gcc-ranlib16.com"
-      - "D:/work/msys2/usr/bin/vendor_perl/gcc-ranlib16.exe"
-      - "D:/work/msys2/usr/bin/vendor_perl/gcc-ranlib16"
-      - "D:/work/msys2/usr/bin/core_perl/gcc-ranlib16.com"
-      - "D:/work/msys2/usr/bin/core_perl/gcc-ranlib16.exe"
-      - "D:/work/msys2/usr/bin/core_perl/gcc-ranlib16"
-      - "D:/work/msys2/mingw64/bin/gcc-ranlib.com"
-    found: "D:/work/msys2/mingw64/bin/gcc-ranlib.exe"
-    search_context:
-      ENV{PATH}:
-        - "D:\\work\\msys2\\mingw64\\bin"
-        - "D:\\work\\msys2\\usr\\local\\bin"
-        - "D:\\work\\msys2\\usr\\bin"
-        - "D:\\work\\msys2\\usr\\bin"
-        - "C:\\Windows\\System32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "D:\\work\\msys2\\usr\\bin\\site_perl"
-        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
-        - "D:\\work\\msys2\\usr\\bin\\core_perl"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCompiler.cmake:54 (find_program)"
       - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
       - "CMakeLists.txt:3 (project)"
     mode: "program"
@@ -995,10 +70,10 @@ events:
     settings:
       SearchFramework: "NEVER"
       SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
       CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: false
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
       - "c++"
@@ -1009,6 +84,15 @@ events:
       - "clang++"
     candidate_directories:
       - "D:/work/msys2/mingw64/bin/"
+      - "D:/work/msys2/usr/local/bin/"
+      - "D:/work/msys2/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "D:/work/msys2/usr/bin/site_perl/"
+      - "D:/work/msys2/usr/bin/vendor_perl/"
+      - "D:/work/msys2/usr/bin/core_perl/"
     searched_directories:
       - "D:/work/msys2/mingw64/bin/c++.com"
     found: "D:/work/msys2/mingw64/bin/c++.exe"
@@ -1085,6 +169,541 @@ events:
       The CXX compiler identification is GNU, found in:
         D:/work/programs/prj/APIAgent/build/CMakeFiles/4.4.2/CompilerIdCXX/a.exe
       
+  -
+    kind: "find-v1"
+    backtrace:
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ar"
+    candidate_directories:
+      - "D:/work/msys2/mingw64/bin/"
+      - "D:/work/msys2/usr/local/bin/"
+      - "D:/work/msys2/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "D:/work/msys2/usr/bin/site_perl/"
+      - "D:/work/msys2/usr/bin/vendor_perl/"
+      - "D:/work/msys2/usr/bin/core_perl/"
+    searched_directories:
+      - "D:/work/msys2/mingw64/bin/ar.com"
+    found: "D:/work/msys2/mingw64/bin/ar.exe"
+    search_context:
+      ENV{PATH}:
+        - "D:\\work\\msys2\\mingw64\\bin"
+        - "D:\\work\\msys2\\usr\\local\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "D:\\work\\msys2\\usr\\bin\\site_perl"
+        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
+        - "D:\\work\\msys2\\usr\\bin\\core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_RANLIB"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ranlib"
+    candidate_directories:
+      - "D:/work/msys2/mingw64/bin/"
+      - "D:/work/msys2/usr/local/bin/"
+      - "D:/work/msys2/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "D:/work/msys2/usr/bin/site_perl/"
+      - "D:/work/msys2/usr/bin/vendor_perl/"
+      - "D:/work/msys2/usr/bin/core_perl/"
+    searched_directories:
+      - "D:/work/msys2/mingw64/bin/ranlib.com"
+    found: "D:/work/msys2/mingw64/bin/ranlib.exe"
+    search_context:
+      ENV{PATH}:
+        - "D:\\work\\msys2\\mingw64\\bin"
+        - "D:\\work\\msys2\\usr\\local\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "D:\\work\\msys2\\usr\\bin\\site_perl"
+        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
+        - "D:\\work\\msys2\\usr\\bin\\core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "strip"
+    candidate_directories:
+      - "D:/work/msys2/mingw64/bin/"
+      - "D:/work/msys2/usr/local/bin/"
+      - "D:/work/msys2/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "D:/work/msys2/usr/bin/site_perl/"
+      - "D:/work/msys2/usr/bin/vendor_perl/"
+      - "D:/work/msys2/usr/bin/core_perl/"
+    searched_directories:
+      - "D:/work/msys2/mingw64/bin/strip.com"
+    found: "D:/work/msys2/mingw64/bin/strip.exe"
+    search_context:
+      ENV{PATH}:
+        - "D:\\work\\msys2\\mingw64\\bin"
+        - "D:\\work\\msys2\\usr\\local\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "D:\\work\\msys2\\usr\\bin\\site_perl"
+        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
+        - "D:\\work\\msys2\\usr\\bin\\core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ld"
+    candidate_directories:
+      - "D:/work/msys2/mingw64/bin/"
+      - "D:/work/msys2/usr/local/bin/"
+      - "D:/work/msys2/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "D:/work/msys2/usr/bin/site_perl/"
+      - "D:/work/msys2/usr/bin/vendor_perl/"
+      - "D:/work/msys2/usr/bin/core_perl/"
+    searched_directories:
+      - "D:/work/msys2/mingw64/bin/ld.com"
+    found: "D:/work/msys2/mingw64/bin/ld.exe"
+    search_context:
+      ENV{PATH}:
+        - "D:\\work\\msys2\\mingw64\\bin"
+        - "D:\\work\\msys2\\usr\\local\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "D:\\work\\msys2\\usr\\bin\\site_perl"
+        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
+        - "D:\\work\\msys2\\usr\\bin\\core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_NM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nm"
+    candidate_directories:
+      - "D:/work/msys2/mingw64/bin/"
+      - "D:/work/msys2/usr/local/bin/"
+      - "D:/work/msys2/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "D:/work/msys2/usr/bin/site_perl/"
+      - "D:/work/msys2/usr/bin/vendor_perl/"
+      - "D:/work/msys2/usr/bin/core_perl/"
+    searched_directories:
+      - "D:/work/msys2/mingw64/bin/nm.com"
+    found: "D:/work/msys2/mingw64/bin/nm.exe"
+    search_context:
+      ENV{PATH}:
+        - "D:\\work\\msys2\\mingw64\\bin"
+        - "D:\\work\\msys2\\usr\\local\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "D:\\work\\msys2\\usr\\bin\\site_perl"
+        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
+        - "D:\\work\\msys2\\usr\\bin\\core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objdump"
+    candidate_directories:
+      - "D:/work/msys2/mingw64/bin/"
+      - "D:/work/msys2/usr/local/bin/"
+      - "D:/work/msys2/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "D:/work/msys2/usr/bin/site_perl/"
+      - "D:/work/msys2/usr/bin/vendor_perl/"
+      - "D:/work/msys2/usr/bin/core_perl/"
+    searched_directories:
+      - "D:/work/msys2/mingw64/bin/objdump.com"
+    found: "D:/work/msys2/mingw64/bin/objdump.exe"
+    search_context:
+      ENV{PATH}:
+        - "D:\\work\\msys2\\mingw64\\bin"
+        - "D:\\work\\msys2\\usr\\local\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "D:\\work\\msys2\\usr\\bin\\site_perl"
+        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
+        - "D:\\work\\msys2\\usr\\bin\\core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objcopy"
+    candidate_directories:
+      - "D:/work/msys2/mingw64/bin/"
+      - "D:/work/msys2/usr/local/bin/"
+      - "D:/work/msys2/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "D:/work/msys2/usr/bin/site_perl/"
+      - "D:/work/msys2/usr/bin/vendor_perl/"
+      - "D:/work/msys2/usr/bin/core_perl/"
+    searched_directories:
+      - "D:/work/msys2/mingw64/bin/objcopy.com"
+    found: "D:/work/msys2/mingw64/bin/objcopy.exe"
+    search_context:
+      ENV{PATH}:
+        - "D:\\work\\msys2\\mingw64\\bin"
+        - "D:\\work\\msys2\\usr\\local\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "D:\\work\\msys2\\usr\\bin\\site_perl"
+        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
+        - "D:\\work\\msys2\\usr\\bin\\core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "readelf"
+    candidate_directories:
+      - "D:/work/msys2/mingw64/bin/"
+      - "D:/work/msys2/usr/local/bin/"
+      - "D:/work/msys2/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "D:/work/msys2/usr/bin/site_perl/"
+      - "D:/work/msys2/usr/bin/vendor_perl/"
+      - "D:/work/msys2/usr/bin/core_perl/"
+    searched_directories:
+      - "D:/work/msys2/mingw64/bin/readelf.com"
+    found: "D:/work/msys2/mingw64/bin/readelf.exe"
+    search_context:
+      ENV{PATH}:
+        - "D:\\work\\msys2\\mingw64\\bin"
+        - "D:\\work\\msys2\\usr\\local\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "D:\\work\\msys2\\usr\\bin\\site_perl"
+        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
+        - "D:\\work\\msys2\\usr\\bin\\core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "dlltool"
+    candidate_directories:
+      - "D:/work/msys2/mingw64/bin/"
+      - "D:/work/msys2/usr/local/bin/"
+      - "D:/work/msys2/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "D:/work/msys2/usr/bin/site_perl/"
+      - "D:/work/msys2/usr/bin/vendor_perl/"
+      - "D:/work/msys2/usr/bin/core_perl/"
+    searched_directories:
+      - "D:/work/msys2/mingw64/bin/dlltool.com"
+    found: "D:/work/msys2/mingw64/bin/dlltool.exe"
+    search_context:
+      ENV{PATH}:
+        - "D:\\work\\msys2\\mingw64\\bin"
+        - "D:\\work\\msys2\\usr\\local\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "D:\\work\\msys2\\usr\\bin\\site_perl"
+        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
+        - "D:\\work\\msys2\\usr\\bin\\core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "addr2line"
+    candidate_directories:
+      - "D:/work/msys2/mingw64/bin/"
+      - "D:/work/msys2/usr/local/bin/"
+      - "D:/work/msys2/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "D:/work/msys2/usr/bin/site_perl/"
+      - "D:/work/msys2/usr/bin/vendor_perl/"
+      - "D:/work/msys2/usr/bin/core_perl/"
+    searched_directories:
+      - "D:/work/msys2/mingw64/bin/addr2line.com"
+    found: "D:/work/msys2/mingw64/bin/addr2line.exe"
+    search_context:
+      ENV{PATH}:
+        - "D:\\work\\msys2\\mingw64\\bin"
+        - "D:\\work\\msys2\\usr\\local\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "D:\\work\\msys2\\usr\\bin\\site_perl"
+        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
+        - "D:\\work\\msys2\\usr\\bin\\core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_TAPI"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "tapi"
+    candidate_directories:
+      - "D:/work/msys2/mingw64/bin/"
+      - "D:/work/msys2/usr/local/bin/"
+      - "D:/work/msys2/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "D:/work/msys2/usr/bin/site_perl/"
+      - "D:/work/msys2/usr/bin/vendor_perl/"
+      - "D:/work/msys2/usr/bin/core_perl/"
+    searched_directories:
+      - "D:/work/msys2/mingw64/bin/tapi.com"
+      - "D:/work/msys2/mingw64/bin/tapi.exe"
+      - "D:/work/msys2/mingw64/bin/tapi"
+      - "D:/work/msys2/usr/local/bin/tapi.com"
+      - "D:/work/msys2/usr/local/bin/tapi.exe"
+      - "D:/work/msys2/usr/local/bin/tapi"
+      - "D:/work/msys2/usr/bin/tapi.com"
+      - "D:/work/msys2/usr/bin/tapi.exe"
+      - "D:/work/msys2/usr/bin/tapi"
+      - "C:/Windows/System32/tapi.com"
+      - "C:/Windows/System32/tapi.exe"
+      - "C:/Windows/System32/tapi"
+      - "C:/Windows/tapi.com"
+      - "C:/Windows/tapi.exe"
+      - "C:/Windows/tapi"
+      - "C:/Windows/System32/wbem/tapi.com"
+      - "C:/Windows/System32/wbem/tapi.exe"
+      - "C:/Windows/System32/wbem/tapi"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/tapi.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/tapi.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/tapi"
+      - "D:/work/msys2/usr/bin/site_perl/tapi.com"
+      - "D:/work/msys2/usr/bin/site_perl/tapi.exe"
+      - "D:/work/msys2/usr/bin/site_perl/tapi"
+      - "D:/work/msys2/usr/bin/vendor_perl/tapi.com"
+      - "D:/work/msys2/usr/bin/vendor_perl/tapi.exe"
+      - "D:/work/msys2/usr/bin/vendor_perl/tapi"
+      - "D:/work/msys2/usr/bin/core_perl/tapi.com"
+      - "D:/work/msys2/usr/bin/core_perl/tapi.exe"
+      - "D:/work/msys2/usr/bin/core_perl/tapi"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "D:\\work\\msys2\\mingw64\\bin"
+        - "D:\\work\\msys2\\usr\\local\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "D:\\work\\msys2\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "D:\\work\\msys2\\usr\\bin\\site_perl"
+        - "D:\\work\\msys2\\usr\\bin\\vendor_perl"
+        - "D:\\work\\msys2\\usr\\bin\\core_perl"
   -
     kind: "find-v1"
     backtrace:
@@ -1368,8 +987,8 @@ events:
     backtrace:
       - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
       - "D:/work/msys2/mingw64/share/cmake/Modules/Platform/Windows-GNU.cmake:169 (enable_language)"
-      - "D:/work/msys2/mingw64/share/cmake/Modules/Platform/Windows-GNU-C.cmake:2 (__windows_compiler_gnu)"
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeCInformation.cmake:48 (include)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake:2 (__windows_compiler_gnu)"
+      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeCXXInformation.cmake:48 (include)"
       - "CMakeLists.txt:3 (project)"
     mode: "program"
     variable: "CMAKE_RC_COMPILER"
@@ -1435,285 +1054,13 @@ events:
     kind: "try_compile-v1"
     backtrace:
       - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:123 (try_compile)"
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:3 (project)"
-    checks:
-      - "Detecting C compiler ABI info"
-    directories:
-      source: "D:/work/programs/prj/APIAgent/build/CMakeFiles/CMakeScratch/TryCompile-763gi0"
-      binary: "D:/work/programs/prj/APIAgent/build/CMakeFiles/CMakeScratch/TryCompile-763gi0"
-    cmakeVariables:
-      CMAKE_CXX_STDLIB_MODULES_JSON: ""
-      CMAKE_C_FLAGS: ""
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-    buildResult:
-      variable: "CMAKE_C_ABI_COMPILED"
-      cached: false
-      stdout: |
-        Change Dir: 'D:/work/programs/prj/APIAgent/build/CMakeFiles/CMakeScratch/TryCompile-763gi0'
-        
-        Run Build Command(s): D:/work/msys2/mingw64/bin/ninja.exe -v cmTC_bb1e6
-        [1/2] D:\\work\\msys2\\mingw64\\bin\\cc.exe   -v -o CMakeFiles/cmTC_bb1e6.dir/CMakeCCompilerABI.c.obj -c D:/work/msys2/mingw64/share/cmake/Modules/CMakeCCompilerABI.c
-        Using built-in specs.
-        COLLECT_GCC=D:\\work\\msys2\\mingw64\\bin\\cc.exe
-        Target: x86_64-w64-mingw32
-        Configured with: ../gcc-16.2.0/configure --prefix=/mingw64 --with-sysroot=/mingw64 --with-build-sysroot=D:/M/msys64/mingw64 --with-local-prefix=/local --with-native-system-header-dir=/include --libexecdir=/mingw64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,c++,ada,fortran,lto,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-tls --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev3, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-lto --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++
-        Thread model: posix
-        Supported LTO compression algorithms: zlib zstd
-        gcc version 16.2.0 (Rev3, Built by MSYS2 project) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bb1e6.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_bb1e6.dir/'
-         D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/cc1.exe -quiet -v -iprefix D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/ -isysroot D:/work/msys2/mingw64/bin/../../mingw64 -D_REENTRANT D:/work/msys2/mingw64/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_bb1e6.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o D:\\work\\msys2\\tmp\\ccj5ILtK.s
-        GNU C23 (Rev3, Built by MSYS2 project) version 16.2.0 (x86_64-w64-mingw32)
-        	compiled by GNU C version 16.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version isl-0.28-GMP
-        
-        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring nonexistent directory "D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/include"
-        ignoring duplicate directory "D:/work/msys2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/16.2.0/include"
-        ignoring nonexistent directory "D:/work/msys2/mingw64/bin/../../mingw64/local/include"
-        ignoring duplicate directory "D:/work/msys2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed"
-        ignoring nonexistent directory "D:/work/msys2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/include"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/include
-         D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed
-         D:/work/msys2/mingw64/bin/../../mingw64/include
-        End of search list.
-        Compiler executable checksum: 0cd2d9fa6453d77e7a6d65e57e995577
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bb1e6.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_bb1e6.dir/'
-         D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_bb1e6.dir/CMakeCCompilerABI.c.obj D:\\work\\msys2\\tmp\\ccj5ILtK.s
-        GNU assembler version 2.47 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.47.20260726
-        COMPILER_PATH=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/;D:/work/msys2/mingw64/bin/../lib/gcc/;D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/
-        LIBRARY_PATH=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/;D:/work/msys2/mingw64/bin/../lib/gcc/;D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/;D:/work/msys2/mingw64/bin/../../mingw64/lib/../lib/;D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/;D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../;D:/work/msys2/mingw64/bin/../../mingw64/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bb1e6.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_bb1e6.dir/CMakeCCompilerABI.c.'
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\work\\msys2\\mingw64\\bin\\cc.exe  -v -Wl,-v CMakeFiles/cmTC_bb1e6.dir/CMakeCCompilerABI.c.obj -o cmTC_bb1e6.exe -Wl,--out-implib,libcmTC_bb1e6.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
-        Using built-in specs.
-        COLLECT_GCC=D:\\work\\msys2\\mingw64\\bin\\cc.exe
-        COLLECT_LTO_WRAPPER=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe
-        Target: x86_64-w64-mingw32
-        Configured with: ../gcc-16.2.0/configure --prefix=/mingw64 --with-sysroot=/mingw64 --with-build-sysroot=D:/M/msys64/mingw64 --with-local-prefix=/local --with-native-system-header-dir=/include --libexecdir=/mingw64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,c++,ada,fortran,lto,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-tls --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev3, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-lto --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++
-        Thread model: posix
-        Supported LTO compression algorithms: zlib zstd
-        gcc version 16.2.0 (Rev3, Built by MSYS2 project) 
-        COMPILER_PATH=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/;D:/work/msys2/mingw64/bin/../lib/gcc/;D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/
-        LIBRARY_PATH=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/;D:/work/msys2/mingw64/bin/../lib/gcc/;D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/;D:/work/msys2/mingw64/bin/../../mingw64/lib/../lib/;D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/;D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../;D:/work/msys2/mingw64/bin/../../mingw64/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bb1e6.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_bb1e6.'
-         D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/collect2.exe -plugin D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.dll -plugin-opt=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe -plugin-opt=-fresolution=D:\\work\\msys2\\tmp\\cch4zS3X.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=D:/work/msys2/mingw64/bin/../../mingw64 -m i386pep -Bdynamic -o cmTC_bb1e6.exe D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/crt2.o D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0 -LD:/work/msys2/mingw64/bin/../lib/gcc -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib -LD:/work/msys2/mingw64/bin/../../mingw64/lib/../lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../.. -LD:/work/msys2/mingw64/bin/../../mingw64/lib -v CMakeFiles/cmTC_bb1e6.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_bb1e6.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/default-manifest.o D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o
-        collect2 version 16.2.0
-        D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.dll -plugin-opt=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe -plugin-opt=-fresolution=D:\\work\\msys2\\tmp\\cch4zS3X.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=D:/work/msys2/mingw64/bin/../../mingw64 -m i386pep -Bdynamic -o cmTC_bb1e6.exe D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/crt2.o D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0 -LD:/work/msys2/mingw64/bin/../lib/gcc -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib -LD:/work/msys2/mingw64/bin/../../mingw64/lib/../lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../.. -LD:/work/msys2/mingw64/bin/../../mingw64/lib -v CMakeFiles/cmTC_bb1e6.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_bb1e6.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/default-manifest.o D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o
-        GNU ld (GNU Binutils) 2.47.20260726
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bb1e6.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_bb1e6.'
-        
-      exitCode: 0
-  -
-    kind: "message-v1"
-    backtrace:
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (message)"
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:3 (project)"
-    message: |
-      Parsed C implicit include dir info: rv=done
-        found start of include info
-        found start of implicit include info
-          add: [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/include]
-          add: [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed]
-          add: [D:/work/msys2/mingw64/bin/../../mingw64/include]
-        end of search list found
-        collapse include dir [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/include] ==> [D:/work/msys2/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include]
-        collapse include dir [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed] ==> [D:/work/msys2/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed]
-        collapse include dir [D:/work/msys2/mingw64/bin/../../mingw64/include] ==> [D:/work/msys2/mingw64/include]
-        implicit include dirs: [D:/work/msys2/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include;D:/work/msys2/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed;D:/work/msys2/mingw64/include]
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:291 (message)"
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:3 (project)"
-    message: |
-      Parsed C implicit link information:
-        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild))("|,| |$)]
-        ignore line: [Change Dir: 'D:/work/programs/prj/APIAgent/build/CMakeFiles/CMakeScratch/TryCompile-763gi0']
-        ignore line: []
-        ignore line: [Run Build Command(s): D:/work/msys2/mingw64/bin/ninja.exe -v cmTC_bb1e6]
-        ignore line: [[1/2] D:\\work\\msys2\\mingw64\\bin\\cc.exe   -v -o CMakeFiles/cmTC_bb1e6.dir/CMakeCCompilerABI.c.obj -c D:/work/msys2/mingw64/share/cmake/Modules/CMakeCCompilerABI.c]
-        ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=D:\\work\\msys2\\mingw64\\bin\\cc.exe]
-        ignore line: [Target: x86_64-w64-mingw32]
-        ignore line: [Configured with: ../gcc-16.2.0/configure --prefix=/mingw64 --with-sysroot=/mingw64 --with-build-sysroot=D:/M/msys64/mingw64 --with-local-prefix=/local --with-native-system-header-dir=/include --libexecdir=/mingw64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,c++,ada,fortran,lto,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-tls --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev3, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-lto --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++]
-        ignore line: [Thread model: posix]
-        ignore line: [Supported LTO compression algorithms: zlib zstd]
-        ignore line: [gcc version 16.2.0 (Rev3  Built by MSYS2 project) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bb1e6.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_bb1e6.dir/']
-        ignore line: [ D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/cc1.exe -quiet -v -iprefix D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/ -isysroot D:/work/msys2/mingw64/bin/../../mingw64 -D_REENTRANT D:/work/msys2/mingw64/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_bb1e6.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o D:\\work\\msys2\\tmp\\ccj5ILtK.s]
-        ignore line: [GNU C23 (Rev3  Built by MSYS2 project) version 16.2.0 (x86_64-w64-mingw32)]
-        ignore line: [	compiled by GNU C version 16.2.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version isl-0.28-GMP]
-        ignore line: []
-        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [ignoring nonexistent directory "D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/include"]
-        ignore line: [ignoring duplicate directory "D:/work/msys2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/16.2.0/include"]
-        ignore line: [ignoring nonexistent directory "D:/work/msys2/mingw64/bin/../../mingw64/local/include"]
-        ignore line: [ignoring duplicate directory "D:/work/msys2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed"]
-        ignore line: [ignoring nonexistent directory "D:/work/msys2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/include"]
-        ignore line: [#include "..." search starts here:]
-        ignore line: [#include <...> search starts here:]
-        ignore line: [ D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/include]
-        ignore line: [ D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/include-fixed]
-        ignore line: [ D:/work/msys2/mingw64/bin/../../mingw64/include]
-        ignore line: [End of search list.]
-        ignore line: [Compiler executable checksum: 0cd2d9fa6453d77e7a6d65e57e995577]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bb1e6.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_bb1e6.dir/']
-        ignore line: [ D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_bb1e6.dir/CMakeCCompilerABI.c.obj D:\\work\\msys2\\tmp\\ccj5ILtK.s]
-        ignore line: [GNU assembler version 2.47 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.47.20260726]
-        ignore line: [COMPILER_PATH=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/]
-        ignore line: [D:/work/msys2/mingw64/bin/../lib/gcc/]
-        ignore line: [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/]
-        ignore line: [LIBRARY_PATH=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/]
-        ignore line: [D:/work/msys2/mingw64/bin/../lib/gcc/]
-        ignore line: [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/]
-        ignore line: [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/]
-        ignore line: [D:/work/msys2/mingw64/bin/../../mingw64/lib/../lib/]
-        ignore line: [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/]
-        ignore line: [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../]
-        ignore line: [D:/work/msys2/mingw64/bin/../../mingw64/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bb1e6.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_bb1e6.dir/CMakeCCompilerABI.c.']
-        ignore line: [[2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\work\\msys2\\mingw64\\bin\\cc.exe  -v -Wl -v CMakeFiles/cmTC_bb1e6.dir/CMakeCCompilerABI.c.obj -o cmTC_bb1e6.exe -Wl --out-implib libcmTC_bb1e6.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
-        ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=D:\\work\\msys2\\mingw64\\bin\\cc.exe]
-        ignore line: [COLLECT_LTO_WRAPPER=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe]
-        ignore line: [Target: x86_64-w64-mingw32]
-        ignore line: [Configured with: ../gcc-16.2.0/configure --prefix=/mingw64 --with-sysroot=/mingw64 --with-build-sysroot=D:/M/msys64/mingw64 --with-local-prefix=/local --with-native-system-header-dir=/include --libexecdir=/mingw64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,c++,ada,fortran,lto,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-tls --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev3, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-lto --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++]
-        ignore line: [Thread model: posix]
-        ignore line: [Supported LTO compression algorithms: zlib zstd]
-        ignore line: [gcc version 16.2.0 (Rev3  Built by MSYS2 project) ]
-        ignore line: [COMPILER_PATH=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/]
-        ignore line: [D:/work/msys2/mingw64/bin/../lib/gcc/]
-        ignore line: [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/]
-        ignore line: [LIBRARY_PATH=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/]
-        ignore line: [D:/work/msys2/mingw64/bin/../lib/gcc/]
-        ignore line: [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/]
-        ignore line: [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/]
-        ignore line: [D:/work/msys2/mingw64/bin/../../mingw64/lib/../lib/]
-        ignore line: [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/]
-        ignore line: [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../]
-        ignore line: [D:/work/msys2/mingw64/bin/../../mingw64/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bb1e6.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_bb1e6.']
-        link line: [ D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/collect2.exe -plugin D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.dll -plugin-opt=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe -plugin-opt=-fresolution=D:\\work\\msys2\\tmp\\cch4zS3X.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=D:/work/msys2/mingw64/bin/../../mingw64 -m i386pep -Bdynamic -o cmTC_bb1e6.exe D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/crt2.o D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0 -LD:/work/msys2/mingw64/bin/../lib/gcc -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib -LD:/work/msys2/mingw64/bin/../../mingw64/lib/../lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../.. -LD:/work/msys2/mingw64/bin/../../mingw64/lib -v CMakeFiles/cmTC_bb1e6.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_bb1e6.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/default-manifest.o D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o]
-          arg [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/collect2.exe] ==> ignore
-          arg [-plugin] ==> ignore
-          arg [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.dll] ==> ignore
-          arg [-plugin-opt=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=D:\\work\\msys2\\tmp\\cch4zS3X.res] ==> ignore
-          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
-          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
-          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
-          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
-          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
-          arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
-          arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
-          arg [-plugin-opt=-pass-through=-luser32] ==> ignore
-          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
-          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
-          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
-          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
-          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
-          arg [--sysroot=D:/work/msys2/mingw64/bin/../../mingw64] ==> ignore
-          arg [-m] ==> ignore
-          arg [i386pep] ==> ignore
-          arg [-Bdynamic] ==> search dynamic
-          arg [-o] ==> ignore
-          arg [cmTC_bb1e6.exe] ==> ignore
-          arg [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/crt2.o] ==> obj [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/crt2.o]
-          arg [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o] ==> obj [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o]
-          arg [-LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0] ==> dir [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0]
-          arg [-LD:/work/msys2/mingw64/bin/../lib/gcc] ==> dir [D:/work/msys2/mingw64/bin/../lib/gcc]
-          arg [-LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib]
-          arg [-LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib] ==> dir [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib]
-          arg [-LD:/work/msys2/mingw64/bin/../../mingw64/lib/../lib] ==> dir [D:/work/msys2/mingw64/bin/../../mingw64/lib/../lib]
-          arg [-LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib] ==> dir [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib]
-          arg [-LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../..] ==> dir [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../..]
-          arg [-LD:/work/msys2/mingw64/bin/../../mingw64/lib] ==> dir [D:/work/msys2/mingw64/bin/../../mingw64/lib]
-          arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_bb1e6.dir/CMakeCCompilerABI.c.obj] ==> ignore
-          arg [--out-implib] ==> ignore
-          arg [libcmTC_bb1e6.dll.a] ==> ignore
-          arg [--major-image-version] ==> ignore
-          arg [0] ==> ignore
-          arg [--minor-image-version] ==> ignore
-          arg [0] ==> ignore
-          arg [-lmingw32] ==> lib [mingw32]
-          arg [-lgcc] ==> lib [gcc]
-          arg [-lgcc_eh] ==> lib [gcc_eh]
-          arg [-lmingwex] ==> lib [mingwex]
-          arg [-lmsvcrt] ==> lib [msvcrt]
-          arg [-lkernel32] ==> lib [kernel32]
-          arg [-lpthread] ==> lib [pthread]
-          arg [-ladvapi32] ==> lib [advapi32]
-          arg [-lshell32] ==> lib [shell32]
-          arg [-luser32] ==> lib [user32]
-          arg [-lkernel32] ==> lib [kernel32]
-          arg [-lmingw32] ==> lib [mingw32]
-          arg [-lgcc] ==> lib [gcc]
-          arg [-lgcc_eh] ==> lib [gcc_eh]
-          arg [-lmingwex] ==> lib [mingwex]
-          arg [-lmsvcrt] ==> lib [msvcrt]
-          arg [-lkernel32] ==> lib [kernel32]
-          arg [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/default-manifest.o] ==> obj [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/default-manifest.o]
-          arg [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o] ==> obj [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o]
-        ignore line: [collect2 version 16.2.0]
-        link line: [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.dll -plugin-opt=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe -plugin-opt=-fresolution=D:\\work\\msys2\\tmp\\cch4zS3X.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=D:/work/msys2/mingw64/bin/../../mingw64 -m i386pep -Bdynamic -o cmTC_bb1e6.exe D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/crt2.o D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0 -LD:/work/msys2/mingw64/bin/../lib/gcc -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib -LD:/work/msys2/mingw64/bin/../../mingw64/lib/../lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../.. -LD:/work/msys2/mingw64/bin/../../mingw64/lib -v CMakeFiles/cmTC_bb1e6.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_bb1e6.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/default-manifest.o D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o] ==> linker [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe]
-        link line: [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.dll -plugin-opt=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe -plugin-opt=-fresolution=D:\\work\\msys2\\tmp\\cch4zS3X.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=D:/work/msys2/mingw64/bin/../../mingw64 -m i386pep -Bdynamic -o cmTC_bb1e6.exe D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/crt2.o D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0 -LD:/work/msys2/mingw64/bin/../lib/gcc -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib -LD:/work/msys2/mingw64/bin/../../mingw64/lib/../lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../.. -LD:/work/msys2/mingw64/bin/../../mingw64/lib -v CMakeFiles/cmTC_bb1e6.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_bb1e6.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/default-manifest.o D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o] ==> linker architecture flags [-m;i386pep]
-        ignore line: [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.dll -plugin-opt=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe -plugin-opt=-fresolution=D:\\work\\msys2\\tmp\\cch4zS3X.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=D:/work/msys2/mingw64/bin/../../mingw64 -m i386pep -Bdynamic -o cmTC_bb1e6.exe D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/crt2.o D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0 -LD:/work/msys2/mingw64/bin/../lib/gcc -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib -LD:/work/msys2/mingw64/bin/../../mingw64/lib/../lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../.. -LD:/work/msys2/mingw64/bin/../../mingw64/lib -v CMakeFiles/cmTC_bb1e6.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_bb1e6.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/default-manifest.o D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o]
-        linker tool for 'C': D:/work/msys2/mingw64/x86_64-w64-mingw32/bin/ld.exe -m;i386pep
-        remove lib [gcc_eh]
-        remove lib [msvcrt]
-        remove lib [gcc_eh]
-        remove lib [msvcrt]
-        collapse obj [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/crt2.o] ==> [D:/work/msys2/mingw64/lib/crt2.o]
-        collapse obj [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o] ==> [D:/work/msys2/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o]
-        collapse obj [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/default-manifest.o] ==> [D:/work/msys2/mingw64/lib/default-manifest.o]
-        collapse obj [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o] ==> [D:/work/msys2/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o]
-        collapse library dir [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0] ==> [D:/work/msys2/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0]
-        collapse library dir [D:/work/msys2/mingw64/bin/../lib/gcc] ==> [D:/work/msys2/mingw64/lib/gcc]
-        collapse library dir [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> [D:/work/msys2/mingw64/x86_64-w64-mingw32/lib]
-        collapse library dir [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib] ==> [D:/work/msys2/mingw64/lib]
-        collapse library dir [D:/work/msys2/mingw64/bin/../../mingw64/lib/../lib] ==> [D:/work/msys2/mingw64/lib]
-        collapse library dir [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib] ==> [D:/work/msys2/mingw64/x86_64-w64-mingw32/lib]
-        collapse library dir [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../..] ==> [D:/work/msys2/mingw64/lib]
-        collapse library dir [D:/work/msys2/mingw64/bin/../../mingw64/lib] ==> [D:/work/msys2/mingw64/lib]
-        implicit libs: [mingw32;gcc;mingwex;kernel32;pthread;advapi32;shell32;user32;kernel32;mingw32;gcc;mingwex;kernel32]
-        implicit objs: [D:/work/msys2/mingw64/lib/crt2.o;D:/work/msys2/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o;D:/work/msys2/mingw64/lib/default-manifest.o;D:/work/msys2/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o]
-        implicit dirs: [D:/work/msys2/mingw64/lib/gcc/x86_64-w64-mingw32/16.2.0;D:/work/msys2/mingw64/lib/gcc;D:/work/msys2/mingw64/x86_64-w64-mingw32/lib;D:/work/msys2/mingw64/lib]
-        implicit fwks: []
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "D:/work/msys2/mingw64/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:41 (message)"
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:337 (cmake_determine_linker_id)"
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:3 (project)"
-    message: |
-      Running the C compiler's linker: "D:/work/msys2/mingw64/x86_64-w64-mingw32/bin/ld.exe" "-v"
-      GNU ld (GNU Binutils) 2.47.20260726
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:123 (try_compile)"
       - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:3 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/work/programs/prj/APIAgent/build/CMakeFiles/CMakeScratch/TryCompile-3tntn9"
-      binary: "D:/work/programs/prj/APIAgent/build/CMakeFiles/CMakeScratch/TryCompile-3tntn9"
+      source: "D:/work/programs/prj/APIAgent/build/CMakeFiles/CMakeScratch/TryCompile-igm89a"
+      binary: "D:/work/programs/prj/APIAgent/build/CMakeFiles/CMakeScratch/TryCompile-igm89a"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1724,10 +1071,10 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: false
       stdout: |
-        Change Dir: 'D:/work/programs/prj/APIAgent/build/CMakeFiles/CMakeScratch/TryCompile-3tntn9'
+        Change Dir: 'D:/work/programs/prj/APIAgent/build/CMakeFiles/CMakeScratch/TryCompile-igm89a'
         
-        Run Build Command(s): D:/work/msys2/mingw64/bin/ninja.exe -v cmTC_b3eaa
-        [1/2] D:\\work\\msys2\\mingw64\\bin\\c++.exe   -v -o CMakeFiles/cmTC_b3eaa.dir/CMakeCXXCompilerABI.cpp.obj -c D:/work/msys2/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): D:/work/msys2/mingw64/bin/ninja.exe -v cmTC_2c2ee
+        [1/2] D:\\work\\msys2\\mingw64\\bin\\c++.exe   -v -o CMakeFiles/cmTC_2c2ee.dir/CMakeCXXCompilerABI.cpp.obj -c D:/work/msys2/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=D:\\work\\msys2\\mingw64\\bin\\c++.exe
         Target: x86_64-w64-mingw32
@@ -1735,8 +1082,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 16.2.0 (Rev3, Built by MSYS2 project) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b3eaa.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_b3eaa.dir/'
-         D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/cc1plus.exe -quiet -v -iprefix D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/ -isysroot D:/work/msys2/mingw64/bin/../../mingw64 -D_REENTRANT D:/work/msys2/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_b3eaa.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o D:\\work\\msys2\\tmp\\cc46FEpE.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2c2ee.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_2c2ee.dir/'
+         D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/cc1plus.exe -quiet -v -iprefix D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/ -isysroot D:/work/msys2/mingw64/bin/../../mingw64 -D_REENTRANT D:/work/msys2/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_2c2ee.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o D:\\work\\msys2\\tmp\\ccDIg4tT.s
         GNU C++20 (Rev3, Built by MSYS2 project) version 16.2.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 16.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version isl-0.28-GMP
         
@@ -1759,13 +1106,13 @@ events:
          D:/work/msys2/mingw64/bin/../../mingw64/include
         End of search list.
         Compiler executable checksum: b15794b24f9167c20083aef153e25b90
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b3eaa.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_b3eaa.dir/'
-         D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_b3eaa.dir/CMakeCXXCompilerABI.cpp.obj D:\\work\\msys2\\tmp\\cc46FEpE.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2c2ee.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_2c2ee.dir/'
+         D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_2c2ee.dir/CMakeCXXCompilerABI.cpp.obj D:\\work\\msys2\\tmp\\ccDIg4tT.s
         GNU assembler version 2.47 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.47.20260726
         COMPILER_PATH=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/;D:/work/msys2/mingw64/bin/../lib/gcc/;D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/;D:/work/msys2/mingw64/bin/../lib/gcc/;D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/;D:/work/msys2/mingw64/bin/../../mingw64/lib/../lib/;D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/;D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../;D:/work/msys2/mingw64/bin/../../mingw64/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b3eaa.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_b3eaa.dir/CMakeCXXCompilerABI.cpp.'
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\work\\msys2\\mingw64\\bin\\c++.exe  -v -Wl,-v CMakeFiles/cmTC_b3eaa.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_b3eaa.exe -Wl,--out-implib,libcmTC_b3eaa.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2c2ee.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_2c2ee.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\work\\msys2\\mingw64\\bin\\c++.exe  -v -Wl,-v CMakeFiles/cmTC_2c2ee.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_2c2ee.exe -Wl,--out-implib,libcmTC_2c2ee.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
         Using built-in specs.
         COLLECT_GCC=D:\\work\\msys2\\mingw64\\bin\\c++.exe
         COLLECT_LTO_WRAPPER=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe
@@ -1776,12 +1123,12 @@ events:
         gcc version 16.2.0 (Rev3, Built by MSYS2 project) 
         COMPILER_PATH=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/;D:/work/msys2/mingw64/bin/../lib/gcc/;D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/;D:/work/msys2/mingw64/bin/../lib/gcc/;D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/;D:/work/msys2/mingw64/bin/../../mingw64/lib/../lib/;D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/;D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../;D:/work/msys2/mingw64/bin/../../mingw64/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b3eaa.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_b3eaa.'
-         D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/collect2.exe -plugin D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.dll -plugin-opt=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe -plugin-opt=-fresolution=D:\\work\\msys2\\tmp\\cc6b16XR.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=D:/work/msys2/mingw64/bin/../../mingw64 -m i386pep -Bdynamic -o cmTC_b3eaa.exe D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/crt2.o D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0 -LD:/work/msys2/mingw64/bin/../lib/gcc -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib -LD:/work/msys2/mingw64/bin/../../mingw64/lib/../lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../.. -LD:/work/msys2/mingw64/bin/../../mingw64/lib -v CMakeFiles/cmTC_b3eaa.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_b3eaa.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/default-manifest.o D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2c2ee.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_2c2ee.'
+         D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/collect2.exe -plugin D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.dll -plugin-opt=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe -plugin-opt=-fresolution=D:\\work\\msys2\\tmp\\cc5G3vyk.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=D:/work/msys2/mingw64/bin/../../mingw64 -m i386pep -Bdynamic -o cmTC_2c2ee.exe D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/crt2.o D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0 -LD:/work/msys2/mingw64/bin/../lib/gcc -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib -LD:/work/msys2/mingw64/bin/../../mingw64/lib/../lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../.. -LD:/work/msys2/mingw64/bin/../../mingw64/lib -v CMakeFiles/cmTC_2c2ee.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_2c2ee.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/default-manifest.o D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o
         collect2 version 16.2.0
-        D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.dll -plugin-opt=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe -plugin-opt=-fresolution=D:\\work\\msys2\\tmp\\cc6b16XR.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=D:/work/msys2/mingw64/bin/../../mingw64 -m i386pep -Bdynamic -o cmTC_b3eaa.exe D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/crt2.o D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0 -LD:/work/msys2/mingw64/bin/../lib/gcc -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib -LD:/work/msys2/mingw64/bin/../../mingw64/lib/../lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../.. -LD:/work/msys2/mingw64/bin/../../mingw64/lib -v CMakeFiles/cmTC_b3eaa.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_b3eaa.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/default-manifest.o D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o
+        D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.dll -plugin-opt=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe -plugin-opt=-fresolution=D:\\work\\msys2\\tmp\\cc5G3vyk.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=D:/work/msys2/mingw64/bin/../../mingw64 -m i386pep -Bdynamic -o cmTC_2c2ee.exe D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/crt2.o D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0 -LD:/work/msys2/mingw64/bin/../lib/gcc -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib -LD:/work/msys2/mingw64/bin/../../mingw64/lib/../lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../.. -LD:/work/msys2/mingw64/bin/../../mingw64/lib -v CMakeFiles/cmTC_2c2ee.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_2c2ee.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/default-manifest.o D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o
         GNU ld (GNU Binutils) 2.47.20260726
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b3eaa.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_b3eaa.'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2c2ee.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_2c2ee.'
         
       exitCode: 0
   -
@@ -1820,10 +1167,10 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild))("|,| |$)]
-        ignore line: [Change Dir: 'D:/work/programs/prj/APIAgent/build/CMakeFiles/CMakeScratch/TryCompile-3tntn9']
+        ignore line: [Change Dir: 'D:/work/programs/prj/APIAgent/build/CMakeFiles/CMakeScratch/TryCompile-igm89a']
         ignore line: []
-        ignore line: [Run Build Command(s): D:/work/msys2/mingw64/bin/ninja.exe -v cmTC_b3eaa]
-        ignore line: [[1/2] D:\\work\\msys2\\mingw64\\bin\\c++.exe   -v -o CMakeFiles/cmTC_b3eaa.dir/CMakeCXXCompilerABI.cpp.obj -c D:/work/msys2/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): D:/work/msys2/mingw64/bin/ninja.exe -v cmTC_2c2ee]
+        ignore line: [[1/2] D:\\work\\msys2\\mingw64\\bin\\c++.exe   -v -o CMakeFiles/cmTC_2c2ee.dir/CMakeCXXCompilerABI.cpp.obj -c D:/work/msys2/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=D:\\work\\msys2\\mingw64\\bin\\c++.exe]
         ignore line: [Target: x86_64-w64-mingw32]
@@ -1831,8 +1178,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 16.2.0 (Rev3  Built by MSYS2 project) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b3eaa.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_b3eaa.dir/']
-        ignore line: [ D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/cc1plus.exe -quiet -v -iprefix D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/ -isysroot D:/work/msys2/mingw64/bin/../../mingw64 -D_REENTRANT D:/work/msys2/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_b3eaa.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o D:\\work\\msys2\\tmp\\cc46FEpE.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2c2ee.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_2c2ee.dir/']
+        ignore line: [ D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/cc1plus.exe -quiet -v -iprefix D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/ -isysroot D:/work/msys2/mingw64/bin/../../mingw64 -D_REENTRANT D:/work/msys2/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_2c2ee.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o D:\\work\\msys2\\tmp\\ccDIg4tT.s]
         ignore line: [GNU C++20 (Rev3  Built by MSYS2 project) version 16.2.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 16.2.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version isl-0.28-GMP]
         ignore line: []
@@ -1855,8 +1202,8 @@ events:
         ignore line: [ D:/work/msys2/mingw64/bin/../../mingw64/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: b15794b24f9167c20083aef153e25b90]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b3eaa.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_b3eaa.dir/']
-        ignore line: [ D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_b3eaa.dir/CMakeCXXCompilerABI.cpp.obj D:\\work\\msys2\\tmp\\cc46FEpE.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2c2ee.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_2c2ee.dir/']
+        ignore line: [ D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_2c2ee.dir/CMakeCXXCompilerABI.cpp.obj D:\\work\\msys2\\tmp\\ccDIg4tT.s]
         ignore line: [GNU assembler version 2.47 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.47.20260726]
         ignore line: [COMPILER_PATH=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/]
         ignore line: [D:/work/msys2/mingw64/bin/../lib/gcc/]
@@ -1869,8 +1216,8 @@ events:
         ignore line: [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../]
         ignore line: [D:/work/msys2/mingw64/bin/../../mingw64/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b3eaa.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_b3eaa.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [[2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\work\\msys2\\mingw64\\bin\\c++.exe  -v -Wl -v CMakeFiles/cmTC_b3eaa.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_b3eaa.exe -Wl --out-implib libcmTC_b3eaa.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2c2ee.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_2c2ee.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\work\\msys2\\mingw64\\bin\\c++.exe  -v -Wl -v CMakeFiles/cmTC_2c2ee.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_2c2ee.exe -Wl --out-implib libcmTC_2c2ee.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=D:\\work\\msys2\\mingw64\\bin\\c++.exe]
         ignore line: [COLLECT_LTO_WRAPPER=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe]
@@ -1890,13 +1237,13 @@ events:
         ignore line: [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../]
         ignore line: [D:/work/msys2/mingw64/bin/../../mingw64/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b3eaa.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_b3eaa.']
-        link line: [ D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/collect2.exe -plugin D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.dll -plugin-opt=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe -plugin-opt=-fresolution=D:\\work\\msys2\\tmp\\cc6b16XR.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=D:/work/msys2/mingw64/bin/../../mingw64 -m i386pep -Bdynamic -o cmTC_b3eaa.exe D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/crt2.o D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0 -LD:/work/msys2/mingw64/bin/../lib/gcc -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib -LD:/work/msys2/mingw64/bin/../../mingw64/lib/../lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../.. -LD:/work/msys2/mingw64/bin/../../mingw64/lib -v CMakeFiles/cmTC_b3eaa.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_b3eaa.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/default-manifest.o D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2c2ee.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_2c2ee.']
+        link line: [ D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/collect2.exe -plugin D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.dll -plugin-opt=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe -plugin-opt=-fresolution=D:\\work\\msys2\\tmp\\cc5G3vyk.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=D:/work/msys2/mingw64/bin/../../mingw64 -m i386pep -Bdynamic -o cmTC_2c2ee.exe D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/crt2.o D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0 -LD:/work/msys2/mingw64/bin/../lib/gcc -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib -LD:/work/msys2/mingw64/bin/../../mingw64/lib/../lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../.. -LD:/work/msys2/mingw64/bin/../../mingw64/lib -v CMakeFiles/cmTC_2c2ee.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_2c2ee.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/default-manifest.o D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o]
           arg [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=D:\\work\\msys2\\tmp\\cc6b16XR.res] ==> ignore
+          arg [-plugin-opt=-fresolution=D:\\work\\msys2\\tmp\\cc5G3vyk.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
@@ -1919,7 +1266,7 @@ events:
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_b3eaa.exe] ==> ignore
+          arg [cmTC_2c2ee.exe] ==> ignore
           arg [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/crt2.o] ==> obj [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/crt2.o]
           arg [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o] ==> obj [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o]
           arg [-LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0] ==> dir [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0]
@@ -1931,9 +1278,9 @@ events:
           arg [-LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../..] ==> dir [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../..]
           arg [-LD:/work/msys2/mingw64/bin/../../mingw64/lib] ==> dir [D:/work/msys2/mingw64/bin/../../mingw64/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_b3eaa.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+          arg [CMakeFiles/cmTC_2c2ee.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_b3eaa.dll.a] ==> ignore
+          arg [libcmTC_2c2ee.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -1959,9 +1306,9 @@ events:
           arg [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/default-manifest.o] ==> obj [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/default-manifest.o]
           arg [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o] ==> obj [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o]
         ignore line: [collect2 version 16.2.0]
-        link line: [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.dll -plugin-opt=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe -plugin-opt=-fresolution=D:\\work\\msys2\\tmp\\cc6b16XR.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=D:/work/msys2/mingw64/bin/../../mingw64 -m i386pep -Bdynamic -o cmTC_b3eaa.exe D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/crt2.o D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0 -LD:/work/msys2/mingw64/bin/../lib/gcc -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib -LD:/work/msys2/mingw64/bin/../../mingw64/lib/../lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../.. -LD:/work/msys2/mingw64/bin/../../mingw64/lib -v CMakeFiles/cmTC_b3eaa.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_b3eaa.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/default-manifest.o D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o] ==> linker [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe]
-        link line: [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.dll -plugin-opt=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe -plugin-opt=-fresolution=D:\\work\\msys2\\tmp\\cc6b16XR.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=D:/work/msys2/mingw64/bin/../../mingw64 -m i386pep -Bdynamic -o cmTC_b3eaa.exe D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/crt2.o D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0 -LD:/work/msys2/mingw64/bin/../lib/gcc -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib -LD:/work/msys2/mingw64/bin/../../mingw64/lib/../lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../.. -LD:/work/msys2/mingw64/bin/../../mingw64/lib -v CMakeFiles/cmTC_b3eaa.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_b3eaa.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/default-manifest.o D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o] ==> linker architecture flags [-m;i386pep]
-        ignore line: [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.dll -plugin-opt=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe -plugin-opt=-fresolution=D:\\work\\msys2\\tmp\\cc6b16XR.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=D:/work/msys2/mingw64/bin/../../mingw64 -m i386pep -Bdynamic -o cmTC_b3eaa.exe D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/crt2.o D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0 -LD:/work/msys2/mingw64/bin/../lib/gcc -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib -LD:/work/msys2/mingw64/bin/../../mingw64/lib/../lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../.. -LD:/work/msys2/mingw64/bin/../../mingw64/lib -v CMakeFiles/cmTC_b3eaa.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_b3eaa.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/default-manifest.o D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o]
+        link line: [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.dll -plugin-opt=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe -plugin-opt=-fresolution=D:\\work\\msys2\\tmp\\cc5G3vyk.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=D:/work/msys2/mingw64/bin/../../mingw64 -m i386pep -Bdynamic -o cmTC_2c2ee.exe D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/crt2.o D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0 -LD:/work/msys2/mingw64/bin/../lib/gcc -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib -LD:/work/msys2/mingw64/bin/../../mingw64/lib/../lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../.. -LD:/work/msys2/mingw64/bin/../../mingw64/lib -v CMakeFiles/cmTC_2c2ee.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_2c2ee.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/default-manifest.o D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o] ==> linker [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe]
+        link line: [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.dll -plugin-opt=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe -plugin-opt=-fresolution=D:\\work\\msys2\\tmp\\cc5G3vyk.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=D:/work/msys2/mingw64/bin/../../mingw64 -m i386pep -Bdynamic -o cmTC_2c2ee.exe D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/crt2.o D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0 -LD:/work/msys2/mingw64/bin/../lib/gcc -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib -LD:/work/msys2/mingw64/bin/../../mingw64/lib/../lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../.. -LD:/work/msys2/mingw64/bin/../../mingw64/lib -v CMakeFiles/cmTC_2c2ee.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_2c2ee.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/default-manifest.o D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o] ==> linker architecture flags [-m;i386pep]
+        ignore line: [D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/liblto_plugin.dll -plugin-opt=D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/lto-wrapper.exe -plugin-opt=-fresolution=D:\\work\\msys2\\tmp\\cc5G3vyk.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=D:/work/msys2/mingw64/bin/../../mingw64 -m i386pep -Bdynamic -o cmTC_2c2ee.exe D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/crt2.o D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtbegin.o -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0 -LD:/work/msys2/mingw64/bin/../lib/gcc -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib -LD:/work/msys2/mingw64/bin/../../mingw64/lib/../lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../x86_64-w64-mingw32/lib -LD:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../.. -LD:/work/msys2/mingw64/bin/../../mingw64/lib -v CMakeFiles/cmTC_2c2ee.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_2c2ee.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/../../../../lib/default-manifest.o D:/work/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.2.0/crtend.o]
         linker tool for 'CXX': D:/work/msys2/mingw64/x86_64-w64-mingw32/bin/ld.exe -m;i386pep
         remove lib [msvcrt]
         remove lib [msvcrt]
@@ -2001,7 +1348,7 @@ events:
       - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
       - "D:/work/msys2/mingw64/lib/cmake/CURL/CURLConfig.cmake:68 (find_dependency)"
       - "D:/work/msys2/mingw64/share/cmake/Modules/FindCURL.cmake:174 (find_package)"
-      - "CMakeLists.txt:8 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
     mode: "path"
     variable: "OPENSSL_INCLUDE_DIR"
     description: "Path to a file."
@@ -2103,7 +1450,7 @@ events:
       - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
       - "D:/work/msys2/mingw64/lib/cmake/CURL/CURLConfig.cmake:68 (find_dependency)"
       - "D:/work/msys2/mingw64/share/cmake/Modules/FindCURL.cmake:174 (find_package)"
-      - "CMakeLists.txt:8 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
     mode: "library"
     variable: "LIB_EAY"
     description: "Path to a library."
@@ -2319,7 +1666,7 @@ events:
       - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
       - "D:/work/msys2/mingw64/lib/cmake/CURL/CURLConfig.cmake:68 (find_dependency)"
       - "D:/work/msys2/mingw64/share/cmake/Modules/FindCURL.cmake:174 (find_package)"
-      - "CMakeLists.txt:8 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
     mode: "library"
     variable: "SSL_EAY"
     description: "Path to a library."
@@ -2535,7 +1882,7 @@ events:
       - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
       - "D:/work/msys2/mingw64/lib/cmake/CURL/CURLConfig.cmake:79 (find_dependency)"
       - "D:/work/msys2/mingw64/share/cmake/Modules/FindCURL.cmake:174 (find_package)"
-      - "CMakeLists.txt:8 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
     mode: "path"
     variable: "ZLIB_INCLUDE_DIR"
     description: "Path to a file."
@@ -2643,7 +1990,7 @@ events:
       - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
       - "D:/work/msys2/mingw64/lib/cmake/CURL/CURLConfig.cmake:79 (find_dependency)"
       - "D:/work/msys2/mingw64/share/cmake/Modules/FindCURL.cmake:174 (find_package)"
-      - "CMakeLists.txt:8 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
     mode: "library"
     variable: "ZLIB_LIBRARY_RELEASE"
     description: "Path to a library."
@@ -2913,7 +2260,7 @@ events:
       - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
       - "D:/work/msys2/mingw64/lib/cmake/CURL/CURLConfig.cmake:79 (find_dependency)"
       - "D:/work/msys2/mingw64/share/cmake/Modules/FindCURL.cmake:174 (find_package)"
-      - "CMakeLists.txt:8 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
     mode: "library"
     variable: "ZLIB_LIBRARY_DEBUG"
     description: "Path to a library."
@@ -3431,7 +2778,7 @@ events:
       - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
       - "D:/work/msys2/mingw64/lib/cmake/CURL/CURLConfig.cmake:93 (find_dependency)"
       - "D:/work/msys2/mingw64/share/cmake/Modules/FindCURL.cmake:174 (find_package)"
-      - "CMakeLists.txt:8 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
     mode: "program"
     variable: "PKG_CONFIG_EXECUTABLE"
     description: "pkg-config executable"
@@ -3508,7 +2855,7 @@ events:
       - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
       - "D:/work/msys2/mingw64/lib/cmake/CURL/CURLConfig.cmake:93 (find_dependency)"
       - "D:/work/msys2/mingw64/share/cmake/Modules/FindCURL.cmake:174 (find_package)"
-      - "CMakeLists.txt:8 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
     mode: "library"
     variable: "pkgcfg_lib__brotli_brotlidec"
     description: "Path to a library."
@@ -3561,7 +2908,7 @@ events:
       - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
       - "D:/work/msys2/mingw64/lib/cmake/CURL/CURLConfig.cmake:93 (find_dependency)"
       - "D:/work/msys2/mingw64/share/cmake/Modules/FindCURL.cmake:174 (find_package)"
-      - "CMakeLists.txt:8 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
     mode: "library"
     variable: "pkgcfg_lib__brotli_brotlicommon"
     description: "Path to a library."
@@ -3614,7 +2961,7 @@ events:
       - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
       - "D:/work/msys2/mingw64/lib/cmake/CURL/CURLConfig.cmake:117 (find_dependency)"
       - "D:/work/msys2/mingw64/share/cmake/Modules/FindCURL.cmake:174 (find_package)"
-      - "CMakeLists.txt:8 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
     mode: "library"
     variable: "pkgcfg_lib__libidn2_idn2"
     description: "Path to a library."
@@ -3667,7 +3014,7 @@ events:
       - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
       - "D:/work/msys2/mingw64/lib/cmake/CURL/CURLConfig.cmake:121 (find_dependency)"
       - "D:/work/msys2/mingw64/share/cmake/Modules/FindCURL.cmake:174 (find_package)"
-      - "CMakeLists.txt:8 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
     mode: "library"
     variable: "pkgcfg_lib__libpsl_psl"
     description: "Path to a library."
@@ -3720,7 +3067,7 @@ events:
       - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
       - "D:/work/msys2/mingw64/lib/cmake/CURL/CURLConfig.cmake:129 (find_dependency)"
       - "D:/work/msys2/mingw64/share/cmake/Modules/FindCURL.cmake:174 (find_package)"
-      - "CMakeLists.txt:8 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
     mode: "library"
     variable: "pkgcfg_lib__libssh2_ssh2"
     description: "Path to a library."
@@ -3773,7 +3120,7 @@ events:
       - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
       - "D:/work/msys2/mingw64/lib/cmake/CURL/CURLConfig.cmake:141 (find_dependency)"
       - "D:/work/msys2/mingw64/share/cmake/Modules/FindCURL.cmake:174 (find_package)"
-      - "CMakeLists.txt:8 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
     mode: "library"
     variable: "pkgcfg_lib__nghttp2_nghttp2"
     description: "Path to a library."
@@ -3826,7 +3173,7 @@ events:
       - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
       - "D:/work/msys2/mingw64/lib/cmake/CURL/CURLConfig.cmake:145 (find_dependency)"
       - "D:/work/msys2/mingw64/share/cmake/Modules/FindCURL.cmake:174 (find_package)"
-      - "CMakeLists.txt:8 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
     mode: "library"
     variable: "pkgcfg_lib__nghttp3_nghttp3"
     description: "Path to a library."
@@ -3879,7 +3226,7 @@ events:
       - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
       - "D:/work/msys2/mingw64/lib/cmake/CURL/CURLConfig.cmake:149 (find_dependency)"
       - "D:/work/msys2/mingw64/share/cmake/Modules/FindCURL.cmake:174 (find_package)"
-      - "CMakeLists.txt:8 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
     mode: "library"
     variable: "pkgcfg_lib__ngtcp2_ngtcp2_crypto_ossl"
     description: "Path to a library."
@@ -3932,7 +3279,7 @@ events:
       - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
       - "D:/work/msys2/mingw64/lib/cmake/CURL/CURLConfig.cmake:149 (find_dependency)"
       - "D:/work/msys2/mingw64/share/cmake/Modules/FindCURL.cmake:174 (find_package)"
-      - "CMakeLists.txt:8 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
     mode: "library"
     variable: "pkgcfg_lib__ngtcp2_ngtcp2"
     description: "Path to a library."
@@ -3985,7 +3332,7 @@ events:
       - "D:/work/msys2/mingw64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
       - "D:/work/msys2/mingw64/lib/cmake/CURL/CURLConfig.cmake:171 (find_dependency)"
       - "D:/work/msys2/mingw64/share/cmake/Modules/FindCURL.cmake:174 (find_package)"
-      - "CMakeLists.txt:8 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
     mode: "library"
     variable: "pkgcfg_lib__zstd_zstd"
     description: "Path to a library."
@@ -4030,7 +3377,7 @@ events:
     kind: "find_package-v1"
     backtrace:
       - "D:/work/msys2/mingw64/share/cmake/Modules/FindCURL.cmake:174 (find_package)"
-      - "CMakeLists.txt:8 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
     name: "CURL"
     configs:
       -
@@ -4143,7 +3490,7 @@ events:
   -
     kind: "find_package-v1"
     backtrace:
-      - "CMakeLists.txt:9 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
     name: "nlohmann_json"
     configs:
       -
@@ -4234,10 +3581,6 @@ events:
         - "C:/Program Files (x86)"
         - "D:/work/msys2/mingw64"
         - "C:/Program Files (x86)/APIAgent"
-...
-
----
-events:
   -
     kind: "try_compile-v1"
     backtrace:
@@ -4254,8 +3597,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "D:/work/programs/prj/APIAgent/build/CMakeFiles/CMakeScratch/TryCompile-aim0ul"
-      binary: "D:/work/programs/prj/APIAgent/build/CMakeFiles/CMakeScratch/TryCompile-aim0ul"
+      source: "D:/work/programs/prj/APIAgent/build/CMakeFiles/CMakeScratch/TryCompile-bqtoij"
+      binary: "D:/work/programs/prj/APIAgent/build/CMakeFiles/CMakeScratch/TryCompile-bqtoij"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -4266,11 +3609,11 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'D:/work/programs/prj/APIAgent/build/CMakeFiles/CMakeScratch/TryCompile-aim0ul'
+        Change Dir: 'D:/work/programs/prj/APIAgent/build/CMakeFiles/CMakeScratch/TryCompile-bqtoij'
         
-        Run Build Command(s): D:/work/msys2/mingw64/bin/ninja.exe -v cmTC_25e84
-        [1/2] D:\\work\\msys2\\mingw64\\bin\\c++.exe -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++20 -o CMakeFiles/cmTC_25e84.dir/src.cxx.obj -c D:/work/programs/prj/APIAgent/build/CMakeFiles/CMakeScratch/TryCompile-aim0ul/src.cxx
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\work\\msys2\\mingw64\\bin\\c++.exe   CMakeFiles/cmTC_25e84.dir/src.cxx.obj -o cmTC_25e84.exe -Wl,--out-implib,libcmTC_25e84.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        Run Build Command(s): D:/work/msys2/mingw64/bin/ninja.exe -v cmTC_b0e62
+        [1/2] D:\\work\\msys2\\mingw64\\bin\\c++.exe -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++20 -o CMakeFiles/cmTC_b0e62.dir/src.cxx.obj -c D:/work/programs/prj/APIAgent/build/CMakeFiles/CMakeScratch/TryCompile-bqtoij/src.cxx
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\work\\msys2\\mingw64\\bin\\c++.exe   CMakeFiles/cmTC_b0e62.dir/src.cxx.obj -o cmTC_b0e62.exe -Wl,--out-implib,libcmTC_b0e62.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
         
       exitCode: 0
   -
@@ -4666,8 +4009,8 @@ events:
     checks:
       - "Performing Test HAVE_STDATOMIC"
     directories:
-      source: "D:/work/programs/prj/APIAgent/build/CMakeFiles/CMakeScratch/TryCompile-7ksc2z"
-      binary: "D:/work/programs/prj/APIAgent/build/CMakeFiles/CMakeScratch/TryCompile-7ksc2z"
+      source: "D:/work/programs/prj/APIAgent/build/CMakeFiles/CMakeScratch/TryCompile-bqjpny"
+      binary: "D:/work/programs/prj/APIAgent/build/CMakeFiles/CMakeScratch/TryCompile-bqjpny"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -4678,11 +4021,11 @@ events:
       variable: "HAVE_STDATOMIC"
       cached: true
       stdout: |
-        Change Dir: 'D:/work/programs/prj/APIAgent/build/CMakeFiles/CMakeScratch/TryCompile-7ksc2z'
+        Change Dir: 'D:/work/programs/prj/APIAgent/build/CMakeFiles/CMakeScratch/TryCompile-bqjpny'
         
-        Run Build Command(s): D:/work/msys2/mingw64/bin/ninja.exe -v cmTC_747da
-        [1/2] D:\\work\\msys2\\mingw64\\bin\\c++.exe -DHAVE_STDATOMIC  -std=gnu++20 -o CMakeFiles/cmTC_747da.dir/src.cxx.obj -c D:/work/programs/prj/APIAgent/build/CMakeFiles/CMakeScratch/TryCompile-7ksc2z/src.cxx
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\work\\msys2\\mingw64\\bin\\c++.exe   CMakeFiles/cmTC_747da.dir/src.cxx.obj -o cmTC_747da.exe -Wl,--out-implib,libcmTC_747da.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        Run Build Command(s): D:/work/msys2/mingw64/bin/ninja.exe -v cmTC_eab61
+        [1/2] D:\\work\\msys2\\mingw64\\bin\\c++.exe -DHAVE_STDATOMIC  -std=gnu++20 -o CMakeFiles/cmTC_eab61.dir/src.cxx.obj -c D:/work/programs/prj/APIAgent/build/CMakeFiles/CMakeScratch/TryCompile-bqjpny/src.cxx
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && D:\\work\\msys2\\mingw64\\bin\\c++.exe   CMakeFiles/cmTC_eab61.dir/src.cxx.obj -o cmTC_eab61.exe -Wl,--out-implib,libcmTC_eab61.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
         
       exitCode: 0
   -
